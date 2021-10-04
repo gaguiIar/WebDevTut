@@ -1,0 +1,320 @@
+
+@font-face {
+    font-family: 'ComfortaaReg'; /*a name to be used later*/
+    src: url('../fonts/comfortaa/comfortaa-Regular.ttf'); /*URL to font*/
+}
+
+* {
+  font-family: ComfortaaReg;
+}
+
+body {
+  margin: 0px;
+
+
+}
+
+.footer {
+  text-align: center;
+  height: 30px;
+}
+.page {
+  width: 1100px;
+  height: auto;
+  margin: auto;
+  background-color: #fff;
+}
+.header {
+  padding-top: 30px;
+}
+.header h1, h2 {
+  margin-left: 10px;
+  display: inline;
+  font-size: 39px;
+  font-family: Arial;
+}
+
+.header h2 {
+  color: #808080;
+  font-size: 25px;
+}
+
+#inline {
+  display: inline;
+}
+
+ul {
+  font-size: 25px;
+  text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.textInfo {
+  text-align: block;
+  margin: auto;
+  width: 1090px;
+}
+
+.textInfo p {
+  font-size: 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 20px;
+}
+.title h1 {
+  font-family: Arial;
+}
+.flexContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.boxHor {
+  background-color: #ededed;
+  margin: 5px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: thin;
+  text-align: left;
+  margin-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.box {
+  width: 380px;
+  height: 500px;
+  background-color: #ededed;
+  margin: 5px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: thin;
+  text-align: center;
+  margin-top: 10px;
+
+}
+
+.box h2 {
+  margin-top: 20px;
+  position: relative;
+  top: 10px;
+}
+
+.box p {
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+
+/* Style the links inside the navigation bar */
+.topnav a {
+
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: Arial;
+
+}
+
+.selectedTab {
+  background-color: #ffff61;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+.tagHighlight {
+  font-family: monospace;
+  background-color: #ccc;
+  border-radius: 5px;
+  width: auto;
+  display: inline;
+  width: auto;
+  padding: 5px;
+
+}
+
+em {
+  font-family: monospace;
+  font-size: 18px;
+  background-color: #ccc;
+  border-radius: 5px;
+  width: auto;
+  display: inline;
+  width: auto;
+  padding: 1px;
+  font-style: normal;
+
+}
+
+/* Change the color of links on hover */
+
+.topnav a:hover {
+  background-color: #fff9b5;
+  border-radius: 5px;
+
+}
+
+
+
+#size {
+  width: 50px;
+  height: 50px;
+}
+
+/* lksda;ldkal;kdal;sd */
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  position: relative;
+  top: 860px;
+  margin-left: 250px;
+  background-color: #f1f1f1;
+  color: black;
+  float: left;
+}
+
+.next {
+  position: relative;
+  top: 860px;
+  margin-right: 250px;
+  background-color: #f1f1f1;
+  color: black;
+  float: right;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+.flexHalf {
+  display: flex;
+}
+
+.htmlPreview {
+  background-color: #f3f3f3ff;
+  border-radius: 10px;
+  padding-top: 10px;
+  width: 500px;
+  height: 540px;
+  margin: 10px;
+}
+
+.dots {
+  width: 70px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 0;
+  display: inline;
+}
+
+.dotOne {
+  height: 15px;
+  width: 15px;
+  margin-right: 2px;
+  background-color: #ff0000ff;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dotTwo {
+  height: 15px;
+  width: 15px;
+  margin-right: 2px;
+  background-color: #ffd966ff;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dotThree {
+  height: 15px;
+  width: 15px;
+  margin-right: 2px;
+  background-color: #19e919ff;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.fileName {
+
+  display: inline;
+  background-color: #FFF;
+  font-size: 10px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+
+  border-radius: 20px;
+}
+
+.fileName #inline {
+  font-family: monospace;
+}
+
+.htmlCode {
+  background-color: #FFF;
+  width: 460px;
+  border-radius: 15px;
+  height: 475px;
+  margin-left: 20px;
+}
+
+.htmlCode p {
+  font-family: monospace;
+  font-size: 18px;
+  padding-left: 10px;
+  padding-top: 10px;
+
+}
+
+.tab {
+  margin-left: 20px;
+}
+
+.doubleTab {
+  margin-left: 40px;
+}
+
+.htmlRender {
+  padding-top: 10px;
+  background-color: #f3f3f3ff;
+  border-radius: 10px;
+  width: 500px;
+  height: 200px;
+  margin: 10px;
+
+}
+
+.results {
+  background-color: #FFF;
+  width: 90%;
+  border-radius: 15px;
+  height: 70%;
+  margin-left: 20px;
+
+}
+.results p {
+  font-family: monospace;
+  margin-top: 12px;
+  padding-left: 10px;
+  padding-top: 10px;
+}

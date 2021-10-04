@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="imgs/emojiLogo.png" />
+  <link rel="stylesheet" href="style/master.css">
+  <title>Introduction to Web Development</title>
+</head>
+
+<body>
+  <div class="prevNext">
+    <a href="index.html" class="previous round">&#8249;</a>
+    <a href="bodyTags.html" class="next round">&#8250;</a>
+
+  </div>
+  <div class="page">
+    <div class="header">
+      <h1>Introduction to Web Development</h1>
+      <h2>By Gerardo Aguilar</h2>
+    </div>
+    <div class="textInfo">
+      <p>Are you looking to break into tech but don't have extensive programming experience? My name is Gerardo, and I'm a sophomore studying Computer Science & Business Administration at the University of Southern California. I believe that with
+        enough dedication, anyone can become a successful developer, so I built this website with that in mind. Introduction to Web Development is a resource aimed to help any beginner looking to branch into tech by breaking down web fundamentals
+        such as HTML, CSS & JavaScript. If you're interested in learning more about web development, I applaud and encourage you to keep reading on. To start, you will want some type of IDE or Integrated Development Environment. I recommend Atom, but
+        Sublime Text or Visual Studio Code are also very popular HTML text editors. You can't go wrong with either, so I recommend you read a bit about all options and pick one you can quickly become familiar with. Don't be afraid to get started; You
+        can use the navigation bar below this paragraph or the directional arrows to navigate the sections of this website.
+      </p>
+    </div>
+
+    <div class="topnav">
+      <hr>
+      <ul>
+        <li id="inline"><a href="index.html">How Websites are Created</a></li>
+        <li id="inline"> |</li>
+        <li id="inline" class = "selectedTab"><a href="structure.html">HTML Structure</a></li>
+        <li id="inline"> |</li>
+        <li id="inline"><a href="bodyTags.html">Body Tags</a></li>
+        <li id="inline"> |</li>
+        <li id="inline"><a href="tablesAndForms.html">Tables & Forms</a></li>
+        <li id="inline"> |</li>
+        <li id="inline"><a href="IdsAndClasses.html">IDs & Classes</a></li>
+        <li id="inline"> |</li>
+        <li id="inline"><a href="cssPage.html">CSS</a></li>
+        <li id="inline"> |</li>
+        <li id="inline"><a href="layout.html">Layout</a></li>
+        <li id="inline"> |</li>
+        <li id="inline"><a href="hosting.html">Hosting</a></li>
+        <li id="inline"> |</li>
+        <li id="inline"><a href="otherResources.html">Other Resources</a></li>
+        <li id="inline"> |</li>
+
+      </ul>
+      <hr>
+      </div>
+      <div class="title">
+        <h1>HTML Structure</h1>
+      </div>
+      <div class="textInfo">
+        <ol>
+          <li>
+            <p class="tagHighlight">&lt;!DOCTYPE html&gt;</p>
+          </li>
+          <p>There are all kinds of files you can open on the web and each of them have properties that change the way they are displayed in a brower. Browsers need to be able to identify what kind if file is being loaded to figure out how to display
+            it; the <em>&lt;!DOCTYPE html&gt;</em> tag allows us to do so. Writing <em>&lt;!DOCTYPE html&gt;</em> declares the document type as an HTML file and tells the browser how it should be displayed.</p>
+          <li>
+            <p class="tagHighlight">&lt;html&gt;</p>
+          </li>
+          <p>The html tag begins with <em>&lt;html&gt;</em> and ends with <em>&lt;/html&gt;</em>. As we go through this tutorial you will see that most html tags have a starting and closing tag––Unless otherwise specified you can assume any future
+            tags discussed in this tutorial have a closing tag that is identical to the primary tag with a forwardslash <em>(/)</em> in the beggining. In this case the beggining <em>&lt;html&gt;</em> tag identifies the start or root of a HTML
+            document and the closing <em>&lt;/html&gt;</em> tag indicates the end. Because the html tag is used to mark the start and end of an HTML document that means all other HTML elements present on your webpage will go inside these two tags.
+          </p>
+          <li>
+            <p class="tagHighlight">&lt;head&gt;</p>
+          </li>
+          <p>The <em>&lt;head&gt;</em> tag defines elements about an html page such as the page title, links to CSS, external files, character encoding and other types of metadata about the document.</p>
+          <li>
+            <p class="tagHighlight">&lt;title&gt;</p>
+          </li>
+          <p>The <em>&lt;title&gt;</em> tag goes inside the head tag and defines the title of a webpage(Words that show up on webpage tab above url bar)</p>
+          <li>
+            <p class="tagHighlight">&lt;link&gt;</p>
+          </li>
+          <p>The <em>&lt;link&gt;</em> tag also goes inside the head tag and is used to import external resources such as CSS or cascading style sheet <em>(.css)</em> files.</p>
+          <li>
+            <p class="tagHighlight">&lt;body&gt;</p>
+          </li>
+          <p>The <em>&lt;body&gt;</em> tag will be the first HTML tag that proceeds the ending <em>&lt;/head&gt;</em> tag. The <em>&lt;body&gt;</em> openeing and closing tags will contain eveyrthing that your browser will display. </p>
+        </ol>
+
+        <div class="flexHalf">
+          <div class="htmlPreview">
+            <div class="dots">
+              <span class = "dotOne"></span>
+              <span class = "dotTwo"></span>
+              <span class = "dotThree"></span>
+            </div>
+            <div class="fileName">
+              <p id = "inline">firstFile.html</p>
+            </div>
+
+            <div class="htmlCode"> <p>&lt;!DOCTYPE html&gt;</p>
+            <p>&lt;html&gt;</p>
+            <p>&lt;head&gt;</p>
+            <p class ="tab">&lt;title&gt;Website Title&lt;/title&gt;</p>
+            <p>&lt;/head&gt;</p> <p>&lt;body&gt;</p>
+            <p class = "tab">&lt;p&gt;Hello! Notice how the only thing being displayed is Within the body tags...&lt;p&gt;</p>
+            <p>&lt;/body&gt;</p>
+            <p>&lt;/html&gt;</p> </div>
+
+
+
+          </div>
+
+          <div class="htmlRender">
+            <div class="dots">
+              <span class = "dotOne"></span>
+              <span class = "dotTwo"></span>
+              <span class = "dotThree"></span>
+            </div>
+            <div class="fileName">
+              <p id = "inline">Website Title</p>
+            </div>
+            <div class="results">
+              <p>Hello! Notice how the only thing being displayed is Within the body tags...</p>
+
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>2</p>
+    </div>
+</body>
+
+</html>
