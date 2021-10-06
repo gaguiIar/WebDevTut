@@ -216,6 +216,7 @@ a:hover {
   width: 500px;
   height: 540px;
   margin: 10px;
+  margin-bottom: 20px;
 }
 
 .dots {
@@ -276,6 +277,7 @@ a:hover {
   border-radius: 15px;
   height: 475px;
   margin-left: 20px;
+  margin-right: 20px;
 }
 
 .htmlCode p {
@@ -283,6 +285,7 @@ a:hover {
   font-size: 18px;
   padding-left: 10px;
   padding-top: 10px;
+  line-height: 95%
 
 }
 
@@ -298,18 +301,14 @@ a:hover {
   padding-top: 10px;
   background-color: #f3f3f3ff;
   border-radius: 10px;
-  width: 500px;
-  height: 200px;
   margin: 10px;
-
 }
 
 .results {
   background-color: #FFF;
-  width: 90%;
   border-radius: 15px;
-  height: 70%;
   margin-left: 20px;
+
 
 }
 .results p {

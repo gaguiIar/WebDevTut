@@ -3,17 +3,47 @@
 
 <head>
   <meta charset="utf-8">
+  <style media="screen">
+#SGMIMAGE {
+  margin-top: 18px;
+}
+    #SGMIMAGE img {
+      width: 300px;
+      margin: 20px;
+      margin-top: 20px;
+      border-radius: 5px;
+    }
+
+    .htmlRender {
+      width: 400px;
+      height: 400px;
+    }
+    .results {
+      height: 85%;
+      width: 90%;
+    }
+
+    #anchorTagHTMLPreview > .htmlCode {
+      height: 140px;
+
+    }
+    #anchorEX > .htmlPreview {
+      height: 200px;
+    }
+
+
+
+
+
+
+  </style>
   <link rel="shortcut icon" href="imgs/emojiLogo.png" />
   <link rel="stylesheet" href="style/master.css">
   <title>Introduction to Web Development</title>
 </head>
 
 <body>
-  <div class="prevNext">
-    <a href="structure.html" class="previous round">&#8249;</a>
-    <a href="tablesAndForms.html" class="next round">&#8250;</a>
 
-  </div>
   <div class="page">
     <div class="header">
       <h1>Introduction to Web Development</h1>
@@ -55,35 +85,115 @@
     <div class="title">
       <h1>Body Tags</h1>
     </div>
+    <div class="MarginText">
+      <p><strong>As the name implies HTML structure tags establish the foundation of any HTML webpage; However, to actually build the structure of a webpage you’ll want to deal with interal body tags as these are what is actually going to be rendered by your browser. </strong></p>
+    </div>
     <div class="textInfo">
       <ol>
         <li>
           <p class="tagHighlight">&lt;div&gt;</p>
         </li>
-        <p>There are all kinds of files you can open on the web and each of them have properties that change the way they are displayed in a brower. Browsers need to be able to identify what kind if file is being loaded to figure out how to display
-          it; the <em>&lt;!DOCTYPE html&gt;</em> tag allows us to do so. Writing <em>&lt;!DOCTYPE html&gt;</em> declares the document type as an HTML file and tells the browser how it should be displayed.</p>
+        <p>The <em>&lt;div&gt;</em> tag creates a division within your body. For example a navigation bar, photo gallery, paragraph, or biography can all be contained within a div container. DIv containers are useful for splitting your complex websites into digestible sections. Div containers can also be used with ids or classes to style specific groups of elements at once. We haven’t covered ID’s and Classes yet so don’t worry if that idea seems a bit complex, it will make more sense later.</p>
         <li>
           <p class="tagHighlight">&lt;p&gt;</p>
         </li>
-        <p>The html tag begins with <em>&lt;html&gt;</em> and ends with <em>&lt;/html&gt;</em>. As we go through this tutorial you will see that most html tags have a starting and closing tag––Unless otherwise specified you can assume any future
-          tags discussed in this tutorial have a closing tag that is identical to the primary tag with a forwardslash <em>(/)</em> in the beggining. In this case the beggining <em>&lt;html&gt;</em> tag identifies the start or root of a HTML
-          document and the closing <em>&lt;/html&gt;</em> tag indicates the end. Because the html tag is used to mark the start and end of an HTML document that means all other HTML elements present on your webpage will go inside these two tags.
+        <p>The <em>&lt;p&gt;</em> tag is used to store text and has no special formating besides the fact that a <em>&lt;p&gt;</em> tag will automatically render a blank line before and after every <em>&lt;p&gt;</em> element
+
         </p>
         <li>
           <p class="tagHighlight">&lt;h#&gt;</p>
         </li>
-        <p>There are all kinds of files you can open on the web and each of them have properties that change the way they are displayed in a brower. Browsers need to be able to identify what kind if file is being loaded to figure out how to display
-          it; the DOCTYPE tag allows us to do so. Writing DOCTYPE declares the document type as an HTML file and tells the browser how it should be displayed.</p>
+        <p>Header, or <em>&lt;h#&gt;</em> tags can be used to make titles or of course headers within your webpage, Headers by default are bold in text and decrease or increase insize depending on how far the number used in the header tag is from 1, the first, principal heading tag. Possible tag variations are <em>&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt;</em> with h1 being the largest and h6 being the smallest. </p>
         <li>
           <p class="tagHighlight">&lt;img&gt;</p>
         </li>
-        <p>There are all kinds of files you can open on the web and each of them have properties that change the way they are displayed in a brower. Browsers need to be able to identify what kind if file is being loaded to figure out how to display
-          it; the DOCTYPE tag allows us to do so. Writing DOCTYPE declares the document type as an HTML file and tells the browser how it should be displayed.</p>
+        <p>The <em>img</em> tag is used to add images to your website. For a image to be succesfully rendered you have to use it with the properties <em>src</em> and <em>alt</em>.</p>
+        <p>	<em>src</em> is used to priovide the location for the source of the image, if you have the image in your directory you can simply lead it to the file but alternatively you can use image urls by utalizing the <em>url(“”)</em> argument.  If you will be using multiple photos its best you put them all in one central img file. </p>
+        <p>	<em>alt</em> is an important accessibility feature. The texts in the <em>alt</em> tag should desribe the image as it is what will be displayed if the image file cannot be found. Additionally for people who use screenreaders alt text will be used to describe what the image is. You should always have accurate and useful <em>alt</em> descriptors.</p>
+        <p>Something to note <em>img</em> tags do NOT have a closing image tag.</p>
+        <p><strong>This is what a full image tag would look like:</strong></p>
+
+        <div class="flexHalf">
+          <div class="htmlPreview">
+            <div class="dots">
+              <span class = "dotOne"></span>
+              <span class = "dotTwo"></span>
+              <span class = "dotThree"></span>
+            </div>
+            <div class="fileName">
+              <p id = "inline">imgExample.html</p>
+            </div>
+
+            <div class="htmlCode">
+              <p>&lt;!DOCTYPE html&gt;</p>
+              <p>&lt;html&gt;</p>
+              <p>&lt;head&gt;</p>
+              <p class = "tab">&lt;title&gt;Cool Photo&lt;/title&gt;</p>
+              <p class = "tab">&lt;link&gt; rel="stylesheet" href="style/master.css"></p>
+              <p>&lt;/head&gt;</p> <p>&lt;body&gt;</p>
+              <p class = "tab">&lt;img src = "imgs/sgm.jpg" alt = "DTLA view"&gt;</p>
+              <p>&lt;/body&gt;</p>
+              <p>&lt;/html&gt;</p> </div>
+
+
+
+          </div>
+
+          <div class="htmlRender">
+            <div class="dots">
+              <span class = "dotOne"></span>
+              <span class = "dotTwo"></span>
+              <span class = "dotThree"></span>
+            </div>
+            <div class="fileName">
+              <p id = "inline">Cool Photo</p>
+            </div>
+            <div class="results">
+              <div id="SGMIMAGE">
+                <img src="imgs/sgm.jpg" alt="DTLA skyline at night">
+              </div>
+
+            </div>
+
+            <br>
+
+
+          </div>
+        </div>
+
         <li>
           <p class="tagHighlight">&lt;a&gt;</p>
         </li>
-        <p>There are all kinds of files you can open on the web and each of them have properties that change the way they are displayed in a brower. Browsers need to be able to identify what kind if file is being loaded to figure out how to display
-          it; the DOCTYPE tag allows us to do so. Writing DOCTYPE declares the document type as an HTML file and tells the browser how it should be displayed.</p>
+        <p>The Anchor tag defnies a hyperlink to navigate from one page to another. You can use an anchor tag to direct someone to a already hosted url or a local html file like the img tag. </p>
+        <p>Within the opening anchor tag you must utalize the href proeprty to link the website or file the hyperlink should navigate to.</p>
+        <p><strong>This is what a full anchor tag would look like:</strong></p>
+        <div id="anchorEX">
+          <div class="htmlPreview">
+            <div class="dots">
+              <span class = "dotOne"></span>
+              <span class = "dotTwo"></span>
+              <span class = "dotThree"></span>
+            </div>
+            <div class="fileName">
+              <p id = "inline">imgExample.html</p>
+            </div>
+
+            <div id="anchorTagHTMLPreview">
+              <div class="htmlCode">
+
+                <p>&lt;body&gt;</p>
+                <p class = "tab">&lt;a href = "index.html"&gt; Home Page &lt;a&gt; </p>
+                <p>&lt;/body&gt;</p>
+
+              </div>
+
+            </div>
+
+
+
+          </div>
+
+        </div>
         <li>
           <p class="tagHighlight">&lt;body&gt;</p>
         </li>
