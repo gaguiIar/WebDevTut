@@ -4,7 +4,7 @@
     src: url('../fonts/comfortaa/Comfortaa-Regular.ttf'); /*URL to font*/
 }
 
-* {
+p {
   font-family: ComfortaaReg;
 }
 
@@ -28,7 +28,7 @@ body {
   padding-top: 30px;
 }
 .header h1, h2 {
-  margin-left: 10px;
+  margin-left: 0px;
   display: inline;
   font-size: 39px;
   font-family: Arial;
@@ -43,7 +43,7 @@ body {
   display: inline;
 }
 
-ul {
+.topnav ul {
   font-size: 25px;
   text-align: center;
   list-style-type: none;
@@ -172,14 +172,13 @@ em {
 
 /* lksda;ldkal;kdal;sd */
 
-a {
+.topnav a {
   text-decoration: none;
   display: inline-block;
   padding: 8px 16px;
 }
 
-a:hover {
-  background-color: #ddd;
+.topnav a:hover {
   color: black;
 }
 
@@ -314,6 +313,5 @@ a:hover {
 .results p {
   font-family: monospace;
   margin-top: 12px;
-  padding-left: 10px;
   padding-top: 10px;
 }

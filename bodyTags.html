@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <style media="screen">
-#SGMIMAGE {
-  margin-top: 18px;
-}
+    #SGMIMAGE {
+      margin-top: 18px;
+    }
     #SGMIMAGE img {
       width: 300px;
       margin: 20px;
@@ -16,10 +16,10 @@
 
     .htmlRender {
       width: 400px;
-      height: 400px;
+      height: 330px;
     }
     .results {
-      height: 85%;
+      height: 80%;
       width: 90%;
     }
 
@@ -29,6 +29,67 @@
     }
     #anchorEX > .htmlPreview {
       height: 200px;
+    }
+
+    #anchorEX  .htmlPreview {
+      height: 200px;
+
+
+    }
+
+    #anchorEX .htmlRender {
+      height: 200px;
+    }
+
+    #anchorEX .results {
+      margin-top: 18px;
+      height: 140px;
+    }
+
+    .results #indexAnchor {
+      font-family: arial;
+      margin: 20px;
+    }
+
+    #grandExample .htmlPreview {
+      width: 550px;
+      height: 1000px;
+    }
+
+    #grandExample .htmlRender {
+      width: 450px;
+      height: 800px;
+    }
+
+    #headingTags {
+      font-family: Arial;
+    }
+
+    #grandExample .results p {
+      font-family: Arial;
+    }
+
+    #grandExample p, div, h1, h2, h3, h4, h5, h6, img {
+      font-family: Arial;
+      margin-left: 0px;
+    }
+
+    #bodyTagsMasterExample {
+      margin: 20px;
+    }
+
+
+    #grandExample .htmlRender {
+      height: 1000px;
+
+    }
+
+    #grandExample .results {
+      height: 940px;
+    }
+
+    #padding {
+      padding-top: 10px;
     }
 
 
@@ -168,37 +229,144 @@
         <p>Within the opening anchor tag you must utalize the href proeprty to link the website or file the hyperlink should navigate to.</p>
         <p><strong>This is what a full anchor tag would look like:</strong></p>
         <div id="anchorEX">
-          <div class="htmlPreview">
-            <div class="dots">
-              <span class = "dotOne"></span>
-              <span class = "dotTwo"></span>
-              <span class = "dotThree"></span>
-            </div>
-            <div class="fileName">
-              <p id = "inline">imgExample.html</p>
-            </div>
+          <div class="flexHalf">
+            <div class="htmlPreview">
+              <div class="dots">
+                <span class = "dotOne"></span>
+                <span class = "dotTwo"></span>
+                <span class = "dotThree"></span>
+              </div>
+              <div class="fileName">
+                <p id = "inline">anchorTagExample.html</p>
+              </div>
 
-            <div id="anchorTagHTMLPreview">
-              <div class="htmlCode">
+              <div id="anchorTagHTMLPreview">
+                <div class="htmlCode">
 
-                <p>&lt;body&gt;</p>
-                <p class = "tab">&lt;a href = "index.html"&gt; Home Page &lt;a&gt; </p>
-                <p>&lt;/body&gt;</p>
+                  <p>&lt;body&gt;</p>
+                  <p class = "tab">&lt;a href = "index.html"&gt; Home Page &lt;a&gt; </p>
+                  <p>&lt;/body&gt;</p>
+
+                </div>
 
               </div>
 
+
+
             </div>
 
+            <div class="htmlRender">
+              <div class="dots">
+                <span class = "dotOne"></span>
+                <span class = "dotTwo"></span>
+                <span class = "dotThree"></span>
+              </div>
 
+              <div class="results">
+                <a id = "indexAnchor" href="index.html">Home Page</a>
+              </div>
+
+              </div>
+
+              <br>
+
+
+            </div>
+
+          </div>
+          <li>
+            <p id= "inline">Lists: </p>
+            <p class="tagHighlight">&lt;ul&gt;</p>
+            <p id= "inline">&</p>
+            <p class="tagHighlight">&lt;ol&gt;</p>
+          </li>
+          <p>The <em>&lt;div&gt;</em> tag creates a division within your body. For example a navigation bar, photo gallery, paragraph, or biography can all be contained within a div container. DIv containers are useful for splitting your complex websites into digestible sections. Div containers can also be used with ids or classes to style specific groups of elements at once. We haven’t covered ID’s and Classes yet so don’t worry if that idea seems a bit complex, it will make more sense later.</p>
+          <li>
+            <p class="tagHighlight">&lt;hr&gt;</p>
+            <p id= "inline"> & </p>
+            <p class="tagHighlight">&lt;br&gt;</p>
+          </li>
+          <p>The <em>&lt;div&gt;</em> tag creates a division within your body. For example a navigation bar, photo gallery, paragraph, or biography can all be contained within a div container. DIv containers are useful for splitting your complex websites into digestible sections. Div containers can also be used with ids or classes to style specific groups of elements at once. We haven’t covered ID’s and Classes yet so don’t worry if that idea seems a bit complex, it will make more sense later.</p>
+
+          <div id="grandExample">
+            <div class="flexHalf">
+              <div class="htmlPreview">
+                <div class="dots">
+                  <span class = "dotOne"></span>
+                  <span class = "dotTwo"></span>
+                  <span class = "dotThree"></span>
+                </div>
+                <div class="fileName">
+                  <p id = "inline">grandExample.html</p>
+                </div>
+
+                <div id="anchorTagHTMLPreview">
+                  <div class="htmlCode">
+
+                    <p>&lt;body&gt;</p>
+                    <p class = "tab">&lt;a href = "index.html"&gt; Home Page &lt;a&gt; </p>
+                    <p>&lt;/body&gt;</p>
+
+                  </div>
+
+                </div>
+
+
+
+              </div>
+
+              <div class="htmlRender">
+                <div class="dots">
+                  <span class = "dotOne"></span>
+                  <span class = "dotTwo"></span>
+                  <span class = "dotThree"></span>
+                </div>
+                <div class="fileName">
+                  <p id = "inline">Cool Photo</p>
+                </div>
+                <div class="results">
+                  <div id="bodyTagsMasterExample">
+                    <div id= "padding">This text sits inside a div tag!</div>
+                    <p>And this text inside a paragraph tag...</p>
+                    <div id="headingTags">
+                      <h1>This is a h1 tag</h1>
+                      <h2>This is a h2 tag</h2>
+                      <h3>This is a h3 tag</h3>
+                      <h4>This is a h4 tag</h4>
+                      <h5>This is a h5 tag</h5>
+                      <h6>This is a h6 tag</h6>
+                    </div>
+                    <img src="imgs/yellowstone.jpg" alt="image" width = 250px;>
+                    <img src="imgs/corruptFile.jpg" alt="Image that can't be found...">
+                    <hr>
+                    <p>hr tag above ^</p>
+                    <ul>
+                      <li>first item</li>
+                      <li>second item</li>
+                      <ul>
+                        <li>sublist item</li>
+                      </ul>
+                    </ul>
+                    <ol>
+                      <li>first item</li>
+                      <li>second item</li>
+                      <ol>
+                        <li>sublist item</li>
+                      </ol>
+                    </ol>
+                  </div>
+
+                </div>
+
+                <br>
+
+
+              </div>
 
           </div>
 
+
         </div>
-        <li>
-          <p class="tagHighlight">&lt;body&gt;</p>
-        </li>
-        <p>There are all kinds of files you can open on the web and each of them have properties that change the way they are displayed in a brower. Browsers need to be able to identify what kind if file is being loaded to figure out how to display
-          it; the DOCTYPE tag allows us to do so. Writing DOCTYPE declares the document type as an HTML file and tells the browser how it should be displayed.</p>
       </ol>
     </div>
   </div>
