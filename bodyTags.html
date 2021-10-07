@@ -25,6 +25,7 @@
 
     #anchorTagHTMLPreview > .htmlCode {
       height: 140px;
+      width: 460px;
 
     }
     #anchorEX > .htmlPreview {
@@ -43,7 +44,8 @@
 
     #anchorEX .results {
       margin-top: 18px;
-      height: 140px;
+      height: 130px;
+      padding-top: 10px;
     }
 
     .results #indexAnchor {
@@ -52,10 +54,13 @@
     }
 
     #grandExample .htmlPreview {
-      width: 550px;
-      height: 1000px;
+      width: 530px;
+      height: 1500px;
     }
-
+    #grandExample .htmlCode {
+      height: 1440px;
+      width: 490px;
+    }
     #grandExample .htmlRender {
       width: 450px;
       height: 800px;
@@ -67,11 +72,6 @@
 
     #grandExample .results p {
       font-family: Arial;
-    }
-
-    #grandExample p, div, h1, h2, h3, h4, h5, h6, img {
-      font-family: Arial;
-      margin-left: 0px;
     }
 
     #bodyTagsMasterExample {
@@ -91,6 +91,7 @@
     #padding {
       padding-top: 10px;
     }
+
 
 
 
@@ -261,6 +262,10 @@
                 <span class = "dotTwo"></span>
                 <span class = "dotThree"></span>
               </div>
+              <div class="fileName">
+                <p id = "inline">href example</p>
+              </div>
+
 
               <div class="results">
                 <a id = "indexAnchor" href="index.html">Home Page</a>
@@ -300,12 +305,41 @@
                   <p id = "inline">grandExample.html</p>
                 </div>
 
-                <div id="anchorTagHTMLPreview">
+                <div id="grandExPreview">
                   <div class="htmlCode">
 
                     <p>&lt;body&gt;</p>
-                    <p class = "tab">&lt;a href = "index.html"&gt; Home Page &lt;a&gt; </p>
+                    <p>&lt;div&gt;This text sits inside a div tag&lt;/div&gt;</p>
+                    <p>&lt;p&gt;And tis inside a paragraph tag.&lt;/p&gt;</p>
+                    <p>&lt;div class = headers&gt;</p>
+                    <p class = "tab">&lt;h1&gt;This is a h1 tag&lt;/h1&gt;</p>
+                    <p class = "tab">&lt;h2&gt;This is a h2 tag&lt;/h2&gt;</p>
+                    <p class = "tab">&lt;h3&gt;This is a h3 tag&lt;/h3&gt;</p>
+                    <p class = "tab">&lt;h4&gt;This is a h4 tag&lt;/h4&gt;</p>
+                    <p class = "tab">&lt;h5&gt;This is a h5 tag&lt;/h5&gt;</p>
+                    <p class = "tab">&lt;h6&gt;This is a h6 tag&lt;/h6&gt;</p>
+                    <p>&lt;/div&gt;</p>
+                    <p>&lt;img src = "imgs/yellowstone.jpg" alt = "Image of bison at yellowstone"&gt;</p>
+                    <p>&lt;img src = "imgs/corruptFile.jpg" alt = "Image that can't be found :("&gt;</p>
+                    <p>&lt;hr&gt;</p>
+                    <p>&lt;p&gt; hr tag above ^&lt;p&gt;</p>
+                    <p>&lt;ul&gt;</p>
+                    <p class = "tab">&lt;li&gt;first item&lt;li&gt;</p>
+                    <p class = "tab">&lt;li&gt;second item&lt;li&gt;</p>
+                    <p class = "doubleTab">&lt;ul&gt;</p>
+                    <p class = trippleTab>&lt;li&gt;sublist item&lt;li&gt;</p>
+                    <p class = "doubleTab">&lt;/ul&gt;</p>
+                    <p>&lt;/ul&gt;</p>
+                    <p>&lt;ol&gt;</p>
+                    <p class = "tab">&lt;li&gt;first item&lt;li&gt;</p>
+                    <p class = "tab">&lt;li&gt;second item&lt;li&gt;</p>
+                    <p class = "doubleTab">&lt;ol&gt;</p>
+                    <p class = "trippleTab">&lt;li&gt;sublist item&lt;li&gt;</p>
+                    <p class = "doubleTab">&lt;/ul&gt;</p>
+                    <p>&lt;/ul&gt;</p>
                     <p>&lt;/body&gt;</p>
+                    <p>&lt;/html&gt;</p> </div>
+
 
                   </div>
 
@@ -313,7 +347,7 @@
 
 
 
-              </div>
+
 
               <div class="htmlRender">
                 <div class="dots">
@@ -322,7 +356,7 @@
                   <span class = "dotThree"></span>
                 </div>
                 <div class="fileName">
-                  <p id = "inline">Cool Photo</p>
+                  <p id = "inline">Grand Internal Body Tags</p>
                 </div>
                 <div class="results">
                   <div id="bodyTagsMasterExample">
