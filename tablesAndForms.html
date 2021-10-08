@@ -6,10 +6,70 @@
   <link rel="shortcut icon" href="imgs/emojiLogo.png" />
   <link rel="stylesheet" href="style/master.css">
   <title>Introduction to Web Development</title>
+  <style media="screen">
+    #tableAndFormsExample .htmlRender {
+      height: 760px;
+      width: 500px;
+
+    }
+
+    #tableAndFormsExample .htmlCode {
+      height: 700px;
+      width: 460px;
+    }
+
+    .htmlCode {
+      width: 360px;
+    }
+
+    #tableExample .htmlRender {
+    padding-top: 10px;
+    background-color: #f3f3f3ff;
+    border-radius: 10px;
+    margin: 10px;
+    height: 290px;
+    }
+
+    .tableRender #tableExample {
+      background-color: #FFF;
+      width: 560px;
+      border-radius: 15px;
+      height: 230px;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: 18px;
+    }
+
+    .formRender #formExample {
+      background-color: #FFF;
+      width: 360px;
+      border-radius: 15px;
+      height: 475px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    .tableRender p {
+      margin-left: 20px;
+      padding-top: 10px;
+    }
+
+    .htmlPreview {
+      width: 400px;
+    }
+
+    #FormRender {
+      padding-top: 10px;
+      background-color: #f3f3f3ff;
+      border-radius: 10px;
+      margin: 10px;
+
+    }
+  </style>
 </head>
 
 <body>
-  
+
   <div class="page">
     <div class="header">
       <h1>Introduction to Web Development</h1>
@@ -32,7 +92,7 @@
         <li id="inline"> |</li>
         <li id="inline"><a href="bodyTags.html">Body Tags</a></li>
         <li id="inline"> |</li>
-        <li id="inline" class = "selectedTab"><a href="tablesAndForms.html">Tables & Forms</a></li>
+        <li id="inline" class="selectedTab"><a href="tablesAndForms.html">Tables & Forms</a></li>
         <li id="inline"> |</li>
         <li id="inline"><a href="IdsAndClasses.html">IDs & Classes</a></li>
         <li id="inline"> |</li>
@@ -53,37 +113,164 @@
       <div class="textInfo">
         <ol>
           <li>
-            <p class="tagHighlight">&lt;!DOCTYPE html&gt;</p>
+            <p class="tagHighlight">&lt;table&gt;</p>
           </li>
           <p>There are all kinds of files you can open on the web and each of them have properties that change the way they are displayed in a brower. Browsers need to be able to identify what kind if file is being loaded to figure out how to display
             it; the <em>&lt;!DOCTYPE html&gt;</em> tag allows us to do so. Writing <em>&lt;!DOCTYPE html&gt;</em> declares the document type as an HTML file and tells the browser how it should be displayed.</p>
-          <li>
-            <p class="tagHighlight">&lt;html&gt;</p>
-          </li>
-          <p>The html tag begins with <em>&lt;html&gt;</em> and ends with <em>&lt;/html&gt;</em>. As we go through this tutorial you will see that most html tags have a starting and closing tag––Unless otherwise specified you can assume any future
-            tags discussed in this tutorial have a closing tag that is identical to the primary tag with a forwardslash <em>(/)</em> in the beggining. In this case the beggining <em>&lt;html&gt;</em> tag identifies the start or root of a HTML
-            document and the closing <em>&lt;/html&gt;</em> tag indicates the end. Because the html tag is used to mark the start and end of an HTML document that means all other HTML elements present on your webpage will go inside these two tags.
-          </p>
-          <li>
-            <p class="tagHighlight">&lt;head&gt;</p>
-          </li>
-          <p>There are all kinds of files you can open on the web and each of them have properties that change the way they are displayed in a brower. Browsers need to be able to identify what kind if file is being loaded to figure out how to display
-            it; the DOCTYPE tag allows us to do so. Writing DOCTYPE declares the document type as an HTML file and tells the browser how it should be displayed.</p>
-          <li>
-            <p class="tagHighlight">&lt;title&gt;</p>
-          </li>
-          <p>There are all kinds of files you can open on the web and each of them have properties that change the way they are displayed in a brower. Browsers need to be able to identify what kind if file is being loaded to figure out how to display
-            it; the DOCTYPE tag allows us to do so. Writing DOCTYPE declares the document type as an HTML file and tells the browser how it should be displayed.</p>
-          <li>
-            <p class="tagHighlight">&lt;link&gt;</p>
-          </li>
-          <p>There are all kinds of files you can open on the web and each of them have properties that change the way they are displayed in a brower. Browsers need to be able to identify what kind if file is being loaded to figure out how to display
-            it; the DOCTYPE tag allows us to do so. Writing DOCTYPE declares the document type as an HTML file and tells the browser how it should be displayed.</p>
-          <li>
-            <p class="tagHighlight">&lt;body&gt;</p>
-          </li>
-          <p>There are all kinds of files you can open on the web and each of them have properties that change the way they are displayed in a brower. Browsers need to be able to identify what kind if file is being loaded to figure out how to display
-            it; the DOCTYPE tag allows us to do so. Writing DOCTYPE declares the document type as an HTML file and tells the browser how it should be displayed.</p>
+          <br>
+          <div id="tableExample">
+            <div class="flexHalf">
+              <div class="htmlPreview">
+                <div class="dots">
+                  <span class="dotOne"></span>
+                  <span class="dotTwo"></span>
+                  <span class="dotThree"></span>
+                </div>
+                <div class="fileName">
+                  <p id="inline">tables.html</p>
+                </div>
+
+                <div id="tablePreview">
+                  <div class="htmlCode">
+
+                    <p>&lt;body&gt;</p>
+
+
+
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="htmlRender">
+                <div class="dots">
+                  <span class="dotOne"></span>
+                  <span class="dotTwo"></span>
+                  <span class="dotThree"></span>
+                </div>
+                <div class="fileName">
+                  <p id="inline">Tables</p>
+                </div>
+                <div class="tableRender">
+                  <div id="tableExample">
+                    <table class='table'>
+                      <tr>
+                        <th class='th'>Song Title</th>
+                        <th class='th'>Artist</th>
+                        <th class='th'>Album</th>
+                        <th class='th'>Year</th>
+                        <th class='th'>Length</th>
+                        <th class='th'>Label</th>
+                      </tr>
+                      <tr>
+                        <td class='td'>Nikes</td>
+                        <td class='td'>Frank Ocean</td>
+                        <td class='td'>Blonde</td>
+                        <td class='td'>2016</td>
+                        <td class='td'>5:14</td>
+                        <td class='td'>Boys Don't Cry</td>
+                      </tr>
+                      <tr>
+                        <td class='td'>Small Worlds</td>
+                        <td class='td'>Mac Miller</td>
+                        <td class='td'>Swimming</td>
+                        <td class='td'>2018</td>
+                        <td class='td'>4:32</td>
+                        <td class='td'>Warner Records</td>
+                      </tr>
+                      <tr>
+                        <td class='td'>Garden (Say It Like Dat)</td>
+                        <td class='td'>SZA</td>
+                        <td class='td'>Ctrl</td>
+                        <td class='td'>2017</td>
+                        <td class='td'>3:28</td>
+                        <td class='td'>Top Dawg Entertainment</td>
+                      </tr>
+                      <tr>
+                        <td class='td'>Come Thru</td>
+                        <td class='td'>Drake</td>
+                        <td class='td'>Nothing Was The Same</td>
+                        <td class='td'>2013</td>
+                        <td class='td'>3:56</td>
+                        <td class='td'>Cash Money Records</td>
+                      </tr>
+                      <tr>
+                        <td class='td'>DEVASTATED</td>
+                        <td class='td'>Joey Bada$$</td>
+                        <td class='td'>ALL-AMERIKKKAN BADA$$</td>
+                        <td class='td'>2017</td>
+                        <td class='td'>3:27</td>
+                        <td class='td'>Pro Era</td>
+                      </tr>
+                    </table>
+
+
+                  </div>
+
+                </div>
+
+                <br>
+
+
+              </div>
+
+            </div>
+
+            <li>
+              <p class="tagHighlight">&lt;form&gt;</p>
+            </li>
+            <p>The html tag begins with <em>&lt;html&gt;</em> and ends with <em>&lt;/html&gt;</em>. As we go through this tutorial you will see that most html tags have a starting and closing tag––Unless otherwise specified you can assume any future
+              tags discussed in this tutorial have a closing tag that is identical to the primary tag with a forwardslash <em>(/)</em> in the beggining. In this case the beggining <em>&lt;html&gt;</em> tag identifies the start or root of a HTML
+              document and the closing <em>&lt;/html&gt;</em> tag indicates the end. Because the html tag is used to mark the start and end of an HTML document that means all other HTML elements present on your webpage will go inside these two tags.
+            </p>
+            <br>
+            <div id="FormsExample">
+              <div class="flexHalf">
+                <div class="htmlPreview">
+                  <div class="dots">
+                    <span class="dotOne"></span>
+                    <span class="dotTwo"></span>
+                    <span class="dotThree"></span>
+                  </div>
+                  <div class="fileName">
+                    <p id="inline">forms.html</p>
+                  </div>
+
+                  <div id="grandExPreview">
+                    <div class="htmlCode">
+
+                      <p>&lt;body&gt;</p>
+
+
+
+                    </div>
+
+                  </div>
+                </div>
+
+                <div id="FormRender">
+                  <div class="dots">
+                    <span class="dotOne"></span>
+                    <span class="dotTwo"></span>
+                    <span class="dotThree"></span>
+                  </div>
+                  <div class="fileName">
+                    <p id="inline">Forms</p>
+                  </div>
+                  <div class="formRender">
+                    <div id="formExample">
+                      <p>fill</p>
+                    </div>
+
+                  </div>
+
+                  <br>
+
+
+                </div>
+
+              </div>
+
         </ol>
 
       </div>
