@@ -24,16 +24,14 @@
     }
 
     #anchorTagHTMLPreview > .htmlCode {
-      height: 140px;
+      height: 100px;
       width: 460px;
 
     }
-    #anchorEX > .htmlPreview {
-      height: 200px;
-    }
+
 
     #anchorEX  .htmlPreview {
-      height: 200px;
+      height: 150px;
 
 
     }
@@ -55,10 +53,10 @@
 
     #grandExample .htmlPreview {
       width: 530px;
-      height: 1500px;
+      height: 1100px;
     }
     #grandExample .htmlCode {
-      height: 1440px;
+      height: 1040px;
       width: 490px;
     }
     #grandExample .htmlRender {
@@ -92,11 +90,9 @@
       padding-top: 10px;
     }
 
-
-
-
-
-
+    #imgExample .htmlPreview {
+      height: 370px;
+    }
 
   </style>
   <link rel="shortcut icon" href="imgs/emojiLogo.png" />
@@ -175,52 +171,55 @@
         <p>Something to note <em>img</em> tags do NOT have a closing image tag.</p>
         <p><strong>This is what a full image tag would look like:</strong></p>
 
-        <div class="flexHalf">
-          <div class="htmlPreview">
-            <div class="dots">
-              <span class = "dotOne"></span>
-              <span class = "dotTwo"></span>
-              <span class = "dotThree"></span>
-            </div>
-            <div class="fileName">
-              <p id = "inline">imgExample.html</p>
-            </div>
-
-            <div class="htmlCode">
-              <p class ="firstCode">&lt;!DOCTYPE html&gt;</p>
-              <p>&lt;html&gt;</p>
-              <p>&lt;head&gt;</p>
-              <p class = "tab">&lt;title&gt;Cool Photo&lt;/title&gt;</p>
-              <p class = "tab">&lt;link&gt; rel="stylesheet" href="style/master.css"></p>
-              <p>&lt;/head&gt;</p> <p>&lt;body&gt;</p>
-              <p class = "tab">&lt;img src = "imgs/sgm.jpg" alt = "DTLA view"&gt;</p>
-              <p>&lt;/body&gt;</p>
-              <p>&lt;/html&gt;</p> </div>
-
-
-
-          </div>
-
-          <div class="htmlRender">
-            <div class="dots">
-              <span class = "dotOne"></span>
-              <span class = "dotTwo"></span>
-              <span class = "dotThree"></span>
-            </div>
-            <div class="fileName">
-              <p id = "inline">Cool Photo</p>
-            </div>
-            <div class="results">
-              <div id="SGMIMAGE">
-                <img src="imgs/sgm.jpg" alt="DTLA skyline at night">
+        <div id="imgExample">
+          <div class="flexHalf">
+            <div class="htmlPreview">
+              <div class="dots">
+                <span class = "dotOne"></span>
+                <span class = "dotTwo"></span>
+                <span class = "dotThree"></span>
+              </div>
+              <div class="fileName">
+                <p id = "inline">imgExample.html</p>
               </div>
 
+              <div class="htmlCode">
+                <p class ="firstCode">&lt;!DOCTYPE html&gt;</p>
+                <p>&lt;html&gt;</p>
+                <p>&lt;head&gt;</p>
+                <p class = "tab">&lt;title&gt;Cool Photo&lt;/title&gt;</p>
+                <p class = "tab">&lt;link&gt; rel="stylesheet" href="style/master.css"></p>
+                <p>&lt;/head&gt;</p> <p>&lt;body&gt;</p>
+                <p class = "tab">&lt;img src = "imgs/sgm.jpg" alt = "DTLA view"&gt;</p>
+                <p>&lt;/body&gt;</p>
+                <p>&lt;/html&gt;</p> </div>
+
+
+
             </div>
 
-            <br>
+            <div class="htmlRender">
+              <div class="dots">
+                <span class = "dotOne"></span>
+                <span class = "dotTwo"></span>
+                <span class = "dotThree"></span>
+              </div>
+              <div class="fileName">
+                <p id = "inline">Cool Photo</p>
+              </div>
+              <div class="results">
+                <div id="SGMIMAGE">
+                  <img src="imgs/sgm.jpg" alt="DTLA skyline at night">
+                </div>
+
+              </div>
+
+              <br>
 
 
+            </div>
           </div>
+
         </div>
 
         <li>
@@ -247,13 +246,8 @@
                   <p class ="firstCode">&lt;body&gt;</p>
                   <p class = "tab">&lt;a href = "index.html"&gt; Home Page &lt;a&gt; </p>
                   <p>&lt;/body&gt;</p>
-
                 </div>
-
               </div>
-
-
-
             </div>
 
             <div class="htmlRender">

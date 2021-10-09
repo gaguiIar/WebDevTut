@@ -219,8 +219,6 @@ em {
   background-color: #f3f3f3ff;
   border-radius: 10px;
   padding-top: 10px;
-  width: 500px;
-
   margin: 10px;
   margin-bottom: 20px;
 }
@@ -279,9 +277,7 @@ em {
 
 .htmlCode {
   background-color: #FFF;
-  width: 460px;
   border-radius: 15px;
-  height: 475px;
   margin-left: 20px;
   margin-right: 20px;
 }

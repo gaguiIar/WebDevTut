@@ -46,7 +46,7 @@
       height: 230px;
       margin-left: 20px;
       margin-right: 20px;
-      margin-top: 18px;
+      margin-top: 10px;
     }
 
     .formRender #formExample {
@@ -58,6 +58,7 @@
       margin-right: 20px;
     }
 
+
     .tableRender p {
       margin-left: 20px;
       padding-top: 10px;
@@ -67,11 +68,25 @@
       width: 400px;
     }
 
-    #FormRender {
+    #formRender {
       padding-top: 10px;
       background-color: #f3f3f3ff;
       border-radius: 10px;
       margin: 10px;
+      height: 530px;
+
+    }
+    #formPreview .htmlPreview {
+      height: 1400px;
+      width: 640px;
+    }
+    #formPreview .htmlCode {
+      height: 1340px;
+      width: 600px;
+    }
+    .formRender #formExample {
+      padding-left: 20px;
+      margin-top: 10px;
 
     }
   </style>
@@ -285,29 +300,66 @@
             <br>
             <div id="FormsExample">
               <div class="flexHalf">
-                <div class="htmlPreview">
-                  <div class="dots">
-                    <span class="dotOne"></span>
-                    <span class="dotTwo"></span>
-                    <span class="dotThree"></span>
-                  </div>
-                  <div class="fileName">
-                    <p id="inline">forms.html</p>
-                  </div>
-
-                  <div id="grandExPreview">
-                    <div class="htmlCode">
-
-                      <p class ="firstCode">&lt;body&gt;</p>
-
-
-
+                <div id="formPreview">
+                  <div class="htmlPreview">
+                    <div class="dots">
+                      <span class="dotOne"></span>
+                      <span class="dotTwo"></span>
+                      <span class="dotThree"></span>
+                    </div>
+                    <div class="fileName">
+                      <p id="inline">forms.html</p>
                     </div>
 
+
+                      <div class="htmlCode">
+                        <p class ="firstCode">&lt;form action = "index.html" method = "post"&gt;</p>
+                        <p class="tab">&lt;label for="text-id"&gt;Text Field:&lt;label&gt;</p>
+                        <p class="tab">&lt;input type = "text id="text-id"&gt;</p>
+                        <p class="tab">&lt;br&gt;</p>
+                        <p class="tab">&lt;br&gt;</p>
+                        <p>&lt;label for = "email-id"&gt;Email Field:&lt;/label&gt;</p>
+                        <p>&lt;input type = "email" id = "email-id"&gt;</p>
+                        <p class="tab">&lt;br&gt;</p>
+                        <p class="tab">&lt;br&gt;</p>
+                        <p>&lt;label&gt;Radio Buttons:&lt;/label&gt;</p>
+                        <p>&lt;label&gt;</p>
+                          <p class = "tab">&lt;input type ="radio" name = "radio-name"&gt; Radio I</p>
+                          <p class = "tab">&lt;input type ="radio" name = "radio-name"&gt; Radio II</p>
+                          <p class = "tab">&lt;input type ="radio" name = "radio-name"&gt; Radio III</p>
+
+
+                        <p>&lt;/label&gt;</p>
+                        <p class="tab">&lt;br&gt;</p>
+                        <p class="tab">&lt;br&gt;</p>
+                        <p>&lt;label&gt;Radio Buttons:&lt;/label&gt;</p>
+                        <p>&lt;label&gt;</p>
+                        <p class="tab">&lt;input type= "checkbox"&gt; Checkbox I</p>
+                        <p>&lt;/label&gt;</p>
+                        <p>&lt;label&gt;</p>
+                        <p class="tab">&lt;input type= "checkbox"&gt; Checkbox II</p>
+                        <p>&lt;/label&gt;</p>
+                        <p class="tab">&lt;br&gt;</p>
+                        <p class="tab">&lt;br&gt;</p>
+                        <p>&lt;label for = "dropdown-id"&gt;Drop Down:&lt;/label&gt;</p>
+                        <p class="tab">&lt;select id = "dropdown-id"&gt;</p>
+                        <p class="trippleTab">&lt;select&gt; &lt;/select&gt;</p>
+                        <p class="trippleTab">&lt;select&gt;Pretty &lt;/select&gt;</p>
+                        <p class="trippleTab">&lt;select&gt;Neat &lt;/select&gt;</p>
+                        <p class="trippleTab">&lt;select&gt;Right? &lt;/select&gt;</p>
+                        <p class="tab">&lt;/select&gt;</p>
+                        <p class="tab">&lt;br&gt;</p>
+                        <p class="tab">&lt;br&gt;</p>
+                        <p>&lt;label for = "textarea-id"&gt;Textarea:&lt;/label&gt;</p>
+                        <p class="tab">&lt;textarea id = "textarea-id"&gt;&lt;/textarea&gt;</p>
+                        <p class="tab">&lt;br&gt;</p>
+                        <p class="tab">&lt;br&gt;</p>
+                        <p class="tab">&lt;button type = "submit"&gt; Submit &lt;/button&gt;</p>
+                        <p class="tab">&lt;button type = "reset"&gt; Reset &lt;/button&gt;</p>
+                      </div>
                   </div>
                 </div>
-
-                <div id="FormRender">
+                <div id="formRender">
                   <div class="dots">
                     <span class="dotOne"></span>
                     <span class="dotTwo"></span>
@@ -318,7 +370,61 @@
                   </div>
                   <div class="formRender">
                     <div id="formExample">
-                      <p>fill</p>
+                      <br>
+                      <form action="index.html" method="post">
+                        <label for="text-id">Text Field:</label>
+                        <input type="text" id = "text-id">
+                        <br>
+                        <br>
+                        <label for="email-id">Email Field:</label>
+                        <input type="email" id="email-id">
+                        <br>
+                        <br>
+
+                        <label>Radio buttons:</label>
+                        <label>
+                          <input type="radio" name="radio-name">
+                          Radio I
+                          <input type="radio" name="radio-name">
+                          Radio II
+                          <input type="radio" name="radio-name">
+                          Radio III
+                        </label>
+
+                        <br>
+                        <br>
+
+                        <label>Checkboxes:</label>
+                        <label>
+                          <input type="checkbox">
+                          Checkbox I
+                        </label>
+                        <label>
+                          <input type="checkbox">
+                          Checkbox II
+                        </label>
+
+                        <br>
+                        <br>
+
+                        <label for="dropdown-id">Drop Down:</label>
+                          <select id="dropdown-id">
+                            <option></option>
+                            <option>Pretty</option>
+                            <option>Neat</option>
+                            <option>Right?</option>
+                          </select>
+
+                          <br>
+                          <br>
+
+                          <label for="textarea-id">Textarea:</label>
+                          <textarea id="textarea-id"></textarea>
+                          <br>
+                          <br>
+                          <button type = "submit"> Submit </button>
+                          <button type=reset> Reset </button>
+                      </form>
                     </div>
 
                   </div>
@@ -329,6 +435,7 @@
                 </div>
 
               </div>
+            </div>
 
         </ol>
 
