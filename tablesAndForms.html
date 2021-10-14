@@ -10,8 +10,8 @@
     #tableAndFormsExample .htmlRender {
       height: 760px;
       width: 500px;
-
     }
+
     #tableExample .htmlPreview {
       height: 1660px;
     }
@@ -30,14 +30,12 @@
     }
 
     #tableExample .htmlRender {
-    padding-top: 10px;
-    background-color: #f3f3f3ff;
-    border-radius: 10px;
-    margin: 10px;
-    height: 290px;
+      padding-top: 10px;
+      background-color: #f3f3f3ff;
+      border-radius: 10px;
+      margin: 10px;
+      height: 290px;
     }
-
-
 
     .tableRender #tableExample {
       background-color: #FFF;
@@ -58,7 +56,6 @@
       margin-right: 20px;
     }
 
-
     .tableRender p {
       margin-left: 20px;
       padding-top: 10px;
@@ -74,26 +71,31 @@
       border-radius: 10px;
       margin: 10px;
       height: 530px;
-
     }
+
     #formPreview .htmlPreview {
       height: 1400px;
       width: 640px;
     }
+
     #formPreview .htmlCode {
       height: 1340px;
       width: 600px;
     }
+
     .formRender #formExample {
       padding-left: 20px;
       margin-top: 10px;
-
+    }
+    .textFix {
+      font-family: ComfortaaReg;
+      font-size: 20px;
+      line-height: 30px;
     }
   </style>
 </head>
 
 <body>
-
   <div class="page">
     <div class="header">
       <h1>Introduction to Web Development</h1>
@@ -139,9 +141,12 @@
           <li>
             <p class="tagHighlight">&lt;table&gt;</p>
           </li>
-          <p>There are all kinds of files you can open on the web and each of them have properties that change the way they are displayed in a brower. Browsers need to be able to identify what kind if file is being loaded to figure out how to display
-            it; the <em>&lt;!DOCTYPE html&gt;</em> tag allows us to do so. Writing <em>&lt;!DOCTYPE html&gt;</em> declares the document type as an HTML file and tells the browser how it should be displayed.</p>
+          <p>HTML tables used to be used for all basic page layouts but now that there are better ways to setup pages like flexbox, float or CSS grid it’s mostly used to make tables or calendars on modern webpages.
           <br>
+          <br>
+          To start off a table you need to utalize the <em>table tags</em> this defines the start and end of the table. In between the opening and closing table table tags you’ll need to use <em>&lt;tr&gt;</em> tags. <em>&lt;tr&gt;</em> tags work the same way <em>&lt;li&gt;</em> tags work in lists in the fact that they both define items. However, for table tags you’ll need to use <em>&lt;th&gt;</em> or <em>&lt;td&gt;</em> tags to distingush whether the indiviual table items are a table heading <em>(th)</em> or table data <em>(td)</em>.</p>
+          <p><strong>This is what the code for a full, basic HTML table would look like...</strong></p>
+
           <div id="tableExample">
             <div class="flexHalf">
               <div class="htmlPreview">
@@ -157,56 +162,56 @@
                 <div id="tablePreview">
                   <div class="htmlCode">
 
-                    <p class ="firstCode">&lt;table&gt;</p>
-                      <p class = "tab">&lt;tr&gt;</p>
-                        <p class = "doubleTab">&lt;th&gt; Heading I &lt;/th&gt;</p>
-                        <p class = "doubleTab">&lt;th&gt; Heading II &lt;/th&gt;</p>
-                        <p class = "doubleTab">&lt;th&gt; Heading III &lt;/th&gt;</p>
-                        <p class = "doubleTab">&lt;th&gt; Heading IV &lt;/th&gt;</p>
-                        <p class = "doubleTab">&lt;th&gt; Heading V &lt;/th&gt;</p>
-                        <p class = "doubleTab">&lt;th&gt; Heading VI &lt;/th&gt;</p>
+                    <p class="firstCode">&lt;table&gt;</p>
+                    <p class="tab">&lt;tr&gt;</p>
+                    <p class="doubleTab">&lt;th&gt; Heading I &lt;/th&gt;</p>
+                    <p class="doubleTab">&lt;th&gt; Heading II &lt;/th&gt;</p>
+                    <p class="doubleTab">&lt;th&gt; Heading III &lt;/th&gt;</p>
+                    <p class="doubleTab">&lt;th&gt; Heading IV &lt;/th&gt;</p>
+                    <p class="doubleTab">&lt;th&gt; Heading V &lt;/th&gt;</p>
+                    <p class="doubleTab">&lt;th&gt; Heading VI &lt;/th&gt;</p>
 
-                      <p class = "tab">&lt;/tr&gt;</p>
-                      <p class = "tab">&lt;tr&gt;</p>
-                        <p class = "doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
-                        <p class = "doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
-                        <p class = "doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
-                        <p class = "doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
-                        <p class = "doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
-                        <p class = "doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
-                      <p class = "tab">&lt;/tr&gt;</p>
-                      <p class = "tab">&lt;tr&gt;</p>
-                        <p class = "doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
-                        <p class = "doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
-                        <p class = "doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
-                        <p class = "doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
-                        <p class = "doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
-                        <p class = "doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
-                      <p class = "tab">&lt;/tr&gt;</p>
-                      <p class = "tab">&lt;tr&gt;</p>
-                        <p class = "doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
-                        <p class = "doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
-                        <p class = "doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
-                        <p class = "doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
-                        <p class = "doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
-                        <p class = "doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
-                      <p class = "tab">&lt;/tr&gt;</p>
-                      <p class = "tab">&lt;tr&gt;</p>
-                        <p class = "doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
-                        <p class = "doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
-                        <p class = "doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
-                        <p class = "doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
-                        <p class = "doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
-                        <p class = "doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
-                      <p class = "tab">&lt;/tr&gt;</p>
-                      <p class = "tab">&lt;tr&gt;</p>
-                        <p class = "doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
-                        <p class = "doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
-                        <p class = "doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
-                        <p class = "doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
-                        <p class = "doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
-                        <p class = "doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
-                      <p class = "tab">&lt;/tr&gt;</p>
+                    <p class="tab">&lt;/tr&gt;</p>
+                    <p class="tab">&lt;tr&gt;</p>
+                    <p class="doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
+                    <p class="doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
+                    <p class="doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
+                    <p class="doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
+                    <p class="doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
+                    <p class="doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
+                    <p class="tab">&lt;/tr&gt;</p>
+                    <p class="tab">&lt;tr&gt;</p>
+                    <p class="doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
+                    <p class="doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
+                    <p class="doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
+                    <p class="doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
+                    <p class="doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
+                    <p class="doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
+                    <p class="tab">&lt;/tr&gt;</p>
+                    <p class="tab">&lt;tr&gt;</p>
+                    <p class="doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
+                    <p class="doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
+                    <p class="doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
+                    <p class="doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
+                    <p class="doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
+                    <p class="doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
+                    <p class="tab">&lt;/tr&gt;</p>
+                    <p class="tab">&lt;tr&gt;</p>
+                    <p class="doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
+                    <p class="doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
+                    <p class="doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
+                    <p class="doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
+                    <p class="doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
+                    <p class="doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
+                    <p class="tab">&lt;/tr&gt;</p>
+                    <p class="tab">&lt;tr&gt;</p>
+                    <p class="doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
+                    <p class="doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
+                    <p class="doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
+                    <p class="doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
+                    <p class="doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
+                    <p class="doubleTab">&lt;td&gt; Data &lt;/td&gt;</p>
+                    <p class="tab">&lt;/tr&gt;</p>
                     <p>&lt;/table&gt;</p>
 
 
@@ -293,11 +298,29 @@
             <li>
               <p class="tagHighlight">&lt;form&gt;</p>
             </li>
-            <p>The html tag begins with <em>&lt;html&gt;</em> and ends with <em>&lt;/html&gt;</em>. As we go through this tutorial you will see that most html tags have a starting and closing tag––Unless otherwise specified you can assume any future
-              tags discussed in this tutorial have a closing tag that is identical to the primary tag with a forwardslash <em>(/)</em> in the beggining. In this case the beggining <em>&lt;html&gt;</em> tag identifies the start or root of a HTML
-              document and the closing <em>&lt;/html&gt;</em> tag indicates the end. Because the html tag is used to mark the start and end of an HTML document that means all other HTML elements present on your webpage will go inside these two tags.
+            <p>Forms allow user interaction and data collection to happen. You start off a form with a <em>&lt;form&gt;</em> tag that contains an <em>action= ""</em>  attribute which specifies where form data is sent to upon submission.
+              <ul>
+                <li class=tagHighlight>Input Tags</li>
+              </ul>
+            <p>Input tags have a <em>type=""</em> attribtue and as the name implies, define what type of input will be taken. Here are some possible type attribtues and other types of input:</p>
+            <ol>
+              <li class = "textFix"><em>type =“text”</em> adds a text-field</li>
+              <li class = "textFix"><em>type ="email"</em> adds a text-field with basic email validation</li>
+              <li class = "textFix"><em>type =radio</em> adds radio buttons. You can group radio buttons by setting the same name attribute. Radio buttons are used when you only want one option to be selectable at once. </li>
+              <li class = "textFix"><em>type ="checkbox"</em> adds a checkbox field, similar to radio buttons except multiple can be selected or “checked” at once. </li>
+            </ol>
+            <ul>
+              <li><li class=tagHighlight>Buttons</li></li>
+            </ul>
+            <p>There are two types of buttons you’ll likely use, <em>submit</em> and <em>reset</em>. To add a submit button you’ll start off by inserting <em>&lt;button&gt;</em> tags. Within the opening button tag you’ll want to add a <em>type=“submit”</em> attribute. Between the opening and closing button tags you’ll want to put the text that will be displayed on the button itself<br><br>You can do the same to make a reset button that clears all text-fields/boxes, except replacing the <em>type=“submit”</em> attribute with <em>reset</em>.</p>
+            <ul>
+              <li><li class=tagHighlight>Larger Input Tags</li></li>
+            </ul>
+            <p>When you want a user to select an option from a list you might want to use the drop-down function.<br><br>Drop-down functions work a bit like lists or tables do. You start a drop down function by using a <em>&lt;select&gt;</em> tag. Between the opening and closing <em>select</em> tags goes all your drop down options seperated by an opening and closing <em>&lt;option&gt;</em> tags.<br><br>To add a multi-line textfield instead of using a regular text tag you’ll need to use a textarea input field. You can do this by just incerting <em>&lt;textarea&gt;</em> tags</p>
             </p>
             <br>
+            <h1 class=subTitle>Take a look at form input types in action!</h1>
+            <hr>
             <div id="FormsExample">
               <div class="flexHalf">
                 <div id="formPreview">
@@ -312,51 +335,58 @@
                     </div>
 
 
-                      <div class="htmlCode">
-                        <p class ="firstCode">&lt;form action = "index.html" method = "post"&gt;</p>
-                        <p class="tab">&lt;label for="text-id"&gt;Text Field:&lt;label&gt;</p>
-                        <p class="tab">&lt;input type = "text id="text-id"&gt;</p>
-                        <p class="tab">&lt;br&gt;</p>
-                        <p class="tab">&lt;br&gt;</p>
-                        <p>&lt;label for = "email-id"&gt;Email Field:&lt;/label&gt;</p>
-                        <p>&lt;input type = "email" id = "email-id"&gt;</p>
-                        <p class="tab">&lt;br&gt;</p>
-                        <p class="tab">&lt;br&gt;</p>
-                        <p>&lt;label&gt;Radio Buttons:&lt;/label&gt;</p>
-                        <p>&lt;label&gt;</p>
-                          <p class = "tab">&lt;input type ="radio" name = "radio-name"&gt; Radio I</p>
-                          <p class = "tab">&lt;input type ="radio" name = "radio-name"&gt; Radio II</p>
-                          <p class = "tab">&lt;input type ="radio" name = "radio-name"&gt; Radio III</p>
+                    <div class="htmlCode">
+                      <p class="firstCode">&lt;form action = "index.html" method = "post"&gt;</p>
+                      <p class="tab">&lt;label for="text-id"&gt;Text Field:&lt;label&gt;</p>
+                      <p class="tab">&lt;input type = "text id="text-id"&gt;</p>
+                      <p class="tab">&lt;br&gt;</p>
+                      <p class="tab">&lt;br&gt;</p>
+                      <p>&lt;label for = "email-id"&gt;Email Field:&lt;/label&gt;</p>
+                      <p>&lt;input type = "email" id = "email-id"&gt;</p>
+                      <p class="tab">&lt;br&gt;</p>
+                      <p class="tab">&lt;br&gt;</p>
+                      <p>&lt;label&gt;Radio Buttons:&lt;/label&gt;</p>
+                      <p>&lt;label&gt;</p>
+                      <p class="tab">&lt;input type ="radio" name = "radio-name"&gt; Radio I</p>
+                      <p class="tab">&lt;input type ="radio" name = "radio-name"&gt; Radio II</p>
+                      <p class="tab">&lt;input type ="radio" name = "radio-name"&gt; Radio III</p>
 
 
+                      <p>&lt;/label&gt;</p>
+                      <p class="tab">&lt;br&gt;</p>
+                      <p>class="tab">&lt;br&gt;</p>
+                      <p>&lt;label&gt;Radio Buttons:&lt;/label&gt;</p>
+                      <p>&lt;label&gt;</p>
+                      <p class="tab">&lt;input type= "checkbox"&gt; Checkbox
+                        I</p>
                         <p>&lt;/label&gt;</p>
-                        <p class="tab">&lt;br&gt;</p>
-                        <p class="tab">&lt;br&gt;</p>
-                        <p>&lt;label&gt;Radio Buttons:&lt;/label&gt;</p>
                         <p>&lt;label&gt;</p>
-                        <p class="tab">&lt;input type= "checkbox"&gt; Checkbox I</p>
-                        <p>&lt;/label&gt;</p>
-                        <p>&lt;label&gt;</p>
-                        <p class="tab">&lt;input type= "checkbox"&gt; Checkbox II</p>
+                        <p class="tab">&lt;input type= "checkbox"&gt; Checkbox
+                          II</p>
                         <p>&lt;/label&gt;</p>
                         <p class="tab">&lt;br&gt;</p>
                         <p class="tab">&lt;br&gt;</p>
-                        <p>&lt;label for = "dropdown-id"&gt;Drop Down:&lt;/label&gt;</p>
-                        <p class="tab">&lt;select id = "dropdown-id"&gt;</p>
+                        <p>&lt;label for = "dropdown-id"&gt;Drop
+                          Down:&lt;/label&gt;</p>
+                        <p class="tab">&lt;select id "dropdown-id"&gt;</p>
                         <p class="trippleTab">&lt;select&gt; &lt;/select&gt;</p>
-                        <p class="trippleTab">&lt;select&gt;Pretty &lt;/select&gt;</p>
+                        <p class="trippleTab">&lt;select&gt;Pretty
+                          &lt;/select&gt;</p>
                         <p class="trippleTab">&lt;select&gt;Neat &lt;/select&gt;</p>
                         <p class="trippleTab">&lt;select&gt;Right? &lt;/select&gt;</p>
                         <p class="tab">&lt;/select&gt;</p>
                         <p class="tab">&lt;br&gt;</p>
                         <p class="tab">&lt;br&gt;</p>
-                        <p>&lt;label for = "textarea-id"&gt;Textarea:&lt;/label&gt;</p>
-                        <p class="tab">&lt;textarea id = "textarea-id"&gt;&lt;/textarea&gt;</p>
+                        <p>&lt;label for =
+                          "textarea-id"&gt;Textarea:&lt;/label&gt;</p>
+                        <p class="tab">&lt;textarea id =
+                          "textarea-id"&gt;&lt;/textarea&gt;</p>
                         <p class="tab">&lt;br&gt;</p>
                         <p class="tab">&lt;br&gt;</p>
-                        <p class="tab">&lt;button type = "submit"&gt; Submit &lt;/button&gt;</p>
+                        <p class="tab">&lt;button type = "submit"&gt; Submit
+                          &lt;/button&gt;</p>
                         <p class="tab">&lt;button type = "reset"&gt; Reset &lt;/button&gt;</p>
-                      </div>
+                    </div>
                   </div>
                 </div>
                 <div id="formRender">
@@ -373,7 +403,7 @@
                       <br>
                       <form action="index.html" method="post">
                         <label for="text-id">Text Field:</label>
-                        <input type="text" id = "text-id">
+                        <input type="text" id="text-id">
                         <br>
                         <br>
                         <label for="email-id">Email Field:</label>
@@ -408,22 +438,22 @@
                         <br>
 
                         <label for="dropdown-id">Drop Down:</label>
-                          <select id="dropdown-id">
-                            <option></option>
-                            <option>Pretty</option>
-                            <option>Neat</option>
-                            <option>Right?</option>
-                          </select>
+                        <select id="dropdown-id">
+                          <option></option>
+                          <option>Pretty</option>
+                          <option>Neat</option>
+                          <option>Right?</option>
+                        </select>
 
-                          <br>
-                          <br>
+                        <br>
+                        <br>
 
-                          <label for="textarea-id">Textarea:</label>
-                          <textarea id="textarea-id"></textarea>
-                          <br>
-                          <br>
-                          <button type = "submit"> Submit </button>
-                          <button type=reset> Reset </button>
+                        <label for="textarea-id">Textarea:</label>
+                        <textarea id="textarea-id"></textarea>
+                        <br>
+                        <br>
+                        <button type="submit"> Submit </button>
+                        <button type=reset> Reset </button>
                       </form>
                     </div>
 
