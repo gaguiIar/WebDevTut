@@ -3,7 +3,9 @@
     font-family: 'ComfortaaReg'; /*a name to be used later*/
     src: url('../fonts/comfortaa/Comfortaa-Regular.ttf'); /*URL to font*/
 }
-
+li {
+  font-family: ComfortaaReg;
+}
 #test {
   float: right;
 }
