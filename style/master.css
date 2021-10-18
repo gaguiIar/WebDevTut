@@ -3,6 +3,10 @@
     font-family: 'ComfortaaReg'; /*a name to be used later*/
     src: url('../fonts/comfortaa/Comfortaa-Regular.ttf'); /*URL to font*/
 }
+@font-face {
+    font-family: 'Ubuntu'; /*a name to be used later*/
+    src: url('../fonts/Ubuntu/Ubuntu-Bold.ttf'); /*URL to font*/
+}
 li {
   font-family: ComfortaaReg;
 }
@@ -37,14 +41,14 @@ body {
   margin-right: 10px;
   display: inline;
   font-size: 39px;
-  font-family: Arial;
+  font-family: 'Ubuntu';
 }
 
 
 .header h2 {
   color: #808080;
   font-size: 25px;
-  font-family: Arial;
+  font-family: 'Ubuntu';
   display: inline;
 }
 
@@ -77,7 +81,7 @@ body {
   font-size: 20px;
 }
 .title h1 {
-  font-family: Arial;
+  font-family: 'Ubuntu';
 }
 .flexContainer {
   display: flex;
@@ -112,7 +116,7 @@ body {
   margin-top: 20px;
   position: relative;
   top: 10px;
-  font-family: Arial;
+  font-family: 'Ubuntu';
 }
 
 .box p {
