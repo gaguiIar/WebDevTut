@@ -7,6 +7,16 @@
     font-family: 'Ubuntu'; /*a name to be used later*/
     src: url('../fonts/Ubuntu/Ubuntu-Bold.ttf'); /*URL to font*/
 }
+@media(max-width: 767px) {
+
+}
+
+
+
+
+
+
+
 li {
   font-family: ComfortaaReg;
 }
@@ -35,21 +45,29 @@ body {
 }
 .header {
   padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
 }
 .header h1 {
-  margin-left: 0px;
-  margin-right: 10px;
+  margin: 0px;
   display: inline;
   font-size: 39px;
   font-family: 'Ubuntu';
+  margin-right: 20px;
 }
 
 
 .header h2 {
+  padding-top: 10px;
+
   color: #808080;
   font-size: 25px;
   font-family: 'Ubuntu';
   display: inline;
+  margin: 0px;
+
 }
 
 #inline {
