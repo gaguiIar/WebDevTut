@@ -6,6 +6,116 @@
   <link rel="shortcut icon" href="imgs/emojiLogo.png" />
   <link rel="stylesheet" href="style/master.css">
   <title>Introduction to Web Development</title>
+  <style media="screen">
+    .flexThree {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+
+    .externalPreview hr {
+      border-top: 4px dashed white;
+    }
+
+    .examplesCSS .htmlRender p {
+      font-family: monospace;
+      margin: 10px;
+    }
+
+    .examplesCSS .htmlPreview {
+      width: 600px;
+      padding-bottom: 20px;
+    }
+
+    .examplesCSS .htmlRender {
+      width: 400px;
+      height: 100px;
+    }
+
+    .examplesCSS .results {
+      width: 370px;
+      height: 50px;
+      color: red;
+    }
+
+    .examplesCSS .htmlCode {
+      padding-bottom: 3px;
+    }
+
+    .examplesCSS em {
+      background-color: #EDEDED;
+      border-radius: 0px;
+
+    }
+
+    .text {
+      width: 600px;
+    }
+
+    .cssAnatomy {
+      width: 480px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .cssAnatomy .htmlRender {
+      width: 460px;
+      height: 330px;
+
+    }
+
+    .cssAnatomy .results {
+      width: 400px;
+
+
+    }
+
+    .cssAnatomy em {
+      background-color: #EDEDED;
+      border-radius: 0px;
+    }
+
+    #red {
+      color: red;
+
+    }
+
+    #green {
+      color: green;
+
+    }
+
+    #blue {
+      color: blue;
+
+    }
+
+    .cssAnatomy .results {
+      padding: 10px;
+      margin-top: 10px;
+    }
+
+    .generalCSSProperties {}
+
+    .usefulCSS {
+      width: 260px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .usefulCSS .htmlRender {
+      width: 280px;
+      height: 280px;
+
+    }
+
+    .usefulCSS .results {
+      width: 240px;
+
+
+    }
+  </style>
 </head>
 
 <body>
@@ -45,43 +155,669 @@
 
 
       </ul>
-      <hr>
-      <div class="title">
-        <h1>IDs and Classes</h1>
-      </div>
-      <div class="textInfo">
-        <ol>
-          <li>
-            <p class="tagHighlight">What is CSS?</p>
-          </li>
-          <p>There are three types of CSS–– <em>External, Internal and inline.</em> Now a days inline css is not standard and should not be used. IInternal css  on the other hand goes in the head of your html document under opening and closing <em>&lt;style&gt;</em> tags Internal css only effects that html page. As the name implies external CSS is on an external file.css document. The css in your css document will be applied to any html file that has that css file linked in the heading, as you recall we can link an external css in an html document by using a link tag. As I mentioned inline css is no longer standard and should not be used, so when should you use external over internal CSS?  Well when you are building multi-length web-pagews and you want to have styling that is applied to them all this should be put in an external master css file as to avoid repeating code. If you want specific styling that will only be applied to one document add it internally in the head tag in between
+
+    </div>
+    <hr>
+    <div class="title">
+      <h1>IDs and Classes</h1>
+    </div>
+    <div class="textInfo">
+      <ol>
+        <li>
+          <p class="tagHighlight">Anatomy of CSS</p>
+          <div class="cssAnatomy">
+            <div class="htmlRender">
+              <div class="dots">
+                <span class="dotOne"></span>
+                <span class="dotTwo"></span>
+                <span class="dotThree"></span>
+              </div>
+              <div class="fileName">
+                <p id="inline">CSS Anatomy</p>
+              </div>
+              <div class="results">
+                <p class='firstCode inline' id='red'><em>h1</em> </p>
+                <p class='inline'>{</p>
+                <br>
+                <br>
+                <p class='tab inline' id='green'><em>color:</em> </p>
+                <p class='inline' id='blue'><em>red;</em></p>
+                <p>}</p>
+
+                <p id='red'>&lt;!-- CSS Selector --></p>
+                <p id='green'>&lt;!-- CSS Property --></p>
+                <p id='blue'>&lt;!-- CSS Value --></p>
+
+              </div>
+            </div>
+
+          </div>
+        </li>
+
+
+
+        <li>
+          <p class="tagHighlight">Types of CSS</p>
+          <p>There are three types of CSS–– <em>External, Internal and inline.</em> Now a days inline css is not standard and should not be used. Internal css on the other hand goes in the head of your html document under opening and closing
+            <em>&lt;style&gt;</em> tags. Internal css only effects that html page. As the name implies external CSS is in an external file. The css in your css document will be applied to any html file that has that css file linked in the heading, as
+            you recall we can link an external css in an html document by using a link tag. As I mentioned inline css is no longer standard and should not be used, so when should you use external over internal CSS? Well when you are building
+            multi-length web-pagews and you want to have styling that is applied to them all this should be put in an external master css file as to avoid repeating code. If you want specific styling that will only be applied to one document add it
+            internally in the head tag in between
             <em>style</em> tags.
-           </p>
-          <li>
-            <p class="tagHighlight">fill</p>
-          </li>
-          <p>fill </p>
-          <li>
-            <p class="tagHighlight">fill</p>
-          </li>
-          <p>fill</p>
-          <li>
-            <p class="tagHighlight">fill</p>
-          </li>
-          <p>fill</p>
-          <li>
-            <p class="tagHighlight">fill</p>
-          </li>
-          <p>fill</p>
-          <li>
-            <p class="tagHighlight">fill</p>
-          </li>
-          <p>fill</p>
-        </ol>
+          </p>
+          <!-- examples for all three -->
+          <!-- inline -->
+          <div class="examplesCSS">
+            <div class="inlineExample">
+              <div class="flexHalf">
+                <div class="htmlPreview">
+                  <div class="dots">
+                    <span class="dotOne"></span>
+                    <span class="dotTwo"></span>
+                    <span class="dotThree"></span>
+                  </div>
+                  <div class="fileName">
+                    <p id="inline">inlineCSSExample.html</p>
+                  </div>
+
+                  <div class="htmlCode">
+                    <p class="firstCode">&lt;!DOCTYPE html&gt;</p>
+                    <p>&lt;html&gt;</p>
+                    <p>&lt;head&gt;</p>
+                    <p class="tab">&lt;title&gt;Inline CSS&lt;/title&gt;</p>
+                    <p>&lt;/head&gt;</p>
+                    <p>&lt;body&gt;</p>
+                    <p class="tab">&lt;h1 <em>style = "color: red;"</em>&gt; color: red; property turns the text color red!&lt;h1&gt;</p>
+                    <p>&lt;/body&gt;</p>
+                    <p>&lt;/html&gt;</p>
+                  </div>
+                </div>
+
+                <div class="htmlRender">
+                  <div class="dots">
+                    <span class="dotOne"></span>
+                    <span class="dotTwo"></span>
+                    <span class="dotThree"></span>
+                  </div>
+                  <div class="fileName">
+                    <p id="inline">Inline CSS</p>
+                  </div>
+                  <div class="results">
+                    <p> color: red; property turns the text color red!</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <!-- internal -->
+            <div class="internalExample">
+              <div class="flexHalf">
+                <div class="htmlPreview">
+                  <div class="dots">
+                    <span class="dotOne"></span>
+                    <span class="dotTwo"></span>
+                    <span class="dotThree"></span>
+                  </div>
+                  <div class="fileName">
+                    <p id="inline">internalCSSExample.html</p>
+                  </div>
+
+                  <div class="htmlCode">
+                    <p class="firstCode">&lt;!DOCTYPE html&gt;</p>
+                    <p>&lt;html&gt;</p>
+                    <p>&lt;head&gt;</p>
+                    <p class="tab">&lt;title&gt;Internal CSS&lt;/title&gt;</p>
+                    <p><em>&lt;style&gt;</em></p>
+                    <p class="tab"><em>h1 {</em></p>
+                    <p class="doubleTab"><em>color: red;</em><br></p>
+                    <p class="tab"><em>}</em></p>
+                    <p><em>&lt;/style&gt;</em></p>
+                    <p>&lt;/head&gt;</p>
+                    <p>&lt;body&gt;</p>
+                    <p class="tab">&lt;h1&gt; color: red; property turns the text color red!&lt;h1&gt;</p>
+                    <p>&lt;/body&gt;</p>
+                    <p>&lt;/html&gt;</p>
+                  </div>
+                </div>
+
+                <div class="htmlRender">
+                  <div class="dots">
+                    <span class="dotOne"></span>
+                    <span class="dotTwo"></span>
+                    <span class="dotThree"></span>
+                  </div>
+                  <div class="fileName">
+                    <p id="inline">Internal CSS</p>
+                  </div>
+                  <div class="results">
+                    <p>color: red; property turns the text color red!</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- external -->
+            <div class="externalExample">
+              <div class="flexHalf">
+                <div class="externalPreview">
+                  <div class="htmlPreview">
+                    <div class="dots">
+                      <span class="dotOne"></span>
+                      <span class="dotTwo"></span>
+                      <span class="dotThree"></span>
+                    </div>
+                    <div class="fileName">
+                      <p id="inline">externalCSSExample.html</p>
+                    </div>
+
+                    <div class="htmlCode">
+                      <p class="firstCode">&lt;!DOCTYPE html&gt;</p>
+                      <p>&lt;html&gt;</p>
+                      <p>&lt;head&gt;</p>
+                      <p class="tab">&lt;title&gt;External CSS&lt;/title&gt;</p>
+                      <p><em>&lt;link rel="stylesheet" href="style/master.css"&gt;</em></p>
+                      <p>&lt;/head&gt;</p>
+                      <p>&lt;body&gt;</p>
+                      <p class="tab">&lt;h1&gt; color: red; property turns the text color red!&lt;h1&gt;</p>
+                      <p>&lt;/body&gt;</p>
+                      <p>&lt;/html&gt;</p>
+                    </div>
+                    <br>
+                    <hr>
+                    <br>
+
+                    <div class="masterCSSEX">
+                      <div class="dots">
+                        <span class="dotOne"></span>
+                        <span class="dotTwo"></span>
+                        <span class="dotThree"></span>
+                      </div>
+                      <div class="fileName">
+                        <p id="inline">master.css</p>
+                      </div>
+
+                      <div class="htmlCode">
+
+                        <p class=firstCode>h1 {</p>
+                        <p class="tab">color: red;</p>
+                        <p>}</p>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="htmlRender">
+                  <div class="dots">
+                    <span class="dotOne"></span>
+                    <span class="dotTwo"></span>
+                    <span class="dotThree"></span>
+                  </div>
+                  <div class="fileName">
+                    <p id="inline">External CSS</p>
+                  </div>
+                  <div class="results">
+                    <p> color: red; property turns the text color red!</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </li>
+        <hr>
+        <br>
+
+
+
+        <!-- done -->
+
+      </ol>
+      <div class="generalCSSProperties">
+        <div class="title">
+          <ul>
+            <li class='tagHighlight'>Useful CSS properties and values</li>
+          </ul>
+        </div>
+        <div class="flex3Row">
+          <div class="flexThree">
+              <div class="usefulCSS">
+                <div class="htmlRender">
+                  <div class="dots">
+                    <span class="dotOne"></span>
+                    <span class="dotTwo"></span>
+                    <span class="dotThree"></span>
+                  </div>
+                  <div class="fileName">
+                    <p id="inline">color</p>
+                  </div>
+                  <div class="htmlCode">
+                    <p class=firstCode>h1 {</p>
+                    <p class="tab">color: red;</p>
+                    <p>}</p>
+
+                    <p>makes text-color of h1 elements red</p>
+                    <p>Other values: green, red, any hex code or RGB combination</p>
+                    <br>
+
+
+                  </div>
+                </div>
+              </div>
+              <div class="usefulCSS">
+                <div class="htmlRender">
+                  <div class="dots">
+                    <span class="dotOne"></span>
+                    <span class="dotTwo"></span>
+                    <span class="dotThree"></span>
+                  </div>
+                  <div class="fileName">
+                    <p id="inline">background-color</p>
+                  </div>
+                  <div class="htmlCode">
+                    <p class=firstCode>h1 {</p>
+                    <p class="tab">color: red;</p>
+                    <p>}</p>
+
+                    <p>makes text-color of h1 elements red</p>
+                    <p>Other values: green, red, any hex code or RGB combination</p>
+                    <br>
+
+
+                  </div>
+                </div>
+              </div>
+              <div class="usefulCSS">
+                <div class="htmlRender">
+                  <div class="dots">
+                    <span class="dotOne"></span>
+                    <span class="dotTwo"></span>
+                    <span class="dotThree"></span>
+                  </div>
+                  <div class="fileName">
+                    <p id="inline">background-image</p>
+                  </div>
+                  <div class="htmlCode">
+                    <p class=firstCode>h1 {</p>
+                    <p class="tab">color: red;</p>
+                    <p>}</p>
+
+                    <p>makes text-color of h1 elements red</p>
+                    <p>Other values: green, red, any hex code or RGB combination</p>
+                    <br>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="flex3Row">
+          <div class="flexThree">
+              <div class="usefulCSS">
+                <div class="htmlRender">
+                  <div class="dots">
+                    <span class="dotOne"></span>
+                    <span class="dotTwo"></span>
+                    <span class="dotThree"></span>
+                  </div>
+                  <div class="fileName">
+                    <p id="inline">display</p>
+                  </div>
+                  <div class="htmlCode">
+                    <p class=firstCode>h1 {</p>
+                    <p class="tab">color: red;</p>
+                    <p>}</p>
+
+                    <p>makes text-color of h1 elements red</p>
+                    <p>Other values: green, red, any hex code or RGB combination</p>
+                    <br>
+
+
+                  </div>
+                </div>
+              </div>
+              <div class="usefulCSS">
+                <div class="htmlRender">
+                  <div class="dots">
+                    <span class="dotOne"></span>
+                    <span class="dotTwo"></span>
+                    <span class="dotThree"></span>
+                  </div>
+                  <div class="fileName">
+                    <p id="inline">width</p>
+                  </div>
+                  <div class="htmlCode">
+                    <p class=firstCode>h1 {</p>
+                    <p class="tab">color: red;</p>
+                    <p>}</p>
+
+                    <p>makes text-color of h1 elements red</p>
+                    <p>Other values: green, red, any hex code or RGB combination</p>
+                    <br>
+
+
+                  </div>
+                </div>
+              </div>
+              <div class="usefulCSS">
+                <div class="htmlRender">
+                  <div class="dots">
+                    <span class="dotOne"></span>
+                    <span class="dotTwo"></span>
+                    <span class="dotThree"></span>
+                  </div>
+                  <div class="fileName">
+                    <p id="inline">height</p>
+                  </div>
+                  <div class="htmlCode">
+                    <p class=firstCode>h1 {</p>
+                    <p class="tab">color: red;</p>
+                    <p>}</p>
+
+                    <p>makes text-color of h1 elements red</p>
+                    <p>Other values: green, red, any hex code or RGB combination</p>
+                    <br>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="flex3Row">
+          <div class="flexThree">
+              <div class="usefulCSS">
+                <div class="htmlRender">
+                  <div class="dots">
+                    <span class="dotOne"></span>
+                    <span class="dotTwo"></span>
+                    <span class="dotThree"></span>
+                  </div>
+                  <div class="fileName">
+                    <p id="inline">margin</p>
+                  </div>
+                  <div class="htmlCode">
+                    <p class=firstCode>h1 {</p>
+                    <p class="tab">color: red;</p>
+                    <p>}</p>
+
+                    <p>makes text-color of h1 elements red</p>
+                    <p>Other values: green, red, any hex code or RGB combination</p>
+                    <br>
+
+
+                  </div>
+                </div>
+              </div>
+              <div class="usefulCSS">
+                <div class="htmlRender">
+                  <div class="dots">
+                    <span class="dotOne"></span>
+                    <span class="dotTwo"></span>
+                    <span class="dotThree"></span>
+                  </div>
+                  <div class="fileName">
+                    <p id="inline">padding</p>
+                  </div>
+                  <div class="htmlCode">
+                    <p class=firstCode>h1 {</p>
+                    <p class="tab">color: red;</p>
+                    <p>}</p>
+
+                    <p>makes text-color of h1 elements red</p>
+                    <p>Other values: green, red, any hex code or RGB combination</p>
+                    <br>
+
+
+                  </div>
+                </div>
+              </div>
+              <div class="usefulCSS">
+                <div class="htmlRender">
+                  <div class="dots">
+                    <span class="dotOne"></span>
+                    <span class="dotTwo"></span>
+                    <span class="dotThree"></span>
+                  </div>
+                  <div class="fileName">
+                    <p id="inline">border</p>
+                  </div>
+                  <div class="htmlCode">
+                    <p class=firstCode>h1 {</p>
+                    <p class="tab">color: red;</p>
+                    <p>}</p>
+
+                    <p>makes text-color of h1 elements red</p>
+                    <p>Other values: green, red, any hex code or RGB combination</p>
+                    <br>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="flex3Row">
+          <div class="flexThree">
+              <div class="usefulCSS">
+                <div class="htmlRender">
+                  <div class="dots">
+                    <span class="dotOne"></span>
+                    <span class="dotTwo"></span>
+                    <span class="dotThree"></span>
+                  </div>
+                  <div class="fileName">
+                    <p id="inline">border-color</p>
+                  </div>
+                  <div class="htmlCode">
+                    <p class=firstCode>h1 {</p>
+                    <p class="tab">color: red;</p>
+                    <p>}</p>
+
+                    <p>makes text-color of h1 elements red</p>
+                    <p>Other values: green, red, any hex code or RGB combination</p>
+                    <br>
+
+
+                  </div>
+                </div>
+              </div>
+              <div class="usefulCSS">
+                <div class="htmlRender">
+                  <div class="dots">
+                    <span class="dotOne"></span>
+                    <span class="dotTwo"></span>
+                    <span class="dotThree"></span>
+                  </div>
+                  <div class="fileName">
+                    <p id="inline">border-width</p>
+                  </div>
+                  <div class="htmlCode">
+                    <p class=firstCode>h1 {</p>
+                    <p class="tab">color: red;</p>
+                    <p>}</p>
+
+                    <p>makes text-color of h1 elements red</p>
+                    <p>Other values: green, red, any hex code or RGB combination</p>
+                    <br>
+
+
+                  </div>
+                </div>
+              </div>
+              <div class="usefulCSS">
+                <div class="htmlRender">
+                  <div class="dots">
+                    <span class="dotOne"></span>
+                    <span class="dotTwo"></span>
+                    <span class="dotThree"></span>
+                  </div>
+                  <div class="fileName">
+                    <p id="inline">border-style</p>
+                  </div>
+                  <div class="htmlCode">
+                    <p class=firstCode>h1 {</p>
+                    <p class="tab">color: red;</p>
+                    <p>}</p>
+
+                    <p>makes text-color of h1 elements red</p>
+                    <p>Other values: green, red, any hex code or RGB combination</p>
+                    <br>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="flex3Row">
+          <div class="flexThree">
+              <div class="usefulCSS">
+                <div class="htmlRender">
+                  <div class="dots">
+                    <span class="dotOne"></span>
+                    <span class="dotTwo"></span>
+                    <span class="dotThree"></span>
+                  </div>
+                  <div class="fileName">
+                    <p id="inline">border-radius</p>
+                  </div>
+                  <div class="htmlCode">
+                    <p class=firstCode>h1 {</p>
+                    <p class="tab">color: red;</p>
+                    <p>}</p>
+
+                    <p>makes text-color of h1 elements red</p>
+                    <p>Other values: green, red, any hex code or RGB combination</p>
+                    <br>
+
+
+                  </div>
+                </div>
+              </div>
+              <div class="usefulCSS">
+                <div class="htmlRender">
+                  <div class="dots">
+                    <span class="dotOne"></span>
+                    <span class="dotTwo"></span>
+                    <span class="dotThree"></span>
+                  </div>
+                  <div class="fileName">
+                    <p id="inline">font-family</p>
+                  </div>
+                  <div class="htmlCode">
+                    <p class=firstCode>h1 {</p>
+                    <p class="tab">color: red;</p>
+                    <p>}</p>
+
+                    <p>makes text-color of h1 elements red</p>
+                    <p>Other values: green, red, any hex code or RGB combination</p>
+                    <br>
+
+
+                  </div>
+                </div>
+              </div>
+              <div class="usefulCSS">
+                <div class="htmlRender">
+                  <div class="dots">
+                    <span class="dotOne"></span>
+                    <span class="dotTwo"></span>
+                    <span class="dotThree"></span>
+                  </div>
+                  <div class="fileName">
+                    <p id="inline">font-style</p>
+                  </div>
+                  <div class="htmlCode">
+                    <p class=firstCode>h1 {</p>
+                    <p class="tab">color: red;</p>
+                    <p>}</p>
+
+                    <p>makes text-color of h1 elements red</p>
+                    <p>Other values: green, red, any hex code or RGB combination</p>
+                    <br>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="flex3Row">
+          <div class="flexThree">
+              <div class="usefulCSS">
+                <div class="htmlRender">
+                  <div class="dots">
+                    <span class="dotOne"></span>
+                    <span class="dotTwo"></span>
+                    <span class="dotThree"></span>
+                  </div>
+                  <div class="fileName">
+                    <p id="inline">font-weight</p>
+                  </div>
+                  <div class="htmlCode">
+                    <p class=firstCode>h1 {</p>
+                    <p class="tab">color: red;</p>
+                    <p>}</p>
+
+                    <p>makes text-color of h1 elements red</p>
+                    <p>Other values: green, red, any hex code or RGB combination</p>
+                    <br>
+
+
+                  </div>
+                </div>
+              </div>
+              <div class="usefulCSS">
+                <div class="htmlRender">
+                  <div class="dots">
+                    <span class="dotOne"></span>
+                    <span class="dotTwo"></span>
+                    <span class="dotThree"></span>
+                  </div>
+                  <div class="fileName">
+                    <p id="inline">position</p>
+                  </div>
+                  <div class="htmlCode">
+                    <p class=firstCode>h1 {</p>
+                    <p class="tab">color: red;</p>
+                    <p>}</p>
+
+                    <p>makes text-color of h1 elements red</p>
+                    <p>Other values: green, red, any hex code or RGB combination</p>
+                    <br>
+
+
+                  </div>
+                </div>
+              </div>
+              <div class="usefulCSS">
+                <div class="htmlRender">
+                  <div class="dots">
+                    <span class="dotOne"></span>
+                    <span class="dotTwo"></span>
+                    <span class="dotThree"></span>
+                  </div>
+                  <div class="fileName">
+                    <p id="inline">z-index</p>
+                  </div>
+                  <div class="htmlCode">
+                    <p class=firstCode>h1 {</p>
+                    <p class="tab">color: red;</p>
+                    <p>}</p>
+
+                    <p>makes text-color of h1 elements red</p>
+                    <p>Other values: green, red, any hex code or RGB combination</p>
+                    <br>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+
 
       </div>
+
+
     </div>
   </div>
+
   <div class="footer">
     <p>5</p>
   </div>
