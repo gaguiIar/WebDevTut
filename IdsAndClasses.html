@@ -7,15 +7,12 @@
   <link rel="stylesheet" href="style/master.css">
   <title>Introduction to Web Development</title>
   <style media="screen">
-    .flexThree {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-    }
+    
 
 
     .externalPreview hr {
       border-top: 4px dashed white;
+
     }
 
     .examplesCSS .htmlRender p {
@@ -98,22 +95,10 @@
 
     .generalCSSProperties {}
 
-    .usefulCSS {
-      width: 260px;
-      margin: auto;
-      padding: 20px;
-    }
 
-    .usefulCSS .htmlRender {
-      width: 280px;
-      height: 280px;
-
-    }
-
-    .usefulCSS .results {
-      width: 240px;
-
-
+    .red {
+      background-color: red;
+      padding:0px;
     }
   </style>
 </head>
@@ -159,7 +144,7 @@
     </div>
     <hr>
     <div class="title">
-      <h1>IDs and Classes</h1>
+      <h1>CSS Fundamentals</h1>
     </div>
     <div class="textInfo">
       <ol>
@@ -335,6 +320,7 @@
                       </div>
                       <div class="fileName">
                         <p id="inline">master.css</p>
+
                       </div>
 
                       <div class="htmlCode">
@@ -393,7 +379,7 @@
                     <span class="dotThree"></span>
                   </div>
                   <div class="fileName">
-                    <p id="inline">color</p>
+                    <p id="inline"><a href="#" target="_blank">color</a></p>
                   </div>
                   <div class="htmlCode">
                     <p class=firstCode>h1 {</p>
@@ -401,7 +387,7 @@
                     <p>}</p>
 
                     <p>makes text-color of h1 elements red</p>
-                    <p>Other values: green, red, any hex code or RGB combination</p>
+                    <p>Other values: color, any hex code or RGB combination</p>
                     <br>
 
 
@@ -416,15 +402,15 @@
                     <span class="dotThree"></span>
                   </div>
                   <div class="fileName">
-                    <p id="inline">background-color</p>
+                    <p id="inline"><a href="#" target="_blank">background-color</a></p>
                   </div>
                   <div class="htmlCode">
                     <p class=firstCode>h1 {</p>
-                    <p class="tab">color: red;</p>
+                    <p class="tab">background-color: red;</p>
                     <p>}</p>
 
-                    <p>makes text-color of h1 elements red</p>
-                    <p>Other values: green, red, any hex code or RGB combination</p>
+                    <p>sets background color red.</p>
+                    <p>Other values: color, hex code or any RGB combination</p>
                     <br>
 
 
@@ -439,15 +425,15 @@
                     <span class="dotThree"></span>
                   </div>
                   <div class="fileName">
-                    <p id="inline">background-image</p>
+                    <p id="inline"><a href="#" target="_blank">background-image</a></p>
                   </div>
                   <div class="htmlCode">
                     <p class=firstCode>h1 {</p>
-                    <p class="tab">color: red;</p>
+                    <p class="tab">background-image: url('image.jpg');</p>
                     <p>}</p>
 
-                    <p>makes text-color of h1 elements red</p>
-                    <p>Other values: green, red, any hex code or RGB combination</p>
+                    <p>sets background image as source provided</p>
+                    <p>Other values: can be file or hosted link</p>
                     <br>
                   </div>
                 </div>
@@ -464,15 +450,15 @@
                     <span class="dotThree"></span>
                   </div>
                   <div class="fileName">
-                    <p id="inline">display</p>
+                    <p id="inline"><a href="#" target="_blank">display</a></p>
                   </div>
                   <div class="htmlCode">
                     <p class=firstCode>h1 {</p>
-                    <p class="tab">color: red;</p>
+                    <p class="tab">display: block;</p>
                     <p>}</p>
 
-                    <p>makes text-color of h1 elements red</p>
-                    <p>Other values: green, red, any hex code or RGB combination</p>
+                    <p>changes how element is displayed</p>
+                    <p>Other values: none, inline, block, inline-block</p>
                     <br>
 
 
@@ -487,15 +473,15 @@
                     <span class="dotThree"></span>
                   </div>
                   <div class="fileName">
-                    <p id="inline">width</p>
+                    <p id="inline"><a href="https://www.w3schools.com/cssref/pr_dim_width.asp" target = '_blank'>width</a></p>
                   </div>
                   <div class="htmlCode">
                     <p class=firstCode>h1 {</p>
-                    <p class="tab">color: red;</p>
+                    <p class="tab">width: 100px;</p>
                     <p>}</p>
 
-                    <p>makes text-color of h1 elements red</p>
-                    <p>Other values: green, red, any hex code or RGB combination</p>
+                    <p>sets width of element</p>
+                    <p>Other values: percentage, inherit, any pixel value or auto</p>
                     <br>
 
 
@@ -510,15 +496,16 @@
                     <span class="dotThree"></span>
                   </div>
                   <div class="fileName">
-                    <p id="inline">height</p>
+                    <p id="inline"><a href="https://www.w3schools.com/cssref/pr_dim_height.asp" target = '_blank'>height</a></p>
+
                   </div>
                   <div class="htmlCode">
                     <p class=firstCode>h1 {</p>
-                    <p class="tab">color: red;</p>
+                    <p class="tab">height: 100px;</p>
                     <p>}</p>
 
-                    <p>makes text-color of h1 elements red</p>
-                    <p>Other values: green, red, any hex code or RGB combination</p>
+                    <p>sets height of element</p>
+                    <p>Other values: percentage, inherit, any pixel value, auto</p>
                     <br>
                   </div>
                 </div>
@@ -535,15 +522,19 @@
                     <span class="dotThree"></span>
                   </div>
                   <div class="fileName">
-                    <p id="inline">margin</p>
+                    <p id="inline"><a href="#" target="_blank">margin</a></p>
                   </div>
                   <div class="htmlCode">
                     <p class=firstCode>h1 {</p>
-                    <p class="tab">color: red;</p>
+                    <p class="tab">margin: 10px;</p>
+                    <p class="tab">margin-left: 10px;</p>
+                    <p class="tab">margin-right: 10px;</p>
+                    <p class="tab">margin-top: 10px;</p>
+                    <p class="tab">margin-bottom: 10px;</p>
                     <p>}</p>
 
-                    <p>makes text-color of h1 elements red</p>
-                    <p>Other values: green, red, any hex code or RGB combination</p>
+                    <p>adds margin</p>
+                    <p>Other values: any pixel value, inherit or auto</p>
                     <br>
 
 
@@ -558,15 +549,19 @@
                     <span class="dotThree"></span>
                   </div>
                   <div class="fileName">
-                    <p id="inline">padding</p>
+                    <p id="inline"><a href="#" target="_blank">padding</a></p>
                   </div>
                   <div class="htmlCode">
                     <p class=firstCode>h1 {</p>
-                    <p class="tab">color: red;</p>
+                    <p class="tab">padding: 10px;</p>
+                    <p class="tab">padding-left: 10px;</p>
+                    <p class="tab">padding-right: 10px;</p>
+                    <p class="tab">padding-top: 10px;</p>
+                    <p class="tab">padding-bottom: 10px;</p>
                     <p>}</p>
 
-                    <p>makes text-color of h1 elements red</p>
-                    <p>Other values: green, red, any hex code or RGB combination</p>
+                    <p>adds padding</p>
+                    <p>Other values: any pixel value, inherit or auto</p>
                     <br>
 
 
@@ -581,15 +576,17 @@
                     <span class="dotThree"></span>
                   </div>
                   <div class="fileName">
-                    <p id="inline">border</p>
+                    <p id="inline"><a href="#" target="_blank">border</a></p>
                   </div>
                   <div class="htmlCode">
                     <p class=firstCode>h1 {</p>
-                    <p class="tab">color: red;</p>
+                    <p class="tab">border: 5px solid black;</p>
+                    <p class="tab">border: double;</p>
                     <p>}</p>
 
-                    <p>makes text-color of h1 elements red</p>
-                    <p>Other values: green, red, any hex code or RGB combination</p>
+                    <p>used to add border</p>
+                    <p>Values define width, style and color in that order.</p>
+                    <p>Other values: any pixel value; dotted, dashed; any color, hex or RGB value</p>
                     <br>
                   </div>
                 </div>
@@ -606,15 +603,15 @@
                     <span class="dotThree"></span>
                   </div>
                   <div class="fileName">
-                    <p id="inline">border-color</p>
+                    <p id="inline"><a href="#" target="_blank">font-family</a></p>
                   </div>
                   <div class="htmlCode">
                     <p class=firstCode>h1 {</p>
-                    <p class="tab">color: red;</p>
+                    <p class="tab">font-family: 'ComfortaaReg', Arial, Sans Serif;</p>
                     <p>}</p>
 
-                    <p>makes text-color of h1 elements red</p>
-                    <p>Other values: green, red, any hex code or RGB combination</p>
+                    <p>defines font for element, will go from left to right if font can't be accessed</p>
+                    <p>Other values: Sans Serif, Serif, Fancy and monospace are default font families. </p>
                     <br>
 
 
@@ -629,15 +626,15 @@
                     <span class="dotThree"></span>
                   </div>
                   <div class="fileName">
-                    <p id="inline">border-width</p>
+                    <p id="inline"><a href="#" target="_blank">font-size</a></p>
                   </div>
                   <div class="htmlCode">
                     <p class=firstCode>h1 {</p>
-                    <p class="tab">color: red;</p>
+                    <p class="tab">font-size: 10px;</p>
                     <p>}</p>
 
-                    <p>makes text-color of h1 elements red</p>
-                    <p>Other values: green, red, any hex code or RGB combination</p>
+                    <p>defines font size</p>
+                    <p>Other values: any pixel value, inherit or (x)em meaning inherited font emphasised x times <br><br>e.g.<br><br> 2em = inherited font * 2 </p>
                     <br>
 
 
@@ -652,157 +649,15 @@
                     <span class="dotThree"></span>
                   </div>
                   <div class="fileName">
-                    <p id="inline">border-style</p>
+                    <p id="inline"><a href="#" target="_blank">font-style</a></p>
                   </div>
                   <div class="htmlCode">
                     <p class=firstCode>h1 {</p>
-                    <p class="tab">color: red;</p>
+                    <p class="tab">font-style: normal;</p>
                     <p>}</p>
 
-                    <p>makes text-color of h1 elements red</p>
-                    <p>Other values: green, red, any hex code or RGB combination</p>
-                    <br>
-                  </div>
-                </div>
-              </div>
-          </div>
-        </div>
-        <div class="flex3Row">
-          <div class="flexThree">
-              <div class="usefulCSS">
-                <div class="htmlRender">
-                  <div class="dots">
-                    <span class="dotOne"></span>
-                    <span class="dotTwo"></span>
-                    <span class="dotThree"></span>
-                  </div>
-                  <div class="fileName">
-                    <p id="inline">border-radius</p>
-                  </div>
-                  <div class="htmlCode">
-                    <p class=firstCode>h1 {</p>
-                    <p class="tab">color: red;</p>
-                    <p>}</p>
-
-                    <p>makes text-color of h1 elements red</p>
-                    <p>Other values: green, red, any hex code or RGB combination</p>
-                    <br>
-
-
-                  </div>
-                </div>
-              </div>
-              <div class="usefulCSS">
-                <div class="htmlRender">
-                  <div class="dots">
-                    <span class="dotOne"></span>
-                    <span class="dotTwo"></span>
-                    <span class="dotThree"></span>
-                  </div>
-                  <div class="fileName">
-                    <p id="inline">font-family</p>
-                  </div>
-                  <div class="htmlCode">
-                    <p class=firstCode>h1 {</p>
-                    <p class="tab">color: red;</p>
-                    <p>}</p>
-
-                    <p>makes text-color of h1 elements red</p>
-                    <p>Other values: green, red, any hex code or RGB combination</p>
-                    <br>
-
-
-                  </div>
-                </div>
-              </div>
-              <div class="usefulCSS">
-                <div class="htmlRender">
-                  <div class="dots">
-                    <span class="dotOne"></span>
-                    <span class="dotTwo"></span>
-                    <span class="dotThree"></span>
-                  </div>
-                  <div class="fileName">
-                    <p id="inline">font-style</p>
-                  </div>
-                  <div class="htmlCode">
-                    <p class=firstCode>h1 {</p>
-                    <p class="tab">color: red;</p>
-                    <p>}</p>
-
-                    <p>makes text-color of h1 elements red</p>
-                    <p>Other values: green, red, any hex code or RGB combination</p>
-                    <br>
-                  </div>
-                </div>
-              </div>
-          </div>
-        </div>
-        <div class="flex3Row">
-          <div class="flexThree">
-              <div class="usefulCSS">
-                <div class="htmlRender">
-                  <div class="dots">
-                    <span class="dotOne"></span>
-                    <span class="dotTwo"></span>
-                    <span class="dotThree"></span>
-                  </div>
-                  <div class="fileName">
-                    <p id="inline">font-weight</p>
-                  </div>
-                  <div class="htmlCode">
-                    <p class=firstCode>h1 {</p>
-                    <p class="tab">color: red;</p>
-                    <p>}</p>
-
-                    <p>makes text-color of h1 elements red</p>
-                    <p>Other values: green, red, any hex code or RGB combination</p>
-                    <br>
-
-
-                  </div>
-                </div>
-              </div>
-              <div class="usefulCSS">
-                <div class="htmlRender">
-                  <div class="dots">
-                    <span class="dotOne"></span>
-                    <span class="dotTwo"></span>
-                    <span class="dotThree"></span>
-                  </div>
-                  <div class="fileName">
-                    <p id="inline">position</p>
-                  </div>
-                  <div class="htmlCode">
-                    <p class=firstCode>h1 {</p>
-                    <p class="tab">color: red;</p>
-                    <p>}</p>
-
-                    <p>makes text-color of h1 elements red</p>
-                    <p>Other values: green, red, any hex code or RGB combination</p>
-                    <br>
-
-
-                  </div>
-                </div>
-              </div>
-              <div class="usefulCSS">
-                <div class="htmlRender">
-                  <div class="dots">
-                    <span class="dotOne"></span>
-                    <span class="dotTwo"></span>
-                    <span class="dotThree"></span>
-                  </div>
-                  <div class="fileName">
-                    <p id="inline">z-index</p>
-                  </div>
-                  <div class="htmlCode">
-                    <p class=firstCode>h1 {</p>
-                    <p class="tab">color: red;</p>
-                    <p>}</p>
-
-                    <p>makes text-color of h1 elements red</p>
-                    <p>Other values: green, red, any hex code or RGB combination</p>
+                    <p>defines font style</p>
+                    <p>Other values: normal, italic, oblique</p>
                     <br>
                   </div>
                 </div>
@@ -810,12 +665,6 @@
           </div>
         </div>
 
-
-
-      </div>
-
-
-    </div>
   </div>
 
   <div class="footer">

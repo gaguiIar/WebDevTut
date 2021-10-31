@@ -6,6 +6,46 @@
   <link rel="shortcut icon" href="imgs/emojiLogo.png" />
   <link rel="stylesheet" href="style/master.css">
   <title>Introduction to Web Development</title>
+  <style media="screen">
+    .externalPreview hr {
+      border-top: 4px dashed white;
+
+    }
+
+    .tagAndClassEX .htmlCode {
+      width: 525px;
+      height: 930px;
+
+    }
+
+    .tagAndClassEX .htmlPreview {
+      height: 1370px;
+
+    }
+
+    .tagAndClassEX .htmlRender {
+      height: 640px;
+      width: 450px;
+
+    }
+    .masterCSSEX .htmlCode {
+      height: 300px;
+    }
+    .tagAndClassEX .results {
+      padding-top: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      width: 390px;
+    }
+
+    .results {
+      margin-top: 10px;
+    }
+    .results p {
+      margin: 10px;
+    }
+  </style>
 </head>
 
 <body>
@@ -22,75 +62,298 @@
         Sublime Text or Visual Studio Code are also very popular HTML text editors. You can't go wrong with either, so I recommend you read a bit about all options and pick one you can quickly become familiar with. Don't be afraid to get started; You
         can use the navigation bar below this paragraph or the directional arrows to navigate the sections of this website.
       </p>
-    </div>
-    <hr>
-    <div class="topnav">
-      <ul>
-        <li id="inline"><a href="index.html">How Websites are Created</a></li>
-        <li id="inline"> |</li>
-        <li id="inline"><a href="structure.html">HTML Structure</a></li>
-        <li id="inline"> |</li>
-        <li id="inline"><a href="bodyTags.html">Body Tags</a></li>
-        <li id="inline"> |</li>
-        <li id="inline"><a href="tablesAndForms.html">Tables & Forms</a></li>
-        <li id="inline"><a href="IdsAndClasses.html">CSS (1/2)</a></li>
-        <li id="inline" class="line"> |</li>
-        <li id="inline"><a href="cssPage.html">CSS (2/2)</a></li>
-        <li id="inline"> |</li>
-        <li id="inline"><a href="layout.html">Layout</a></li>
-        <li id="inline"> |</li>
-        <li id="inline"><a href="hosting.html">Hosting</a></li>
-        <li id="inline"> |</li>
-        <li id="inline"><a href="otherResources.html">Other Resources</a></li>
+
+      <hr>
+      <div class="topnav">
+        <ul>
+          <li id="inline"><a href="index.html">How Websites are Created</a></li>
+          <li id="inline"> |</li>
+          <li id="inline"><a href="structure.html">HTML Structure</a></li>
+          <li id="inline"> |</li>
+          <li id="inline"><a href="bodyTags.html">Body Tags</a></li>
+          <li id="inline"> |</li>
+          <li id="inline"><a href="tablesAndForms.html">Tables & Forms</a></li>
+          <li id="inline"><a href="IdsAndClasses.html">CSS (1/2)</a></li>
+          <li id="inline" class="line"> |</li>
+          <li id="inline"><a href="cssPage.html">CSS (2/2)</a></li>
+          <li id="inline"> |</li>
+          <li id="inline"><a href="layout.html">Layout</a></li>
+          <li id="inline"> |</li>
+          <li id="inline"><a href="hosting.html">Hosting</a></li>
+          <li id="inline"> |</li>
+          <li id="inline"><a href="otherResources.html">Other Resources</a></li>
 
 
-      </ul>
+        </ul>
+      </div>
       <hr>
       <div class="title">
-        <h1>CSS</h1>
+        <h1>CSS Grouping with ID's and Classes</h1>
       </div>
-      <div class="textInfo">
-        <!-- <ol>
-          <li>
-            <p class="tagHighlight">&lt;!DOCTYPE html&gt;</p>
-          </li>
-          <p>There are all kinds of files you can open on the web and each of them have properties that change the way they are displayed in a brower. Browsers need to be able to identify what kind if file is being loaded to figure out how to display
-            it; the <em>&lt;!DOCTYPE html&gt;</em> tag allows us to do so. Writing <em>&lt;!DOCTYPE html&gt;</em> declares the document type as an HTML file and tells the browser how it should be displayed.</p>
-          <li>
-            <p class="tagHighlight">&lt;html&gt;</p>
-          </li>
-          <p>The html tag begins with <em>&lt;html&gt;</em> and ends with <em>&lt;/html&gt;</em>. As we go through this tutorial you will see that most html tags have a starting and closing tag––Unless otherwise specified you can assume any future
-            tags discussed in this tutorial have a closing tag that is identical to the primary tag with a forwardslash <em>(/)</em> in the beggining. In this case the beggining <em>&lt;html&gt;</em> tag identifies the start or root of a HTML
-            document and the closing <em>&lt;/html&gt;</em> tag indicates the end. Because the html tag is used to mark the start and end of an HTML document that means all other HTML elements present on your webpage will go inside these two tags.
-          </p>
-          <li>
-            <p class="tagHighlight">&lt;head&gt;</p>
-          </li>
-          <p>There are all kinds of files you can open on the web and each of them have properties that change the way they are displayed in a brower. Browsers need to be able to identify what kind if file is being loaded to figure out how to display
-            it; the DOCTYPE tag allows us to do so. Writing DOCTYPE declares the document type as an HTML file and tells the browser how it should be displayed.</p>
-          <li>
-            <p class="tagHighlight">&lt;title&gt;</p>
-          </li>
-          <p>There are all kinds of files you can open on the web and each of them have properties that change the way they are displayed in a brower. Browsers need to be able to identify what kind if file is being loaded to figure out how to display
-            it; the DOCTYPE tag allows us to do so. Writing DOCTYPE declares the document type as an HTML file and tells the browser how it should be displayed.</p>
-          <li>
-            <p class="tagHighlight">&lt;link&gt;</p>
-          </li>
-          <p>There are all kinds of files you can open on the web and each of them have properties that change the way they are displayed in a brower. Browsers need to be able to identify what kind if file is being loaded to figure out how to display
-            it; the DOCTYPE tag allows us to do so. Writing DOCTYPE declares the document type as an HTML file and tells the browser how it should be displayed.</p>
-          <li>
-            <p class="tagHighlight">&lt;body&gt;</p>
-          </li>
-          <p>There are all kinds of files you can open on the web and each of them have properties that change the way they are displayed in a brower. Browsers need to be able to identify what kind if file is being loaded to figure out how to display
-            it; the DOCTYPE tag allows us to do so. Writing DOCTYPE declares the document type as an HTML file and tells the browser how it should be displayed.</p>
-        </ol> -->
 
+
+      <div class="textInfo">
+        <div class="flex3Row">
+          <div class="flexThree">
+            <div class="usefulCSS">
+              <div class="htmlRender">
+                <div class="dots">
+                  <span class="dotOne"></span>
+                  <span class="dotTwo"></span>
+                  <span class="dotThree"></span>
+                </div>
+                <div class="fileName">
+                  <p id="inline"><a href="#" target="_blank">display</a></p>
+                </div>
+                <div class="htmlCode">
+                  <p class=firstCode>h1 {</p>
+                  <p class="tab">display: block;</p>
+                  <p>}</p>
+
+                  <p>changes how element is displayed</p>
+                  <p>Other values: none, inline, block, inline-block</p>
+                  <br>
+
+
+                </div>
+              </div>
+            </div>
+            <div class="usefulCSS">
+              <div class="htmlRender">
+                <div class="dots">
+                  <span class="dotOne"></span>
+                  <span class="dotTwo"></span>
+                  <span class="dotThree"></span>
+                </div>
+                <div class="fileName">
+                  <p id="inline"><a href="https://www.w3schools.com/cssref/pr_dim_width.asp" target='_blank'>width</a></p>
+                </div>
+                <div class="htmlCode">
+                  <p class=firstCode>h1 {</p>
+                  <p class="tab">width: 100px;</p>
+                  <p>}</p>
+
+                  <p>sets width of element</p>
+                  <p>Other values: percentage, inherit, any pixel value or auto</p>
+                  <br>
+
+
+                </div>
+              </div>
+            </div>
+            <div class="usefulCSS">
+              <div class="htmlRender">
+                <div class="dots">
+                  <span class="dotOne"></span>
+                  <span class="dotTwo"></span>
+                  <span class="dotThree"></span>
+                </div>
+                <div class="fileName">
+                  <p id="inline"><a href="https://www.w3schools.com/cssref/pr_dim_height.asp" target='_blank'>height</a></p>
+
+                </div>
+                <div class="htmlCode">
+                  <p class=firstCode>h1 {</p>
+                  <p class="tab">height: 100px;</p>
+                  <p>}</p>
+
+                  <p>sets height of element</p>
+                  <p>Other values: percentage, inherit, any pixel value, auto</p>
+                  <br>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="marginText">
+          <p>In the previous page we saw examples using various CSS properties like shown above,</p>
+        </div>
+        <div class="marginText">
+          <p>However, as you can see by looking at the <em>CSS Identifier</em>
+            these CSS properties are only being applied to h1 tags. This also means they will be applied to every h1 tag on that HTML file. What if you only wanted to set the hight of ONE h1 tag to 100px? What if you wanted to set the width of h1
+            tags to 100px but only h1 tags in a certain section of your webpage?
+            <em>This is where IDs and Classes come in handy.</em> Read on to learn more.
+          </p>
+          <hr>
+        </div>
       </div>
+
+      <ol>
+        <li>
+          <p class='tagHighlight'>IDs & Classes</p>
+          <p>If you recall in the internal <em>body tags</em> section we covered <em>div</em> tags which although don’t change the appearance or effect anything visually help us create divisions within our body page. We can consequently use div tags
+            to section out different portions of our website such as a header, title or paragraphs. We can style these new groups by adding id or class selectors to the opening div tags. Doing so will mean any style applied to that specific id or
+            class will effect every element within that div.</p>
+          <p>An opening div tag with an id selector looks like so: <em>&lt;div id="test"&gt;</em></p>
+          <p>An opening div tag with a class selector looks like so: <em>&lt;div class="test"&gt;</em></p>
+        </li>
+        <li>
+          <p class='tagHighlight'>When to use IDs over Classes?</p>
+          <p>One of the major rules about IDs is they can not appear twice on the
+            same HTML document. This means that ID tags should only be used to style
+            a single element. If you know you will want to reuse some CSS on multiple elements(such as the CSS that makes the example boxes on every page on this website) you should use classes.</p>
+        </li>
+        <li>
+          <p class='tagHighlight'>Examples</p>
+          <div class="tagAndClassEX">
+
+              <div class="flexHalf">
+                <div class="externalPreview">
+                  <div class="htmlPreview">
+                    <div class="dots">
+                      <span class="dotOne"></span>
+                      <span class="dotTwo"></span>
+                      <span class="dotThree"></span>
+                    </div>
+                    <div class="fileName">
+                      <p id="inline">classesExample.html</p>
+                    </div>
+
+                    <div class="htmlCode">
+                      <p class="firstCode">&lt;!DOCTYPE html&gt;</p>
+                      <p>&lt;html&gt;</p>
+                      <p>&lt;head&gt;</p>
+                      <p class="tab">&lt;title&gt;Classes Example&lt;/title&gt;</p>
+                      <p>&lt;link rel="stylesheet" href="style/master.css"&gt;</p>
+                      <p>&lt;/head&gt;</p>
+                      <p>&lt;body&gt;</p>
+                      <p class='tab'>&lt;div class=red&gt;</p>
+
+                      <p class="doubleTab">&lt;p&gt; On and on you will hike,
+                      And I know you'll hike far
+                      and face up to your problems
+                      whatever they are. &lt;/p&gt;</p>
+                      <p class='tab'>&lt;/div&gt;</p>
+                      <p class='tab'>&lt;div class=green&gt;</p>
+                      <p class="doubleTab">&lt;p&gt; You'll get mixed up, of course,
+                      as you already know.
+                      You'll get mixed up
+                      with many strange birds as you go.
+                      So be sure when you step.
+                      Step with care and great tact
+                      and remember that Life's
+                      a Great Balancing Act.
+                      Just never foget to be dexterous and deft.
+                      And never mix up your right foot with your left. &lt;/p&gt;</p>
+                      <p class='tab'>&lt;/div&gt;</p>
+                      <p class='tab'>&lt;div class=red&gt;</p>
+                      <p class="doubleTab">&lt;p&gt; And will you succeed?
+                      Yes! You will, indeed!
+                      (98 and 3/4 percent guaranteed.) &lt;/p&gt;</p>
+                      <p class='tab'>&lt;div class=green&gt;</p>
+                      <p class="doubleTab">&lt;p&gt; KID, YOU'LL MOVE MOUNTAINS!.&lt;br&gt; <br> So...
+                      be your name Buxbaum or Bixby or Bray
+                      or Mordecai Ali Van Allen O'Shea,
+                      You're off the Great Places!
+                      Today is your day!
+                      Your mountain is waiting.
+                      So...get on your way! &lt;/p&gt;</p>
+                      <p class='tab'>&lt;/div&gt;</p>
+
+                      <p>&lt;/body&gt;</p>
+                      <p>&lt;/html&gt;</p>
+                    </div>
+                    <br>
+                    <hr>
+                    <br>
+                    <div class="masterCSSEX">
+                      <div class="dots">
+                        <span class="dotOne"></span>
+                        <span class="dotTwo"></span>
+                        <span class="dotThree"></span>
+                      </div>
+                      <div class="fileName">
+                        <p id="inline">master.css</p>
+
+                      </div>
+
+                      <div class="htmlCode">
+
+                        <p class=firstCode>.red {</p>
+                        <p class="tab">color: red;</p>
+                        <p class="tab">font-family: 'ComfortaaReg', Arial, Sans-Serif;</p>
+                        <p>}</p>
+
+                        <p class=firstCode>.green {</p>
+                        <p class="tab">color: green;</p>
+                        <p class="tab">font-family: 'ComfortaaReg', Arial, Sans-Serif;</p>
+                        <p>}</p>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="htmlRender">
+                    <div class="dots">
+                      <span class="dotOne"></span>
+                      <span class="dotTwo"></span>
+                      <span class="dotThree"></span>
+                    </div>
+                    <div class="fileName">
+                      <p id="inline">Classes Example</p>
+                    </div>
+                    <div class="results">
+                      <div class="red">
+                        <p>On and on you will hike,
+                        And I know you'll hike far
+                        and face up to your problems
+                        whatever they are.</p>
+                      </div>
+                      <div class="green">
+                        <p>You'll get mixed up, of course,
+                        as you already know.
+                        You'll get mixed up
+                        with many strange birds as you go.
+                        So be sure when you step.
+                        Step with care and great tact
+                        and remember that Life's
+                        a Great Balancing Act.
+                        Just never foget to be dexterous and deft.
+                        And never mix up your right foot with your left.</p>
+                      </div>
+
+                      <div class="red">
+                        <p>And will you succeed?
+                        Yes! You will, indeed!
+                        (98 and 3/4 percent guaranteed.)</p>
+                      </div>
+                      <div class="green">
+                        <p>KID, YOU'LL MOVE MOUNTAINS!<br>
+
+                        So...
+                        be your name Buxbaum or Bixby or Bray
+                        or Mordecai Ali Van Allen O'Shea,
+                        You're off the Great Places!
+                        Today is your day!
+                        Your mountain is waiting.
+                        So...get on your way!</p>
+
+                      </div>
+
+
+
+
+
+
+
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+          </div>
+        </li>
+      </ol>
+
     </div>
   </div>
-    <div class="footer">
-      <p>6</p>
-    </div>
+  </div>
+  <div class="footer">
+    <p>6</p>
+  </div>
 </body>
 
 </html>

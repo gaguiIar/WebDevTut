@@ -11,11 +11,20 @@
     font-family: 'Kanit'; /*a name to be used later*/
     src: url('../fonts/Kanit/Kanit/Kanit-SemiBold.ttf'); /*URL to font*/
 }
+@font-face {
+  font-family: 'George';
+  src: url('../fonts/louis_george_caf/LouisGeorgeCafeLightItalic.ttf');
+}
 @media(max-width: 767px) {
 
 }
 ::selection {
   background: #ededed;
+}
+.flexThree {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 li {
   font-family: ComfortaaReg;
@@ -23,9 +32,7 @@ li {
 #test {
   float: right;
 }
-p {
-  font-family: "ComfortaaReg";
-}
+
 body {
   margin: 0px;
 }
@@ -62,6 +69,7 @@ body {
   margin: 0px;
 }
 .textInfo a:visited {
+
   text-decoration: none;
   color: black;
 }
@@ -91,6 +99,7 @@ body {
 }
 .textInfo p {
   font-size: 20px;
+  font-family: 'ComfortaaReg';
 }
 .title {
   text-align: center;
@@ -284,6 +293,7 @@ em {
   font-family: sans-serif;
 }
 .marginText p {
+  font-family: 'ComfortaaReg';
   font-size: 18px;
   margin: 20px;
   font-weight: bolder;
@@ -310,4 +320,29 @@ em {
   background-color: #FFF;
   border-radius: 15px;
   margin-left: 20px;
+}
+.usefulCSS {
+  width: 260px;
+  margin: auto;
+  padding: 20px;
+}
+
+.usefulCSS .htmlRender {
+  width: 330px;
+  height: 360px;
+
+}
+
+.usefulCSS .htmlCode {
+  height: 310px;
+
+
+
+}
+.red {
+  color:red;
+}
+.green {
+  color:green;
+  font-family: 'George', Arial, sans-serif;
 }
