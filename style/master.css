@@ -230,6 +230,7 @@ em {
   padding-top: 10px;
   margin: 10px;
   margin-bottom: 20px;
+  box-shadow: 1px 5px 5px lightgrey;
 }
 .dots {
   width: 70px;
@@ -316,6 +317,7 @@ em {
   background-color: #f3f3f3ff;
   border-radius: 10px;
   margin: 10px;
+  box-shadow: 1px 5px 5px lightgrey;
 }
 .results {
   background-color: #FFF;
