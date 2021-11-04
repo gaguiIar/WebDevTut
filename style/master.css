@@ -37,8 +37,10 @@ body {
   margin: 0px;
 }
 .footer {
+  margin-top: 10px;
   text-align: center;
-  height: 30px;
+  height: 50px;
+
 }
 .page {
   width: 1100px;
@@ -115,6 +117,7 @@ body {
 .boxHor {
   background-color: #ededed;
   margin: 5px;
+  border-color: lightgrey;
   border-radius: 5px;
   border-style: solid;
   border-width: thin;
@@ -122,8 +125,10 @@ body {
   margin-top: 10px;
   padding-left: 20px;
   padding-right: 20px;
+  box-shadow: 1px 5px 5px lightgrey;
 }
 .box {
+  border-color: lightgrey;
   width: 380px;
   height: 500px;
   background-color: #ededed;
@@ -133,6 +138,7 @@ body {
   border-width: thin;
   text-align: center;
   margin-top: 10px;
+  box-shadow: 1px 5px 5px lightgrey;
 }
 .box h2 {
   margin-top: 20px;
@@ -141,6 +147,13 @@ body {
   font-family: 'Ubuntu';
 }
 .box p {
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 18px;
+  font-family: 'ComfortaaReg';
+}
+.boxHor p {
   text-align: left;
   margin-left: 20px;
   margin-right: 20px;
