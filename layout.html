@@ -7,6 +7,100 @@
   <link rel="stylesheet" href="style/master.css">
   <title>Introduction to Web Development</title>
 </head>
+<style media="screen">
+  .htmlPreview hr {
+    border-top: 4px dashed white;
+}
+  }
+  .iFrameContainer .htmlRender {
+    width: 1000px;
+    height: 700px;
+
+  }
+
+  .iFrameContainer .htmlCode {
+    margin: 12px;
+    width: 960px;
+    height: 650px;
+  }
+
+  .iFrameContainer iframe {
+    border-radius: 15px;
+    border-color: #ABABAB;
+
+  }
+
+  #mono {
+    font-family: monospace;
+  }
+
+  .flexBoxExample .htmlPreview {
+    width: 400px;
+    height: 1070px;
+
+  }
+
+  .flexBoxExample .flexParentContainer {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 10px;
+    width: 400px;
+
+  }
+
+  .flexBoxExample .htmlRender {
+    width: 600px;
+    height: 140px;
+  }
+
+  .flexBoxExample .results {
+    height: 90px;
+    width: 560px;
+  }
+
+  .flexParentContainer {
+    display: flex;
+    background-color: orange;
+  }
+
+  .flexEnd .flexParentContainer {
+    justify-content: flex-end;
+  }
+
+  .flexStart .flexParentContainer {
+    justify-content: flex-start;
+  }
+
+  .flexCenter .flexParentContainer {
+    justify-content: center;
+  }
+
+  .flexSpaceBetween .flexParentContainer {
+    justify-content: space-between;
+  }
+
+  .flexSpaceAround .flexParentContainer {
+    justify-content: space-around;
+  }
+
+  .flexSpaceEvenly .flexParentContainer {
+    justify-content: space-evenly;
+  }
+
+  #flexItem1 {
+
+    background-color: green;
+
+  }
+
+  #flexItem2 {
+
+    background-color: red;
+
+  }
+</style>
 
 <body>
 
@@ -37,7 +131,7 @@
         <li id="inline" class="line"> |</li>
         <li id="inline"><a href="cssPage.html">CSS (2/2)</a></li>
         <li id="inline"> |</li>
-        <li id="inline" class = "selectedTab"><a href="layout.html">Layout</a></li>
+        <li id="inline" class="selectedTab"><a href="layout.html">Layout</a></li>
         <li id="inline"> |</li>
         <li id="inline"><a href="hosting.html">Hosting</a></li>
         <li id="inline"> |</li>
@@ -45,39 +139,348 @@
 
 
       </ul>
-      <hr>
-      <div class="title">
-        <h1>Layout</h1>
-      </div>
-      <div class="textInfo">
-        <ol>
-          <li>
-            <p class="tagHighlight">float:</p>
+    </div>
+    <hr>
+    <div class="title">
+      <h1>Layout</h1>
+    </div>
+    <div class="textInfo">
+      <ol>
+        <li>
+          <p class="tagHighlight">float:</p>
 
-            <!-- need to fix and change from id to class asap  -->
+          <!-- need to fix and change from id to class asap  -->
 
-          <p>Float is used to send an element to the left or right side of a page. At one point in time website layouts were made using the float property and invisible tables but now a days with the addition of flexbox and css grid, floats main purpose is to wrap text around images like so:</p>
+          <p>Float is used to send an element to the left or right side of a page. At one point in time website layouts were made using the float property and invisible tables but now a days with the addition of flexbox and css grid, floats main
+            purpose is to wrap text around images like so:</p>
           <div class="floatExample">
 
           </div>
-          </li>
-          <li>
-            <p class="tagHighlight">Flexbox</p>
+        </li>
+        <li>
+          <p class="tagHighlight">Flexbox</p>
 
-          <p>In 2017 the new display type "flex" was added to CSS which made website layout significantly easier. </p>
-          </li>
-          <li>
-            <p class="tagHighlight">CSS Grid</p>
-          </li>
-          <p>fill</p>
-        </ol>
+          <p>In the early stages of web development getting elements positioned right where you wanted them proved to be a huge task. In 2017 a new display type was intruced to CSS called flex which made page layout significantly easier. </p>
+          <p>Flexbox uses css to effect the way parent containers and individual child flexitems react when it comes to things such as positioning, scaling and element wrapping. </p>
 
-      </div>
+          <p>Elements inside the <em>parent flexBoxContainer</em> are called <em>
+              child flex items</em> flexbox parent containers and items both have unique
+            css properties and possible value combinations that do various things that effect the layout. </p>
+          <p>To use flexbox you'll want to make a large <em>"parent flex-container"</em> You can do this by simply making a div container titled <em>flexBoxContainer</em> and then in CSS setting the <em>display</em> property to <em>display:
+              flex;</em>
+            like so: </p>
+          <div class="flexBoxExample">
+            <div class="flexHalf">
+              <div class="htmlPreview">
+                <div class="dots">
+                  <span class="dotOne"></span>
+                  <span class="dotTwo"></span>
+                  <span class="dotThree"></span>
+                </div>
+                <div class="fileName">
+                  <p id="inline">flexBoxExample.html</p>
+                </div>
+
+                <div class="htmlCode">
+                  <p class="firstCode">&lt;!DOCTYPE html&gt;</p>
+                  <p>&lt;html&gt;</p>
+                  <p>&lt;head&gt;</p>
+                  <p class="tab">&lt;title&gt;Flex Example&lt;/title&gt;</p>
+                  <p>&lt;link rel="stylesheet" href="style/master.css"&gt;</p>
+                  <p>&lt;/head&gt;</p>
+                  <p>&lt;body&gt;</p>
+                  <p class=tab>&lt;div class = flexParentContainer&gt;</p>
+                  <p class=doubleTab>&lt;div id = flexItem1&gt;</p>
+                  <p class=trippleTab>&lt;p&gt;hello&lt;/p&gt;</p>
+                  <p class=doubleTab>&lt;/div&gt;</p>
+
+                  <p class=doubleTab>&lt;div id = flexItem2&gt;</p>
+                  <p class=trippleTab>&lt;p&gt;mate&lt;/p&gt;</p>
+                  <p class=doubleTab>&lt;/div&gt;</p>
+                  <p class=tab>&lt;/div&gt;</p>
+
+                  <p>&lt;/body&gt;</p>
+                  <p>&lt;/html&gt;</p>
+                </div>
+                <br>
+                <hr>
+                <br>
+                <div class="masterCSSEX">
+                  <div class="dots">
+                    <span class="dotOne"></span>
+                    <span class="dotTwo"></span>
+                    <span class="dotThree"></span>
+                  </div>
+                  <div class="fileName">
+                    <p id="inline">master.css</p>
+
+                  </div>
+
+                  <div class="htmlCode">
+
+                    <p class=firstCode>.flexParentContainer {</p>
+                    <p class="tab">display: flex;</p>
+                    <p class="tab">justify-content: <em>SEE RIGHT;</em> </p>
+                    <p>}</p>
+
+                    <p class=firstCode>#flexItem1 {</p>
+                    <p class="tab">color: green;</p>
+                    <p>}</p>
+
+                    <p class=firstCode>#flexItem2 {</p>
+                    <p class="tab">color: green;</p>
+                    <p>}</p>
+                    <br>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="secondFlexItem">
+                <div class="flexStart">
+                  <div class="htmlRender">
+                    <div class="dots">
+                      <span class="dotOne"></span>
+                      <span class="dotTwo"></span>
+                      <span class="dotThree"></span>
+                    </div>
+                    <div class="fileName">
+                      <p id="inline">justify-content: flex-start</p>
+                    </div>
+                    <div class="results">
+                      <div class=flexParentContainer>
+
+                        <div id=flexItem1>
+
+                          <p>hello</p>
+
+                        </div>
+
+                        <div id=flexItem2>
+
+                          <p>mate</p>
+
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+                <div class="flexEnd">
+                  <div class="htmlRender">
+                    <div class="dots">
+                      <span class="dotOne"></span>
+                      <span class="dotTwo"></span>
+                      <span class="dotThree"></span>
+                    </div>
+                    <div class="fileName">
+                      <p id="inline">justify-content: flex-end</p>
+                    </div>
+                    <div class="results">
+                      <div class=flexParentContainer>
+
+                        <div id=flexItem1>
+
+                          <p>hello</p>
+
+                        </div>
+
+                        <div id=flexItem2>
+
+                          <p>mate</p>
+
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+                <div class="flexCenter">
+                  <div class="htmlRender">
+                    <div class="dots">
+                      <span class="dotOne"></span>
+                      <span class="dotTwo"></span>
+                      <span class="dotThree"></span>
+                    </div>
+                    <div class="fileName">
+                      <p id="inline">justify-content: flex-center</p>
+                    </div>
+                    <div class="results">
+                      <div class=flexParentContainer>
+
+                        <div id=flexItem1>
+
+                          <p>hello</p>
+
+                        </div>
+
+                        <div id=flexItem2>
+
+                          <p>mate</p>
+
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+                <div class="flexSpaceBetween">
+                  <div class="htmlRender">
+                    <div class="dots">
+                      <span class="dotOne"></span>
+                      <span class="dotTwo"></span>
+                      <span class="dotThree"></span>
+                    </div>
+                    <div class="fileName">
+                      <p id="inline">justify-content: space-between</p>
+                    </div>
+                    <div class="results">
+                      <div class=flexParentContainer>
+
+                        <div id=flexItem1>
+
+                          <p>hello</p>
+
+                        </div>
+
+                        <div id=flexItem2>
+
+                          <p>mate</p>
+
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+                <div class="flexSpaceAround">
+                  <div class="htmlRender">
+                    <div class="dots">
+                      <span class="dotOne"></span>
+                      <span class="dotTwo"></span>
+                      <span class="dotThree"></span>
+                    </div>
+                    <div class="fileName">
+                      <p id="inline">justify-content: space-around</p>
+                    </div>
+                    <div class="results">
+                      <div class=flexParentContainer>
+
+                        <div id=flexItem1>
+
+                          <p>hello</p>
+
+                        </div>
+
+                        <div id=flexItem2>
+
+                          <p>mate</p>
+
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+                <div class="flexSpaceEvenly">
+                  <div class="htmlRender">
+                    <div class="dots">
+                      <span class="dotOne"></span>
+                      <span class="dotTwo"></span>
+                      <span class="dotThree"></span>
+                    </div>
+                    <div class="fileName">
+                      <p id="inline">justify-content: space-evenly</p>
+                    </div>
+                    <div class="results">
+                      <div class=flexParentContainer>
+
+                        <div id=flexItem1>
+
+                          <p>hello</p>
+
+                        </div>
+
+                        <div id=flexItem2>
+
+                          <p>mate</p>
+
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+
+
+
+
+
+
+
+              </div>
+
+              <!-- test -->
+
+
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+          <p>Instead of trying to explain them all I decided it would be more helpful to include this well developed guide to flexbox which will go over everything you need to know!</p>
+
+          <p id=mono> p.s. you can click the link below to open in a new tab. </p>
+          <div class="iFrameContainer">
+            <div class="htmlRender">
+              <div class="dots">
+                <span class="dotOne"></span>
+                <span class="dotTwo"></span>
+                <span class="dotThree"></span>
+              </div>
+              <div class="fileName">
+                <p id="inline"><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target='_blank'>https://css-tricks.com/snippets/css/a-guide-to-flexbox/</a></p>
+              </div>
+              <div class="htmlCode">
+
+                <iframe src="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" width="970px" height="650px"></iframe>
+              </div>
+            </div>
+          </div>
+          <br>
+
+        <li>
+          <p class="tagHighlight">CSS Grid</p>
+        </li>
+        <p>fill</p>
+      </ol>
+
     </div>
   </div>
-      <div class="footer">
-        <p>7</p>
-      </div>
+  </div>
+  </div>
+  <div class="footer">
+    <p>7</p>
+  </div>
 </body>
 
 </html>
