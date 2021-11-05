@@ -10,18 +10,19 @@
 <style media="screen">
   .htmlPreview hr {
     border-top: 4px dashed white;
-}
   }
+
+
   .iFrameContainer .htmlRender {
     width: 1000px;
-    height: 700px;
+    height: 690px;
 
   }
 
   .iFrameContainer .htmlCode {
     margin: 12px;
     width: 960px;
-    height: 650px;
+    height: 630px;
   }
 
   .iFrameContainer iframe {
@@ -30,13 +31,11 @@
 
   }
 
-  #mono {
-    font-family: monospace;
-  }
+  
 
   .flexBoxExample .htmlPreview {
     width: 400px;
-    height: 1070px;
+    height: 1060px;
 
   }
 
@@ -100,6 +99,37 @@
     background-color: red;
 
   }
+  #floatExample p {
+    margin-top: 10px;
+
+  }
+  #floatExample img {
+    padding-top: 20px;
+    padding-right: 20px;
+    width: 200px;
+    float: right;
+
+  }
+  #floatExample .htmlCode {
+    width: 400px;
+
+  }
+  #floatExample .htmlRender {
+    width: 540px;
+    height: 310px;
+  }
+  #floatExample .results {
+    width: 500px;
+    height: 250px;
+  }
+  #floatExample #quote {
+    padding: 20px;
+  }
+  #floatExample .htmlPreview {
+    height: 1030px;
+
+
+  }
 </style>
 
 <body>
@@ -127,9 +157,9 @@
         <li id="inline"><a href="bodyTags.html">Body Tags</a></li>
         <li id="inline"> |</li>
         <li id="inline"><a href="tablesAndForms.html">Tables & Forms</a></li>
-        <li id="inline"><a href="IdsAndClasses.html">CSS (1/2)</a></li>
+        <li id="inline"><a href="cssOne.html">CSS (1/2)</a></li>
         <li id="inline" class="line"> |</li>
-        <li id="inline"><a href="cssPage.html">CSS (2/2)</a></li>
+        <li id="inline"><a href="cssTwo.html">CSS (2/2)</a></li>
         <li id="inline"> |</li>
         <li id="inline" class="selectedTab"><a href="layout.html">Layout</a></li>
         <li id="inline"> |</li>
@@ -153,9 +183,100 @@
 
           <p>Float is used to send an element to the left or right side of a page. At one point in time website layouts were made using the float property and invisible tables but now a days with the addition of flexbox and css grid, floats main
             purpose is to wrap text around images like so:</p>
-          <div class="floatExample">
+
+
+          <div id="floatExample">
+            <div class="flexHalf">
+              <div class="htmlPreview">
+                <div class="dots">
+                  <span class="dotOne"></span>
+                  <span class="dotTwo"></span>
+                  <span class="dotThree"></span>
+                </div>
+                <div class="fileName">
+                  <p id="inline">floatExample.html</p>
+                </div>
+
+                <div class="htmlCode">
+                  <p class="firstCode">&lt;!DOCTYPE html&gt;</p>
+                  <p>&lt;html&gt;</p>
+                  <p>&lt;head&gt;</p>
+                  <p class="tab">&lt;title&gt;This be the Verse&lt;/title&gt;</p>
+                  <p class = "tab">&lt;link&gt; rel="stylesheet" href="style/master.css"></p>
+
+                  <p>&lt;/head&gt;</p>
+                  <p>&lt;body&gt;</p>
+                  <p class = "tab">&lt;img src = "imgs/pl.jpg" alt = "Philip Larkin"&gt;</p>
+                  <p class="tab">&lt;p id="quote"&gt;Man hands on misery to man.
+                    It deepens like a coastal shelf.
+                    Get out as early as you can,
+                    And don’t have any kids yourself.&lt;br>-Philip Larkin&lt;/p&gt;</p>
+
+                  <p>&lt;/body&gt;</p>
+                  <p>&lt;/html&gt;</p>
+                  <br>
+                </div>
+                <br>
+                <hr>
+                <br>
+                <div id="floatCSS">
+                  <div class="dots">
+                    <span class="dotOne"></span>
+                    <span class="dotTwo"></span>
+                    <span class="dotThree"></span>
+                  </div>
+                  <div class="fileName">
+                    <p id="inline">master.css</p>
+
+                  </div>
+
+                  <div class="htmlCode">
+
+                    <p class=firstCode>img {</p>
+                    <p class="tab">float: right;</p>
+                    <p class="tab">width: 200px;</p>
+                    <p class="tab">height: auto;</p>
+                    <p>}</p>
+
+                    <p class=firstCode>#quote {</p>
+                    <p class="tab">font-family: "ComfortaaReg", Arial, Sans Serif;</p>
+                    <p class="tab">padding: 20px;</p>
+
+                    <p>}</p>
+                    <br>
+                  </div>
+                </div>
+
+
+
+              </div>
+
+              <div class="htmlRender">
+                <div class="dots">
+                  <span class="dotOne"></span>
+                  <span class="dotTwo"></span>
+                  <span class="dotThree"></span>
+                </div>
+                <div class="fileName">
+                  <p id = "inline">This be the Verse</p>
+
+                </div>
+                <div class="results">
+                  <img src = "https://media.newyorker.com/photos/590973cb8b51cf59fc422ca9/1:1/w_1722,h_1722,c_limit/Larkin-pg6-c-The-Estate-of-Philip-Larkin-copy.jpg" alt = "DTLA view">
+                  <p id="quote">Man hands on misery to man. It deepens like a coastal shelf. Get out as early as you can, And don’t have any kids yourself.
+                  <br><br> -Philip Larkin</p>
+
+                </div>
+
+                <br>
+
+
+              </div>
+            </div>
 
           </div>
+
+
         </li>
         <li>
           <p class="tagHighlight">Flexbox</p>
@@ -449,7 +570,7 @@
 
           <p>Instead of trying to explain them all I decided it would be more helpful to include this well developed guide to flexbox which will go over everything you need to know!</p>
 
-          <p id=mono> p.s. you can click the link below to open in a new tab. </p>
+          <p class=mono> p.s. you can click the link below to open in a new tab. </p>
           <div class="iFrameContainer">
             <div class="htmlRender">
               <div class="dots">
@@ -462,16 +583,12 @@
               </div>
               <div class="htmlCode">
 
-                <iframe src="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" width="970px" height="650px"></iframe>
+                <iframe src="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" width="970px" height="630px"></iframe>
               </div>
             </div>
           </div>
           <br>
 
-        <li>
-          <p class="tagHighlight">CSS Grid</p>
-        </li>
-        <p>fill</p>
       </ol>
 
     </div>

@@ -8,33 +8,39 @@
   <link rel="stylesheet" href="style/master.css">
   <title>Introduction to Web Development</title>
   <style media="screen">
-  .footer {
-    font-family: ComfortaaReg;
-    height: 50px;
-  }
+    .footer {
+      font-family: ComfortaaReg;
+      height: 50px;
+    }
 
-  .footer a:visited {
-    text-decoration: none;
-    color: black;
-  }
-  .footer a {
-    text-decoration: none;
-    color: black;
-  }
-  marquee img {
-    position: relative;
-    top: 13px;
+    .footer a:hover {
+      color: blue;
+    }
 
-  }
-  .header em {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  .header {
-    padding-top: 0px;
-  }
+    .footer a:visited {
+      text-decoration: none;
+      /* color: black; */
+    }
 
+    .footer a {
+      text-decoration: none;
+      color: black;
+    }
 
+    marquee img {
+      position: relative;
+      top: 13px;
+
+    }
+
+    .header em {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .header {
+      padding-top: 0px;
+    }
   </style>
 
 </head>
@@ -42,46 +48,38 @@
 <body>
 
   <div class="page">
-
     <div class="header">
-
       <marquee direction="right" loop=1><em>This website is a work-in-progress.</em> = <img src="imgs/blimp.png" alt="blimp" width="35px"></marquee>
       <h1>Introduction to Web Development</h1>
       <h2>By Gerardo Aguilar</h2>
     </div>
     <div class="textInfo">
-
       <p>Are you looking to break into tech but don't have extensive programming experience? My name is Gerardo, and I'm a sophomore studying Computer Science & Business Administration at the University of Southern California. I believe that with
         enough dedication, anyone can become a successful developer, so I built this website with that in mind. Introduction to Web Development is a resource aimed to help any beginner looking to branch into tech by breaking down web fundamentals
         such as HTML, CSS & JavaScript. If you're interested in learning more about web development, I applaud and encourage you to keep reading on. To start, you will want some type of IDE or Integrated Development Environment. I recommend Atom, but
         Sublime Text or Visual Studio Code are also very popular HTML text editors. You can't go wrong with either, so I recommend you read a bit about all options and pick one you can quickly become familiar with. Don't be afraid to get started; You
         can use the navigation bar below this paragraph or the directional arrows to navigate the sections of this website.
-
       </p>
-
-
     </div>
-
     <hr>
     <div class="topnav">
       <ul>
-        <li id="inline" class = "selectedTab"><a href="index.html">How Websites are Created</a></li>
-        <li id="inline" class="line"> |</li>
-        <li id="inline"><a href="structure.html">HTML Structure</a></li>
-        <li id="inline" class="line"> |</li>
-        <li id="inline"><a href="bodyTags.html">Body Tags</a></li>
-        <li id="inline" class="line"> |</li>
-        <li id="inline"><a href="tablesAndForms.html">Tables & Forms</a></li>
-        <li id="inline"><a href="IdsAndClasses.html">CSS (1/2)</a></li>
-        <li id="inline" class="line"> |</li>
-        <li id="inline"><a href="cssPage.html">CSS (2/2)</a></li>
-        <li id="inline" class="line"> |</li>
-        <li id="inline"><a href="layout.html">Layout</a></li>
-        <li id="inline" class="line"> |</li>
-        <li id="inline"><a href="hosting.html">Hosting</a></li>
-        <li id="inline" class="line"> |</li>
-        <li id="inline"><a href="otherResources.html">Other Resources</a></li>
-
+        <li class="inline selectedTab"><a href="index.html">How Websites are Created</a></li>
+        <li class="inline line"> |</li>
+        <li class="inline"><a href="structure.html">HTML Structure</a></li>
+        <li class="inline line"> |</li>
+        <li class="inline"><a href="bodyTags.html">Body Tags</a></li>
+        <li class="inline line"> |</li>
+        <li class="inline"><a href="tablesAndForms.html">Tables & Forms</a></li>
+        <li class="inline"><a href="cssOne.html">CSS (1/2)</a></li>
+        <li class="inline line"> |</li>
+        <li class="inline"><a href="cssTwo.html">CSS (2/2)</a></li>
+        <li class="inline line"> |</li>
+        <li class="inline"><a href="layout.html">Layout</a></li>
+        <li class="inline line"> |</li>
+        <li class="inline"><a href="hosting.html">Hosting</a></li>
+        <li class="inline line"> |</li>
+        <li class="inline"><a href="otherResources.html">Other Resources</a></li>
       </ul>
     </div>
     <hr>
@@ -93,23 +91,18 @@
         <h2>HTML</h2>
         <p>HTML, or "Hypertext Markup Language," is the standardized scripting language web browsers use to render pages. We will use HTML to form the skeleton or structure of our web page and add in elements such as(but not limited to) images and
           text. However, as you'll come to find out, there are some things basic HTML can't do, such as styling. Instead, to style our page, we will be using cascading style sheets or CSS. </p>
-
-
-
       </div>
       <div class="box">
         <h2>CSS</h2>
         <p>Cascading Style Sheets, or CSS, is a style sheet language used to describe the presentation of a document written in a markup language such as HTML. Due to the visual limitations of basic HTML, although you can build functioning
           websites, it will almost always be used in conjunction with CSS. Whether it be changing font size or moving an element to the left side of a page, CSS can be used for all your styling and formatting needs. </p>
-
       </div>
-
       <div class="box">
         <h2>JavaScript</h2>
-        <p>JavaScript(or JS for short) is a scriping programming language used to develop interactive web pages and web applications. Although JS can be used alongside HTML stucture code and CSS styling code in web development the only one of the three that is a true "programming" language is JavaScript. WIth that, it is one of the most popular programming languages used today and can be used independantly or with JavaScript libraries to make super cool interactive websites and applications.</p>
-
+        <p>JavaScript(or JS for short) is a scriping programming language used to develop interactive web pages and web applications. Although JS can be used alongside HTML stucture code and CSS styling code in web development the only one of the
+          three that is a true "programming" language is JavaScript. WIth that, it is one of the most popular programming languages used today and can be used independantly or with JavaScript libraries to make super cool interactive websites and
+          applications.</p>
       </div>
-
     </div>
     <div class="flexContainer">
       <div class="boxHor">
@@ -121,10 +114,8 @@
   <div class="footer">
     <br>
     <a href="index.html">[English]</a>
-    <p id=inline>1</p>
+    <p class=inline>1</p>
     <a href="comingSoon.html">[Español]</a>
   </div>
-
 </body>
-
 </html>

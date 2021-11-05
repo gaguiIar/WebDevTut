@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <link rel="shortcut icon" href="imgs/emojiLogo.png" />
   <link rel="stylesheet" href="style/master.css">
+  <link rel="stylesheet" href="style/odometer-theme-default.css">
   <title>Introduction to Web Development</title>
   <style media="screen">
   .textInfo h3 {
@@ -30,9 +31,13 @@
     padding-right: 10px;
     padding-top: 3px;
     padding-bottom: 3px;
+
   }
   .textInfo a:hover {
     color: blue;
+  }
+  .odometer.odometer-auto-theme, .odometer.odometer-theme-default {
+    font-family: "ComfortaaReg";
   }
 
   </style>
@@ -59,9 +64,9 @@
         <li id="inline"><a href="bodyTags.html">Body Tags</a></li>
         <li id="inline"> |</li>
         <li id="inline"><a href="tablesAndForms.html">Tables & Forms</a></li>
-        <li id="inline"><a href="IdsAndClasses.html">CSS (1/2)</a></li>
+        <li id="inline"><a href="cssOne.html">CSS (1/2)</a></li>
         <li id="inline" class="line"> |</li>
-        <li id="inline"><a href="cssPage.html">CSS (2/2)</a></li>
+        <li id="inline"><a href="cssTwo.html">CSS (2/2)</a></li>
         <li id="inline"> |</li>
         <li id="inline"><a href="layout.html">Layout</a></li>
         <li id="inline"> |</li>
@@ -83,7 +88,36 @@
         <div id="letter">
 
           <h3>Closing Remarks:</h3>
-          <p> This website started as a passion project, and with a combined <em>xxxx</em> lines of HTML, JavaScript & CSS, <em>xx</em> days in start-to-finish planning, and <em>xx</em> GitHub commits evolved to be one of my most extensive programming endeavors to date!<br><br>Knowing how daunting the world of tech can be, condensing some of what I've learned the past few months all into one place was a great joy, and with that, I hope you've found this guide particularly serviceable in your web dev journey. As you start to get your footing, I implore you to reference my<br> <em><a href="comingSoon.html" target="_blank">HTML & CSS cheatsheet</a></em> as a last resource available at your disposal. If you would like to learn more about the author of this website(aka me), I'm hosted permanently at <em><a href="http://gerardoaguilar.com/" target="_blank">gerardoaguilar.com</a></em> and I'd love to borrow your eyes for a few moments to show you what I've been working on!<br><br>Best of luck,<br><br></p>
+          <p> This website started as a passion project, and with a combined <em id="odometer" class=odometer>0000</em> lines of HTML, JavaScript & CSS, <em id="odometer2" class=odometer>00</em>  days in start-to-finish planning, and <em id="odometer3" class=odometer>00</em>  GitHub commits evolved to be one of my most extensive programming endeavors to date!<br><br>Knowing how daunting the world of tech can be, condensing some of what I've learned the past few months all into one place was a great joy, and with that, I hope you've found this guide particularly serviceable in your web dev journey. As you start to get your footing, I implore you to reference my<br> <em><a href="comingSoon.html" target="_blank">HTML & CSS cheatsheet</a></em> as a last resource available at your disposal. If you would like to learn more about the author of this website(aka me), I'm hosted permanently at <em><a href="http://gerardoaguilar.com/" target="_blank">gerardoaguilar.com</a></em> and I'd love to borrow your eyes for a few moments to show you what I've been working on!<br><br>Best of luck,<br><br> </p>
+
+
+            <script src="js/odometer.min.js"></script>
+            <script type="text/javascript">
+              setTimeout(function() {
+                odometer.innerHTML = 2670;
+            });
+
+            </script>
+
+            <script src="js/odometer.min.js"></script>
+            <script type="text/javascript">
+              setTimeout(function() {
+                odometer2.innerHTML = 31;
+            });
+
+            </script>
+
+            <script src="js/odometer.min.js"></script>
+            <script type="text/javascript">
+              setTimeout(function() {
+                odometer3.innerHTML = 39;
+            });
+
+            </script>
+
+
+
+
           <img src="imgs/handcock.png" alt="My signiture">
 
 

@@ -1,34 +1,45 @@
+@font-face {
+  font-family: 'ComfortaaReg';
+  /*a name to be used later*/
+  src: url('../fonts/comfortaa/Comfortaa-Regular.ttf');
+  /*URL to font*/
+}
 
 @font-face {
-    font-family: 'ComfortaaReg'; /*a name to be used later*/
-    src: url('../fonts/comfortaa/Comfortaa-Regular.ttf'); /*URL to font*/
+  font-family: 'Ubuntu';
+  /*a name to be used later*/
+  src: url('../fonts/Ubuntu/Ubuntu-Bold.ttf');
+  /*URL to font*/
 }
+
 @font-face {
-    font-family: 'Ubuntu'; /*a name to be used later*/
-    src: url('../fonts/Ubuntu/Ubuntu-Bold.ttf'); /*URL to font*/
+  font-family: 'Kanit';
+  /*a name to be used later*/
+  src: url('../fonts/Kanit/Kanit/Kanit-SemiBold.ttf');
+  /*URL to font*/
 }
-@font-face {
-    font-family: 'Kanit'; /*a name to be used later*/
-    src: url('../fonts/Kanit/Kanit/Kanit-SemiBold.ttf'); /*URL to font*/
-}
+
 @font-face {
   font-family: 'George';
   src: url('../fonts/louis_george_caf/LouisGeorgeCafeLightItalic.ttf');
 }
-@media(max-width: 767px) {
 
-}
+@media(max-width: 767px) {}
+
 ::selection {
   background: #ededed;
 }
+
 .flexThree {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
+
 li {
   font-family: ComfortaaReg;
 }
+
 #test {
   float: right;
 }
@@ -36,25 +47,27 @@ li {
 body {
   margin: 0px;
 }
+
 .footer {
   margin-top: 10px;
   text-align: center;
   height: 50px;
-
 }
+
 .page {
   width: 1100px;
   height: auto;
   margin: auto;
   background-color: #fff;
 }
+
 .header {
-  padding-top: 30px;
+  padding-top: 40px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-
 }
+
 .header h1 {
   margin: 0px;
   display: inline;
@@ -62,6 +75,7 @@ body {
   font-family: 'Ubuntu';
   margin-right: 20px;
 }
+
 .header h2 {
   padding-top: 10px;
   color: #808080;
@@ -70,23 +84,27 @@ body {
   display: inline;
   margin: 0px;
 }
-.textInfo a:visited {
 
+.textInfo a:visited {
   text-decoration: none;
   color: black;
 }
+
 .textInfo a {
   text-decoration: none;
   color: black;
 }
+
 #inline {
   display: inline;
   font-family: Arial;
 }
+
 .inline {
   display: inline;
   font-family: Arial;
 }
+
 .topnav ul {
   font-size: 25px;
   text-align: center;
@@ -94,31 +112,41 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .textInfo {
-  text-align: block;
   margin: auto;
   width: 1090px;
 }
+
 .textInfo p {
   font-size: 20px;
   font-family: 'ComfortaaReg';
 }
+
 .title {
   text-align: center;
   font-size: 20px;
 }
+
 .fileName a:hover {
   color: blue;
 }
+
 .title h1 {
   font-family: 'Ubuntu';
 }
+
 .flexContainer {
   display: flex;
   flex-direction: row;
 }
+
+.mono {
+  font-family: monospace;
+}
+
 .boxHor {
-  background-color: #ededed;
+  background-color: #F3F3F3;
   margin: 5px;
   border-color: lightgrey;
   border-radius: 5px;
@@ -130,15 +158,17 @@ body {
   padding-right: 20px;
   box-shadow: 1px 5px 5px lightgrey;
 }
-.htmlCode  em {
-    background-color: #EDEDED;
-    border-radius: 0px;
+
+.htmlCode em {
+  background-color: #EDEDED;
+  border-radius: 0px;
 }
+
 .box {
   border-color: lightgrey;
   width: 380px;
   height: 500px;
-  background-color: #ededed;
+  background-color: #F3F3F3;
   margin: 5px;
   border-radius: 5px;
   border-style: solid;
@@ -147,12 +177,14 @@ body {
   margin-top: 10px;
   box-shadow: 1px 5px 5px lightgrey;
 }
+
 .box h2 {
   margin-top: 20px;
   position: relative;
   top: 10px;
   font-family: 'Ubuntu';
 }
+
 .box p {
   text-align: left;
   margin-left: 20px;
@@ -160,6 +192,7 @@ body {
   font-size: 18px;
   font-family: 'ComfortaaReg';
 }
+
 .boxHor p {
   text-align: left;
   margin-left: 20px;
@@ -176,13 +209,14 @@ body {
   font-size: 25px;
   font-family: Arial;
 }
+
 .selectedTab {
   background-color: #ffff61;
   border-radius: 5px;
   padding-top: 10px;
   padding-bottom: 10px;
-
 }
+
 .tagHighlight {
   font-family: monospace;
   background-color: #ccc;
@@ -191,8 +225,8 @@ body {
   display: inline;
   padding: 5px;
   font-size: 20px;
-
 }
+
 em {
   font-family: monospace;
   font-size: 20px;
@@ -204,15 +238,18 @@ em {
   padding: 1px;
   font-style: normal;
 }
+
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: #fff9b5;
   border-radius: 5px;
 }
+
 #size {
   width: 50px;
   height: 50px;
 }
+
 /* lksda;ldkal;kdal;sd */
 .topnav a {
   font-family: "ComfortaaReg", sans-serif;
@@ -220,9 +257,11 @@ em {
   display: inline-block;
   padding: 8px 16px;
 }
+
 .topnav a:hover {
   color: black;
 }
+
 .previous {
   position: relative;
   top: 860px;
@@ -231,6 +270,7 @@ em {
   color: black;
   float: left;
 }
+
 .next {
   position: relative;
   top: 860px;
@@ -239,12 +279,15 @@ em {
   color: black;
   float: right;
 }
+
 .round {
   border-radius: 50%;
 }
+
 .flexHalf {
   display: flex;
 }
+
 .htmlPreview {
   background-color: #f3f3f3ff;
   border-radius: 10px;
@@ -253,6 +296,7 @@ em {
   margin-bottom: 20px;
   box-shadow: 1px 5px 5px lightgrey;
 }
+
 .dots {
   width: 70px;
   margin-top: 10px;
@@ -260,6 +304,7 @@ em {
   margin-right: 0;
   display: inline;
 }
+
 .dotOne {
   height: 15px;
   width: 15px;
@@ -268,6 +313,7 @@ em {
   border-radius: 50%;
   display: inline-block;
 }
+
 .dotTwo {
   height: 15px;
   width: 15px;
@@ -276,6 +322,7 @@ em {
   border-radius: 50%;
   display: inline-block;
 }
+
 .dotThree {
   height: 15px;
   width: 15px;
@@ -284,6 +331,7 @@ em {
   border-radius: 50%;
   display: inline-block;
 }
+
 .fileName {
   display: inline;
   background-color: #FFF;
@@ -294,15 +342,18 @@ em {
   padding-right: 5px;
   border-radius: 20px;
 }
+
 .fileName #inline {
   font-family: monospace;
 }
+
 .htmlCode {
   background-color: #FFF;
   border-radius: 15px;
   margin-left: 20px;
   margin-right: 20px;
 }
+
 .htmlCode p {
   font-family: monospace;
   font-size: 18px;
@@ -312,27 +363,34 @@ em {
   margin-top: 5px;
   margin-bottom: 5px;
 }
+
 .subTitle {
   font-family: sans-serif;
 }
+
 .marginText p {
   font-family: 'ComfortaaReg';
   font-size: 18px;
   margin: 20px;
   font-weight: bolder;
 }
+
 .htmlCode .firstCode {
   margin-top: 10px;
 }
+
 .tab {
   margin-left: 20px;
 }
+
 .doubleTab {
   margin-left: 40px;
 }
+
 .trippleTab {
   margin-left: 60px;
 }
+
 .htmlRender {
   padding-top: 10px;
   background-color: #f3f3f3ff;
@@ -340,11 +398,13 @@ em {
   margin: 10px;
   box-shadow: 1px 5px 5px lightgrey;
 }
+
 .results {
   background-color: #FFF;
   border-radius: 15px;
   margin-left: 20px;
 }
+
 .usefulCSS {
   width: 260px;
   margin: auto;
@@ -354,19 +414,17 @@ em {
 .usefulCSS .htmlRender {
   width: 330px;
   height: 360px;
-
 }
 
 .usefulCSS .htmlCode {
   height: 310px;
-
-
-
 }
+
 .red {
-  color:red;
+  color: red;
 }
+
 .green {
-  color:green;
+  color: green;
   font-family: 'George', Arial, sans-serif;
 }
