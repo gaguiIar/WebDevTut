@@ -6,134 +6,124 @@
   <link rel="shortcut icon" href="imgs/emojiLogo.png" />
   <link rel="stylesheet" href="style/master.css">
   <title>Introduction to Web Development</title>
+  <style media="screen">
+    .htmlPreview hr {
+      border-top: 4px dashed white;
+    }
+
+    .iFrameContainer .htmlRender {
+      width: 1000px;
+      height: 690px;
+    }
+
+    .iFrameContainer .htmlCode {
+      margin: 12px;
+      width: 960px;
+      height: 630px;
+    }
+
+    .iFrameContainer iframe {
+      border-radius: 15px;
+      border-color: #ABABAB;
+    }
+
+    .flexBoxExample .htmlPreview {
+      width: 400px;
+      height: 1060px;
+    }
+
+    .flexBoxExample .flexParentContainer {
+      margin-top: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      top: 10px;
+      width: 400px;
+    }
+
+    .flexBoxExample .htmlRender {
+      width: 600px;
+      height: 140px;
+    }
+
+    .flexBoxExample .results {
+      height: 90px;
+      width: 560px;
+    }
+
+    .flexParentContainer {
+      display: flex;
+      background-color: orange;
+    }
+
+    .flexEnd .flexParentContainer {
+      justify-content: flex-end;
+    }
+
+    .flexStart .flexParentContainer {
+      justify-content: flex-start;
+    }
+
+    .flexCenter .flexParentContainer {
+      justify-content: center;
+    }
+
+    .flexSpaceBetween .flexParentContainer {
+      justify-content: space-between;
+    }
+
+    .flexSpaceAround .flexParentContainer {
+      justify-content: space-around;
+    }
+
+    .flexSpaceEvenly .flexParentContainer {
+      justify-content: space-evenly;
+    }
+
+    .flexItem1 {
+      background-color: green;
+    }
+
+    .flexItem2 {
+      background-color: red;
+    }
+
+    #floatExample p {
+      margin-top: 10px;
+    }
+
+    #floatExample img {
+      padding-top: 20px;
+      padding-right: 20px;
+      width: 200px;
+      float: right;
+    }
+
+    #floatExample .htmlCode {
+      width: 400px;
+    }
+
+    #floatExample .htmlRender {
+      width: 540px;
+      height: 310px;
+    }
+
+    #floatExample .results {
+      width: 500px;
+      height: 250px;
+    }
+
+    #floatExample #quote {
+      padding: 20px;
+    }
+
+    #floatExample .htmlPreview {
+      height: 1030px;
+    }
+  </style>
 </head>
-<style media="screen">
-  .htmlPreview hr {
-    border-top: 4px dashed white;
-  }
-
-
-  .iFrameContainer .htmlRender {
-    width: 1000px;
-    height: 690px;
-
-  }
-
-  .iFrameContainer .htmlCode {
-    margin: 12px;
-    width: 960px;
-    height: 630px;
-  }
-
-  .iFrameContainer iframe {
-    border-radius: 15px;
-    border-color: #ABABAB;
-
-  }
-
-  
-
-  .flexBoxExample .htmlPreview {
-    width: 400px;
-    height: 1060px;
-
-  }
-
-  .flexBoxExample .flexParentContainer {
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    top: 10px;
-    width: 400px;
-
-  }
-
-  .flexBoxExample .htmlRender {
-    width: 600px;
-    height: 140px;
-  }
-
-  .flexBoxExample .results {
-    height: 90px;
-    width: 560px;
-  }
-
-  .flexParentContainer {
-    display: flex;
-    background-color: orange;
-  }
-
-  .flexEnd .flexParentContainer {
-    justify-content: flex-end;
-  }
-
-  .flexStart .flexParentContainer {
-    justify-content: flex-start;
-  }
-
-  .flexCenter .flexParentContainer {
-    justify-content: center;
-  }
-
-  .flexSpaceBetween .flexParentContainer {
-    justify-content: space-between;
-  }
-
-  .flexSpaceAround .flexParentContainer {
-    justify-content: space-around;
-  }
-
-  .flexSpaceEvenly .flexParentContainer {
-    justify-content: space-evenly;
-  }
-
-  #flexItem1 {
-
-    background-color: green;
-
-  }
-
-  #flexItem2 {
-
-    background-color: red;
-
-  }
-  #floatExample p {
-    margin-top: 10px;
-
-  }
-  #floatExample img {
-    padding-top: 20px;
-    padding-right: 20px;
-    width: 200px;
-    float: right;
-
-  }
-  #floatExample .htmlCode {
-    width: 400px;
-
-  }
-  #floatExample .htmlRender {
-    width: 540px;
-    height: 310px;
-  }
-  #floatExample .results {
-    width: 500px;
-    height: 250px;
-  }
-  #floatExample #quote {
-    padding: 20px;
-  }
-  #floatExample .htmlPreview {
-    height: 1030px;
-
-
-  }
-</style>
 
 <body>
-
   <div class="page">
     <div class="header">
       <h1>Introduction to Web Development</h1>
@@ -150,24 +140,22 @@
     <hr>
     <div class="topnav">
       <ul>
-        <li id="inline"><a href="index.html">How Websites are Created</a></li>
-        <li id="inline"> |</li>
-        <li id="inline"><a href="structure.html">HTML Structure</a></li>
-        <li id="inline"> |</li>
-        <li id="inline"><a href="bodyTags.html">Body Tags</a></li>
-        <li id="inline"> |</li>
-        <li id="inline"><a href="tablesAndForms.html">Tables & Forms</a></li>
-        <li id="inline"><a href="cssOne.html">CSS (1/2)</a></li>
-        <li id="inline" class="line"> |</li>
-        <li id="inline"><a href="cssTwo.html">CSS (2/2)</a></li>
-        <li id="inline"> |</li>
-        <li id="inline" class="selectedTab"><a href="layout.html">Layout</a></li>
-        <li id="inline"> |</li>
-        <li id="inline"><a href="hosting.html">Hosting</a></li>
-        <li id="inline"> |</li>
-        <li id="inline"><a href="otherResources.html">Other Resources</a></li>
-
-
+        <li class="inline"><a href="index.html">How Websites are Created</a></li>
+        <li class="inline"> |</li>
+        <li class="inline"><a href="structure.html">HTML Structure</a></li>
+        <li class="inline"> |</li>
+        <li class="inline"><a href="bodyTags.html">Body Tags</a></li>
+        <li class="inline"> |</li>
+        <li class="inline"><a href="tablesAndForms.html">Tables & Forms</a></li>
+        <li class="inline"><a href="cssOne.html">CSS (1/2)</a></li>
+        <li class="inline"> |</li>
+        <li class="inline"><a href="cssTwo.html">CSS (2/2)</a></li>
+        <li class="inline"> |</li>
+        <li class="inline selectedTab"><a href="layout.html">Layout</a></li>
+        <li class="inline"> |</li>
+        <li class="inline"><a href="hosting.html">Hosting</a></li>
+        <li class="inline"> |</li>
+        <li class="inline"><a href="otherResources.html">Other Resources</a></li>
       </ul>
     </div>
     <hr>
@@ -178,13 +166,9 @@
       <ol>
         <li>
           <p class="tagHighlight">float:</p>
-
           <!-- need to fix and change from id to class asap  -->
-
           <p>Float is used to send an element to the left or right side of a page. At one point in time website layouts were made using the float property and invisible tables but now a days with the addition of flexbox and css grid, floats main
             purpose is to wrap text around images like so:</p>
-
-
           <div id="floatExample">
             <div class="flexHalf">
               <div class="htmlPreview">
@@ -194,24 +178,21 @@
                   <span class="dotThree"></span>
                 </div>
                 <div class="fileName">
-                  <p id="inline">floatExample.html</p>
+                  <p class="inline">floatExample.html</p>
                 </div>
-
                 <div class="htmlCode">
                   <p class="firstCode">&lt;!DOCTYPE html&gt;</p>
                   <p>&lt;html&gt;</p>
                   <p>&lt;head&gt;</p>
                   <p class="tab">&lt;title&gt;This be the Verse&lt;/title&gt;</p>
-                  <p class = "tab">&lt;link&gt; rel="stylesheet" href="style/master.css"></p>
-
+                  <p class="tab">&lt;link&gt; rel="stylesheet" href="style/master.css"></p>
                   <p>&lt;/head&gt;</p>
                   <p>&lt;body&gt;</p>
-                  <p class = "tab">&lt;img src = "imgs/pl.jpg" alt = "Philip Larkin"&gt;</p>
+                  <p class="tab">&lt;img src = "imgs/pl.jpg" alt = "Philip Larkin"&gt;</p>
                   <p class="tab">&lt;p id="quote"&gt;Man hands on misery to man.
                     It deepens like a coastal shelf.
                     Get out as early as you can,
                     And don’t have any kids yourself.&lt;br>-Philip Larkin&lt;/p&gt;</p>
-
                   <p>&lt;/body&gt;</p>
                   <p>&lt;/html&gt;</p>
                   <br>
@@ -226,31 +207,22 @@
                     <span class="dotThree"></span>
                   </div>
                   <div class="fileName">
-                    <p id="inline">master.css</p>
-
+                    <p class="inline">master.css</p>
                   </div>
-
                   <div class="htmlCode">
-
                     <p class=firstCode>img {</p>
                     <p class="tab">float: right;</p>
                     <p class="tab">width: 200px;</p>
                     <p class="tab">height: auto;</p>
                     <p>}</p>
-
                     <p class=firstCode>#quote {</p>
                     <p class="tab">font-family: "ComfortaaReg", Arial, Sans Serif;</p>
                     <p class="tab">padding: 20px;</p>
-
                     <p>}</p>
                     <br>
                   </div>
                 </div>
-
-
-
               </div>
-
               <div class="htmlRender">
                 <div class="dots">
                   <span class="dotOne"></span>
@@ -258,32 +230,23 @@
                   <span class="dotThree"></span>
                 </div>
                 <div class="fileName">
-                  <p id = "inline">This be the Verse</p>
-
+                  <p class="inline">This be the Verse</p>
                 </div>
                 <div class="results">
-                  <img src = "https://media.newyorker.com/photos/590973cb8b51cf59fc422ca9/1:1/w_1722,h_1722,c_limit/Larkin-pg6-c-The-Estate-of-Philip-Larkin-copy.jpg" alt = "DTLA view">
+                  <img src="https://media.newyorker.com/photos/590973cb8b51cf59fc422ca9/1:1/w_1722,h_1722,c_limit/Larkin-pg6-c-The-Estate-of-Philip-Larkin-copy.jpg" alt="DTLA view">
                   <p id="quote">Man hands on misery to man. It deepens like a coastal shelf. Get out as early as you can, And don’t have any kids yourself.
-                  <br><br> -Philip Larkin</p>
-
+                    <br><br> -Philip Larkin
+                  </p>
                 </div>
-
                 <br>
-
-
               </div>
             </div>
-
           </div>
-
-
         </li>
         <li>
           <p class="tagHighlight">Flexbox</p>
-
           <p>In the early stages of web development getting elements positioned right where you wanted them proved to be a huge task. In 2017 a new display type was intruced to CSS called flex which made page layout significantly easier. </p>
           <p>Flexbox uses css to effect the way parent containers and individual child flexitems react when it comes to things such as positioning, scaling and element wrapping. </p>
-
           <p>Elements inside the <em>parent flexBoxContainer</em> are called <em>
               child flex items</em> flexbox parent containers and items both have unique
             css properties and possible value combinations that do various things that effect the layout. </p>
@@ -299,9 +262,8 @@
                   <span class="dotThree"></span>
                 </div>
                 <div class="fileName">
-                  <p id="inline">flexBoxExample.html</p>
+                  <p class="inline">flexBoxExample.html</p>
                 </div>
-
                 <div class="htmlCode">
                   <p class="firstCode">&lt;!DOCTYPE html&gt;</p>
                   <p>&lt;html&gt;</p>
@@ -314,12 +276,10 @@
                   <p class=doubleTab>&lt;div id = flexItem1&gt;</p>
                   <p class=trippleTab>&lt;p&gt;hello&lt;/p&gt;</p>
                   <p class=doubleTab>&lt;/div&gt;</p>
-
                   <p class=doubleTab>&lt;div id = flexItem2&gt;</p>
                   <p class=trippleTab>&lt;p&gt;mate&lt;/p&gt;</p>
                   <p class=doubleTab>&lt;/div&gt;</p>
                   <p class=tab>&lt;/div&gt;</p>
-
                   <p>&lt;/body&gt;</p>
                   <p>&lt;/html&gt;</p>
                 </div>
@@ -333,30 +293,23 @@
                     <span class="dotThree"></span>
                   </div>
                   <div class="fileName">
-                    <p id="inline">master.css</p>
-
+                    <p class="inline">master.css</p>
                   </div>
-
                   <div class="htmlCode">
-
                     <p class=firstCode>.flexParentContainer {</p>
                     <p class="tab">display: flex;</p>
                     <p class="tab">justify-content: <em>SEE RIGHT;</em> </p>
                     <p>}</p>
-
-                    <p class=firstCode>#flexItem1 {</p>
+                    <p class=firstCode>.flexItem1 {</p>
                     <p class="tab">color: green;</p>
                     <p>}</p>
-
-                    <p class=firstCode>#flexItem2 {</p>
+                    <p class=firstCode>.flexItem2 {</p>
                     <p class="tab">color: green;</p>
                     <p>}</p>
                     <br>
                   </div>
                 </div>
               </div>
-
-
               <div class="secondFlexItem">
                 <div class="flexStart">
                   <div class="htmlRender">
@@ -366,28 +319,19 @@
                       <span class="dotThree"></span>
                     </div>
                     <div class="fileName">
-                      <p id="inline">justify-content: flex-start</p>
+                      <p class="inline">justify-content: flex-start</p>
                     </div>
                     <div class="results">
                       <div class=flexParentContainer>
-
-                        <div id=flexItem1>
-
+                        <div class="flexItem1">
                           <p>hello</p>
-
                         </div>
-
-                        <div id=flexItem2>
-
+                        <div class="flexItem2">
                           <p>mate</p>
-
                         </div>
-
                       </div>
-
                     </div>
                   </div>
-
                 </div>
                 <div class="flexEnd">
                   <div class="htmlRender">
@@ -397,28 +341,19 @@
                       <span class="dotThree"></span>
                     </div>
                     <div class="fileName">
-                      <p id="inline">justify-content: flex-end</p>
+                      <p class="inline">justify-content: flex-end</p>
                     </div>
                     <div class="results">
                       <div class=flexParentContainer>
-
-                        <div id=flexItem1>
-
+                        <div class="flexItem1">
                           <p>hello</p>
-
                         </div>
-
-                        <div id=flexItem2>
-
+                        <div class="flexItem2">
                           <p>mate</p>
-
                         </div>
-
                       </div>
-
                     </div>
                   </div>
-
                 </div>
                 <div class="flexCenter">
                   <div class="htmlRender">
@@ -428,28 +363,19 @@
                       <span class="dotThree"></span>
                     </div>
                     <div class="fileName">
-                      <p id="inline">justify-content: flex-center</p>
+                      <p class="inline">justify-content: flex-center</p>
                     </div>
                     <div class="results">
                       <div class=flexParentContainer>
-
-                        <div id=flexItem1>
-
+                        <div class="flexItem1">
                           <p>hello</p>
-
                         </div>
-
-                        <div id=flexItem2>
-
+                        <div class="flexItem2">
                           <p>mate</p>
-
                         </div>
-
                       </div>
-
                     </div>
                   </div>
-
                 </div>
                 <div class="flexSpaceBetween">
                   <div class="htmlRender">
@@ -459,28 +385,19 @@
                       <span class="dotThree"></span>
                     </div>
                     <div class="fileName">
-                      <p id="inline">justify-content: space-between</p>
+                      <p class="inline">justify-content: space-between</p>
                     </div>
                     <div class="results">
                       <div class=flexParentContainer>
-
-                        <div id=flexItem1>
-
+                        <div class="flexItem1">
                           <p>hello</p>
-
                         </div>
-
-                        <div id=flexItem2>
-
+                        <div class="flexItem2">
                           <p>mate</p>
-
                         </div>
-
                       </div>
-
                     </div>
                   </div>
-
                 </div>
                 <div class="flexSpaceAround">
                   <div class="htmlRender">
@@ -490,28 +407,19 @@
                       <span class="dotThree"></span>
                     </div>
                     <div class="fileName">
-                      <p id="inline">justify-content: space-around</p>
+                      <p class="inline">justify-content: space-around</p>
                     </div>
                     <div class="results">
                       <div class=flexParentContainer>
-
-                        <div id=flexItem1>
-
+                        <div class="flexItem1">
                           <p>hello</p>
-
                         </div>
-
-                        <div id=flexItem2>
-
+                        <div class="flexItem2">
                           <p>mate</p>
-
                         </div>
-
                       </div>
-
                     </div>
                   </div>
-
                 </div>
                 <div class="flexSpaceEvenly">
                   <div class="htmlRender">
@@ -521,55 +429,24 @@
                       <span class="dotThree"></span>
                     </div>
                     <div class="fileName">
-                      <p id="inline">justify-content: space-evenly</p>
+                      <p class="inline">justify-content: space-evenly</p>
                     </div>
                     <div class="results">
                       <div class=flexParentContainer>
-
-                        <div id=flexItem1>
-
+                        <div class="flexItem1">
                           <p>hello</p>
-
                         </div>
-
-                        <div id=flexItem2>
-
+                        <div class="flexItem2">
                           <p>mate</p>
-
                         </div>
-
                       </div>
-
                     </div>
                   </div>
-
                 </div>
-
-
-
-
-
-
-
               </div>
-
-              <!-- test -->
-
-
             </div>
           </div>
-
-
-
-
-
-
-
-
-
-
           <p>Instead of trying to explain them all I decided it would be more helpful to include this well developed guide to flexbox which will go over everything you need to know!</p>
-
           <p class=mono> p.s. you can click the link below to open in a new tab. </p>
           <div class="iFrameContainer">
             <div class="htmlRender">
@@ -579,21 +456,16 @@
                 <span class="dotThree"></span>
               </div>
               <div class="fileName">
-                <p id="inline"><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target='_blank'>https://css-tricks.com/snippets/css/a-guide-to-flexbox/</a></p>
+                <p class="inline"><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target='_blank'>https://css-tricks.com/snippets/css/a-guide-to-flexbox/</a></p>
               </div>
               <div class="htmlCode">
-
-                <iframe src="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" width="970px" height="630px"></iframe>
+                <iframe src="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" width="970" height="630"></iframe>
               </div>
             </div>
           </div>
           <br>
-
       </ol>
-
     </div>
-  </div>
-  </div>
   </div>
   <div class="footer">
     <p>7</p>

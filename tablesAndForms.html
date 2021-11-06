@@ -78,12 +78,12 @@
     }
 
     #formPreview .htmlPreview {
-      height: 1400px;
+      height: 1500px;
       width: 640px;
     }
 
     #formPreview .htmlCode {
-      height: 1340px;
+      height: 1440px;
       width: 600px;
     }
 
@@ -281,198 +281,179 @@
                   </div>
                 </div>
               </div>
-                <br>
-              </div>
-
+              <br>
             </div>
+          </div>
         </li>
         <li>
           <p class="tagHighlight">&lt;form&gt;</p>
-          <p>Forms allow user interaction and data collection to happen. You start off a form with a <em>&lt;form&gt;</em> tag that contains an <em>action= ""</em> attribute which specifies where form data is sent to upon submission.
-        <li class=tagHighlight>Input Tags</li>
-        <p>Input tags have a <em>type=""</em> attribtue and as the name implies, define what type of input will be taken. Here are some possible type attribtues and other types of input:</p>
-        <ol>
-          <li class="textFix"><em>type =“text”</em> adds a text-field</li>
-          <li class="textFix"><em>type ="email"</em> adds a text-field with basic email validation</li>
-          <li class="textFix"><em>type =radio</em> adds radio buttons. You can group radio buttons by setting the same name attribute. Radio buttons are used when you only want one option to be selectable at once. </li>
-          <li class="textFix"><em>type ="checkbox"</em> adds a checkbox field, similar to radio buttons except multiple can be selected or “checked” at once.
-        </ol>
-        </li>
-        <br>
-        <li class=tagHighlight>Larger Input Tags</li>
-        <p>When you want a user to select an option from a list you might want to use the drop-down function.<br><br>Drop-down functions work a bit like lists or tables do. You start a drop down function by using a <em>&lt;select&gt;</em> tag.
-          Between the opening and closing <em>select</em> tags goes all your drop down options seperated by an opening and closing <em>&lt;option&gt;</em> tags.<br><br>To add a multi-line textfield instead of using a regular text tag you’ll need
-          to use a textarea input field. You can do this by just incerting <em>&lt;textarea&gt;</em> tags</p>
-        </p>
-        </li>
-
-
-
-        <br>
-        <h1 class=subTitle>Take a look at form input types in action!</h1>
-        <hr>
-        <div id="FormsExample">
-          <div class="flexHalf">
-            <div id="formPreview">
-              <div class="htmlPreview">
-                <div class="dots">
-                  <span class="dotOne"></span>
-                  <span class="dotTwo"></span>
-                  <span class="dotThree"></span>
-                </div>
-                <div class="fileName">
-                  <p class="inline">forms.html</p>
-                </div>
-
-
-                <div class="htmlCode">
-                  <p class="firstCode">&lt;form action = "index.html" method = "post"&gt;</p>
-                  <p class="tab">&lt;label for="text-id"&gt;Text Field:&lt;label&gt;</p>
-                  <p class="tab">&lt;input type = "text id="text-id"&gt;</p>
-                  <p class="tab">&lt;br&gt;</p>
-                  <p class="tab">&lt;br&gt;</p>
-                  <p>&lt;label for = "email-id"&gt;Email Field:&lt;/label&gt;</p>
-                  <p>&lt;input type = "email" id = "email-id"&gt;</p>
-                  <p class="tab">&lt;br&gt;</p>
-                  <p class="tab">&lt;br&gt;</p>
-                  <p>&lt;label&gt;Radio Buttons:&lt;/label&gt;</p>
-                  <p>&lt;label&gt;</p>
-                  <p class="tab">&lt;input type ="radio" name = "radio-name"&gt; Radio I</p>
-                  <p class="tab">&lt;input type ="radio" name = "radio-name"&gt; Radio II</p>
-                  <p class="tab">&lt;input type ="radio" name = "radio-name"&gt; Radio III</p>
-
-
-                  <p>&lt;/label&gt;</p>
-                  <p class="tab">&lt;br&gt;</p>
-                  <p>class="tab">&lt;br&gt;</p>
-                  <p>&lt;label&gt;Radio Buttons:&lt;/label&gt;</p>
-                  <p>&lt;label&gt;</p>
-                  <p class="tab">&lt;input type= "checkbox"&gt; Checkbox
-                    I</p>
-                  <p>&lt;/label&gt;</p>
-                  <p>&lt;label&gt;</p>
-                  <p class="tab">&lt;input type= "checkbox"&gt; Checkbox
-                    II</p>
-                  <p>&lt;/label&gt;</p>
-                  <p class="tab">&lt;br&gt;</p>
-                  <p class="tab">&lt;br&gt;</p>
-                  <p>&lt;label for = "dropdown-id"&gt;Drop
-                    Down:&lt;/label&gt;</p>
-                  <p class="tab">&lt;select id "dropdown-id"&gt;</p>
-                  <p class="trippleTab">&lt;select&gt; &lt;/select&gt;</p>
-                  <p class="trippleTab">&lt;select&gt;Pretty
-                    &lt;/select&gt;</p>
-                  <p class="trippleTab">&lt;select&gt;Neat &lt;/select&gt;</p>
-                  <p class="trippleTab">&lt;select&gt;Right? &lt;/select&gt;</p>
-                  <p class="tab">&lt;/select&gt;</p>
-                  <p class="tab">&lt;br&gt;</p>
-                  <p class="tab">&lt;br&gt;</p>
-                  <p>&lt;label for =
-                    "textarea-id"&gt;Textarea:&lt;/label&gt;</p>
-                  <p class="tab">&lt;textarea id =
-                    "textarea-id"&gt;&lt;/textarea&gt;</p>
-                  <p class="tab">&lt;br&gt;</p>
-                  <p class="tab">&lt;br&gt;</p>
-                  <p class="tab">&lt;button type = "submit"&gt; Submit
-                    &lt;/button&gt;</p>
-                  <p class="tab">&lt;button type = "reset"&gt; Reset &lt;/button&gt;</p>
-                </div>
-              </div>
-            </div>
-            <div id="formRender">
+          <p>Forms allow user interaction and data collection to happen. You start off a form with a <em>&lt;form&gt;</em> tag that contains an <em>action= ""</em> attribute which specifies where form data is sent to upon submission.</p>
+          <ul>
+            <li>
+              <p class=tagHighlight>Input Tags</p>
+              <p>Input tags have a <em>type=""</em> attribtue and as the name implies, define what type of input will be taken. Here are some possible type attribtues and other types of input:</p>
+              <ol>
+                <li class="textFix"><em>type =“text”</em> adds a text-field</li>
+                <li class="textFix"><em>type ="email"</em> adds a text-field with basic email validation</li>
+                <li class="textFix"><em>type =radio</em> adds radio buttons. You can group radio buttons by setting the same name attribute. Radio buttons are used when you only want one option to be selectable at once. </li>
+                <li class="textFix"><em>type ="checkbox"</em> adds a checkbox field, similar to radio buttons except multiple can be selected or “checked” at once.</li>
+              </ol>
+            </li>
+            <li>
+              <p></p>
+              <p class=tagHighlight>Larger Input Tags</p>
+              <p>When you want a user to select an option from a list you might want to use the drop-down function.<br><br>Drop-down functions work a bit like lists or tables do. You start a drop down function by using a <em>&lt;select&gt;</em> tag.
+                Between the opening and closing <em>select</em> tags goes all your drop down options seperated by an opening and closing <em>&lt;option&gt;</em> tags.<br><br>To add a multi-line textfield instead of using a regular text tag you’ll
+                need to use a textarea input field. You can do this by just incerting <em>&lt;textarea&gt;</em> tags </p>
+            </li>
+          </ul>
+      </ol>
+      <br>
+      <h1 class=subTitle>Take a look at form input types in action!</h1>
+      <hr>
+      <div id="FormsExample">
+        <div class="flexHalf">
+          <div id="formPreview">
+            <div class="htmlPreview">
               <div class="dots">
                 <span class="dotOne"></span>
                 <span class="dotTwo"></span>
                 <span class="dotThree"></span>
               </div>
               <div class="fileName">
-                <p class="inline">Forms</p>
+                <p class="inline">forms.html</p>
               </div>
-              <div class="formRender">
-                <div id="formExample">
-                  <br>
-                  <form action="index.html" method="post">
-                    <label for="text-id">Text Field:</label>
-                    <input type="text" id="text-id">
-                    <br>
-                    <br>
-                    <label for="email-id">Email Field:</label>
-                    <input type="email" id="email-id">
-                    <br>
-                    <br>
-
-                    <label>Radio buttons:</label>
-                    <label>
-                      <input type="radio" name="radio-name">
-                      Radio I
-                      <input type="radio" name="radio-name">
-                      Radio II
-                      <input type="radio" name="radio-name">
-                      Radio III
-                    </label>
-
-                    <br>
-                    <br>
-
-                    <label>Checkboxes:</label>
-                    <label>
-                      <input type="checkbox">
-                      Checkbox I
-                    </label>
-                    <label>
-                      <input type="checkbox">
-                      Checkbox II
-                    </label>
-
-                    <br>
-                    <br>
-
-                    <label for="dropdown-id">Drop Down:</label>
-                    <select id="dropdown-id">
-                      <option></option>
-                      <option>Pretty</option>
-                      <option>Neat</option>
-                      <option>Right?</option>
-                    </select>
-
-                    <br>
-                    <br>
-
-                    <label for="textarea-id">Textarea:</label>
-                    <textarea id="textarea-id"></textarea>
-                    <br>
-                    <br>
-                    <button type="submit"> Submit </button>
-                    <button type=reset> Reset </button>
-                  </form>
-                </div>
-
+              <div class="htmlCode">
+                <p class="firstCode">&lt;form action = "index.html" method = "post"&gt;</p>
+                <p class="tab">&lt;label for="text-id"&gt;Text Field:&lt;label&gt;</p>
+                <p class="tab">&lt;input type = "text id="text-id"&gt;</p>
+                <p class="tab">&lt;br&gt;</p>
+                <p class="tab">&lt;br&gt;</p>
+                <p>&lt;label for = "email-id"&gt;Email Field:&lt;/label&gt;</p>
+                <p>&lt;input type = "email" id = "email-id"&gt;</p>
+                <p class="tab">&lt;br&gt;</p>
+                <p class="tab">&lt;br&gt;</p>
+                <p>&lt;label&gt;Radio Buttons:&lt;/label&gt;</p>
+                <p>&lt;label&gt;</p>
+                <p class="tab">&lt;input type ="radio" name = "radio-name"&gt; Radio I</p>
+                <p>&lt;/label&gt;</p>
+                <p>&lt;label&gt;</p>
+                <p class="tab">&lt;input type ="radio" name = "radio-name"&gt; Radio II</p>
+                <p>&lt;/label&gt;</p>
+                <p>&lt;label&gt;</p>
+                <p class="tab">&lt;input type ="radio" name = "radio-name"&gt; Radio III</p>
+                <p>&lt;/label&gt;</p>
+                <p class="tab">&lt;br&gt;</p>
+                <p class="tab"> &lt;br&gt;</p>
+                <p>&lt;label&gt;Radio Buttons:&lt;/label&gt;</p>
+                <p>&lt;label&gt;</p>
+                <p class="tab">&lt;input type= "checkbox"&gt; Checkbox
+                  I</p>
+                <p>&lt;/label&gt;</p>
+                <p>&lt;label&gt;</p>
+                <p class="tab">&lt;input type= "checkbox"&gt; Checkbox
+                  II</p>
+                <p>&lt;/label&gt;</p>
+                <p class="tab">&lt;br&gt;</p>
+                <p class="tab">&lt;br&gt;</p>
+                <p>&lt;label for = "dropdown-id"&gt;Drop
+                  Down:&lt;/label&gt;</p>
+                <p class="tab">&lt;select id "dropdown-id"&gt;</p>
+                <p class="trippleTab">&lt;select&gt; &lt;/select&gt;</p>
+                <p class="trippleTab">&lt;select&gt;Pretty
+                  &lt;/select&gt;</p>
+                <p class="trippleTab">&lt;select&gt;Neat &lt;/select&gt;</p>
+                <p class="trippleTab">&lt;select&gt;Right? &lt;/select&gt;</p>
+                <p class="tab">&lt;/select&gt;</p>
+                <p class="tab">&lt;br&gt;</p>
+                <p class="tab">&lt;br&gt;</p>
+                <p>&lt;label for =
+                  "textarea-id"&gt;Textarea:&lt;/label&gt;</p>
+                <p class="tab">&lt;textarea id =
+                  "textarea-id"&gt;&lt;/textarea&gt;</p>
+                <p class="tab">&lt;br&gt;</p>
+                <p class="tab">&lt;br&gt;</p>
+                <p class="tab">&lt;button type = "submit"&gt; Submit
+                  &lt;/button&gt;</p>
+                <p class="tab">&lt;button type = "reset"&gt; Reset &lt;/button&gt;</p>
               </div>
-
-              <br>
-
-
             </div>
+          </div>
+          <div id="formRender">
+            <div class="dots">
+              <span class="dotOne"></span>
+              <span class="dotTwo"></span>
+              <span class="dotThree"></span>
+            </div>
+            <div class="fileName">
+              <p class="inline">Forms</p>
+            </div>
+            <div class="formRender">
+              <div id="formExample">
+                <br>
+                <form action="index.html" method="post">
+                  <label for="text-id">Text Field:</label>
+                  <input type="text" id="text-id">
+                  <br>
+                  <br>
+                  <label for="email-id">Email Field:</label>
+                  <input type="email" id="email-id">
+                  <br>
+                  <br>
 
+                  <label>Radio buttons:</label>
+                  <label>
+                    <input type="radio" name="radio-name">
+                    Radio I
+                  </label>
+                  <label>
+                    <input type="radio" name="radio-name">
+                    Radio II
+                  </label>
+                  <label>
+                    <input type="radio" name="radio-name">
+                    Radio III
+                  </label>
+                  <br>
+                  <br>
+                  <label>Checkboxes:</label>
+                  <label>
+                    <input type="checkbox">
+                    Checkbox I
+                  </label>
+                  <label>
+                    <input type="checkbox">
+                    Checkbox II
+                  </label>
+                  <br>
+                  <br>
+                  <label for="dropdown-id">Drop Down:</label>
+                  <select id="dropdown-id">
+                    <option> - </option>
+                    <option>Pretty</option>
+                    <option>Neat</option>
+                    <option>Right?</option>
+                  </select>
+                  <br>
+                  <br>
+                  <label for="textarea-id">Textarea:</label>
+                  <textarea id="textarea-id"></textarea>
+                  <br>
+                  <br>
+                  <button type="submit"> Submit </button>
+                  <button type=reset> Reset </button>
+                </form>
+              </div>
+            </div>
+            <br>
           </div>
         </div>
-        </li>
-        </li>
-
-
-
-
-
-
-      </ol>
-
+      </div>
     </div>
-  </div>
   </div>
   <div class="footer">
     <p>4</p>
   </div>
-
 </body>
 
 </html>

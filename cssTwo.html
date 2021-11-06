@@ -9,28 +9,26 @@
   <style media="screen">
     .externalPreview hr {
       border-top: 4px dashed white;
-
     }
 
     .tagAndClassEX .htmlCode {
       width: 525px;
       height: 930px;
-
     }
 
     .tagAndClassEX .htmlPreview {
       height: 1370px;
-
     }
 
     .tagAndClassEX .htmlRender {
       height: 640px;
       width: 450px;
-
     }
+
     .masterCSSEX .htmlCode {
       height: 300px;
     }
+
     .tagAndClassEX .results {
       padding-top: 10px;
       padding-left: 10px;
@@ -42,14 +40,16 @@
     .results {
       margin-top: 10px;
     }
+
     .results p {
       margin: 10px;
     }
+    .title {
+      margin-bottom: 20px;
+    }
   </style>
 </head>
-
 <body>
-
   <div class="page">
     <div class="header">
       <h1>Introduction to Web Development</h1>
@@ -62,36 +62,31 @@
         Sublime Text or Visual Studio Code are also very popular HTML text editors. You can't go wrong with either, so I recommend you read a bit about all options and pick one you can quickly become familiar with. Don't be afraid to get started; You
         can use the navigation bar below this paragraph or the directional arrows to navigate the sections of this website.
       </p>
-
       <hr>
       <div class="topnav">
         <ul>
-          <li id="inline"><a href="index.html">How Websites are Created</a></li>
-          <li id="inline"> |</li>
-          <li id="inline"><a href="structure.html">HTML Structure</a></li>
-          <li id="inline"> |</li>
-          <li id="inline"><a href="bodyTags.html">Body Tags</a></li>
-          <li id="inline"> |</li>
-          <li id="inline"><a href="tablesAndForms.html">Tables & Forms</a></li>
-          <li id="inline"><a href="cssOne.html">CSS (1/2)</a></li>
-          <li id="inline" class="line"> |</li>
-          <li id="inline"><a href="cssTwo.html">CSS (2/2)</a></li>
-          <li id="inline"> |</li>
-          <li id="inline"><a href="layout.html">Layout</a></li>
-          <li id="inline"> |</li>
-          <li id="inline"><a href="hosting.html">Hosting</a></li>
-          <li id="inline"> |</li>
-          <li id="inline"><a href="otherResources.html">Other Resources</a></li>
-
-
+          <li class="inline"><a href="index.html">How Websites are Created</a></li>
+          <li class="inline"> |</li>
+          <li class="inline"><a href="structure.html">HTML Structure</a></li>
+          <li class="inline"> |</li>
+          <li class="inline"><a href="bodyTags.html">Body Tags</a></li>
+          <li class="inline"> |</li>
+          <li class="inline"><a href="tablesAndForms.html">Tables & Forms</a></li>
+          <li class="inline"><a href="cssOne.html">CSS (1/2)</a></li>
+          <li class="inline line"> |</li>
+          <li class="inline"><a href="cssTwo.html">CSS (2/2)</a></li>
+          <li class="inline"> |</li>
+          <li class="inline"><a href="layout.html">Layout</a></li>
+          <li class="inline"> |</li>
+          <li class="inline"><a href="hosting.html">Hosting</a></li>
+          <li class="inline"> |</li>
+          <li class="inline"><a href="otherResources.html">Other Resources</a></li>
         </ul>
       </div>
       <hr>
       <div class="title">
         <h1>CSS Grouping with ID's and Classes</h1>
       </div>
-
-
       <div class="textInfo">
         <div class="flex3Row">
           <div class="flexThree">
@@ -103,7 +98,7 @@
                   <span class="dotThree"></span>
                 </div>
                 <div class="fileName">
-                  <p id="inline"><a href="https://www.w3schools.com/cssref/pr_class_display.asp" target="_blank">display</a></p>
+                  <p class="inline"><a href="https://www.w3schools.com/cssref/pr_class_display.asp" target="_blank">display</a></p>
                 </div>
                 <div class="htmlCode">
                   <p class=firstCode>h1 {</p>
@@ -113,8 +108,6 @@
                   <p>changes how element is displayed</p>
                   <p>Other values: none, inline, block, inline-block</p>
                   <br>
-
-
                 </div>
               </div>
             </div>
@@ -126,18 +119,15 @@
                   <span class="dotThree"></span>
                 </div>
                 <div class="fileName">
-                  <p id="inline"><a href="https://www.w3schools.com/cssref/pr_dim_width.asp" target='_blank'>width</a></p>
+                  <p class="inline"><a href="https://www.w3schools.com/cssref/pr_dim_width.asp" target='_blank'>width</a></p>
                 </div>
                 <div class="htmlCode">
                   <p class=firstCode>h1 {</p>
                   <p class="tab">width: 100px;</p>
                   <p>}</p>
-
                   <p>sets width of element</p>
                   <p>Other values: percentage, inherit, any pixel value or auto</p>
                   <br>
-
-
                 </div>
               </div>
             </div>
@@ -149,14 +139,12 @@
                   <span class="dotThree"></span>
                 </div>
                 <div class="fileName">
-                  <p id="inline"><a href="https://www.w3schools.com/cssref/pr_dim_height.asp" target='_blank'>height</a></p>
-
+                  <p class="inline"><a href="https://www.w3schools.com/cssref/pr_dim_height.asp" target='_blank'>height</a></p>
                 </div>
                 <div class="htmlCode">
                   <p class=firstCode>h1 {</p>
                   <p class="tab">height: 100px;</p>
                   <p>}</p>
-
                   <p>sets height of element</p>
                   <p>Other values: percentage, inherit, any pixel value, auto</p>
                   <br>
@@ -177,7 +165,6 @@
           <hr>
         </div>
       </div>
-
       <ol>
         <li>
           <p class='tagHighlight'>IDs & Classes</p>
@@ -193,39 +180,38 @@
             same HTML document. This means that ID tags should only be used to style
             a single element. If you know you will want to reuse some CSS on multiple elements(such as the CSS that makes the example boxes on every page on this website) you should use classes.</p>
         </li>
-        <li>
-          <p class='tagHighlight'>Examples</p>
+      </ol>
+          <div class="title">
+            <p class='tagHighlight'>Example</p>
+          </div>
           <div class="tagAndClassEX">
-
-              <div class="flexHalf">
-                <div class="externalPreview">
-                  <div class="htmlPreview">
-                    <div class="dots">
-                      <span class="dotOne"></span>
-                      <span class="dotTwo"></span>
-                      <span class="dotThree"></span>
-                    </div>
-                    <div class="fileName">
-                      <p id="inline">classesExample.html</p>
-                    </div>
-
-                    <div class="htmlCode">
-                      <p class="firstCode">&lt;!DOCTYPE html&gt;</p>
-                      <p>&lt;html&gt;</p>
-                      <p>&lt;head&gt;</p>
-                      <p class="tab">&lt;title&gt;Classes Example&lt;/title&gt;</p>
-                      <p>&lt;link rel="stylesheet" href="style/master.css"&gt;</p>
-                      <p>&lt;/head&gt;</p>
-                      <p>&lt;body&gt;</p>
-                      <p class='tab'>&lt;div class=red&gt;</p>
-
-                      <p class="doubleTab">&lt;p&gt; On and on you will hike,
+            <div class="flexHalf">
+              <div class="externalPreview">
+                <div class="htmlPreview">
+                  <div class="dots">
+                    <span class="dotOne"></span>
+                    <span class="dotTwo"></span>
+                    <span class="dotThree"></span>
+                  </div>
+                  <div class="fileName">
+                    <p class="inline">classesExample.html</p>
+                  </div>
+                  <div class="htmlCode">
+                    <p class="firstCode">&lt;!DOCTYPE html&gt;</p>
+                    <p>&lt;html&gt;</p>
+                    <p>&lt;head&gt;</p>
+                    <p class="tab">&lt;title&gt;Classes Example&lt;/title&gt;</p>
+                    <p>&lt;link rel="stylesheet" href="style/master.css"&gt;</p>
+                    <p>&lt;/head&gt;</p>
+                    <p>&lt;body&gt;</p>
+                    <p class='tab'>&lt;div class=red&gt;</p>
+                    <p class="doubleTab">&lt;p&gt; On and on you will hike,
                       And I know you'll hike far
                       and face up to your problems
                       whatever they are. &lt;/p&gt;</p>
-                      <p class='tab'>&lt;/div&gt;</p>
-                      <p class='tab'>&lt;div class=green&gt;</p>
-                      <p class="doubleTab">&lt;p&gt; You'll get mixed up, of course,
+                    <p class='tab'>&lt;/div&gt;</p>
+                    <p class='tab'>&lt;div class=green&gt;</p>
+                    <p class="doubleTab">&lt;p&gt; You'll get mixed up, of course,
                       as you already know.
                       You'll get mixed up
                       with many strange birds as you go.
@@ -235,122 +221,97 @@
                       a Great Balancing Act.
                       Just never foget to be dexterous and deft.
                       And never mix up your right foot with your left. &lt;/p&gt;</p>
-                      <p class='tab'>&lt;/div&gt;</p>
-                      <p class='tab'>&lt;div class=red&gt;</p>
-                      <p class="doubleTab">&lt;p&gt; And will you succeed?
+                    <p class='tab'>&lt;/div&gt;</p>
+                    <p class='tab'>&lt;div class=red&gt;</p>
+                    <p class="doubleTab">&lt;p&gt; And will you succeed?
                       Yes! You will, indeed!
                       (98 and 3/4 percent guaranteed.) &lt;/p&gt;</p>
-                      <p class='tab'>&lt;div class=green&gt;</p>
-                      <p class="doubleTab">&lt;p&gt; KID, YOU'LL MOVE MOUNTAINS!.&lt;br&gt; <br> So...
+                    <p class='tab'>&lt;div class=green&gt;</p>
+                    <p class="doubleTab">&lt;p&gt; KID, YOU'LL MOVE MOUNTAINS!.&lt;br&gt; <br> So...
                       be your name Buxbaum or Bixby or Bray
                       or Mordecai Ali Van Allen O'Shea,
                       You're off the Great Places!
                       Today is your day!
                       Your mountain is waiting.
                       So...get on your way! &lt;/p&gt;</p>
-                      <p class='tab'>&lt;/div&gt;</p>
-
-                      <p>&lt;/body&gt;</p>
-                      <p>&lt;/html&gt;</p>
-                    </div>
-                    <br>
-                    <hr>
-                    <br>
-                    <div class="masterCSSEX">
-                      <div class="dots">
-                        <span class="dotOne"></span>
-                        <span class="dotTwo"></span>
-                        <span class="dotThree"></span>
-                      </div>
-                      <div class="fileName">
-                        <p id="inline">master.css</p>
-
-                      </div>
-
-                      <div class="htmlCode">
-
-                        <p class=firstCode>.red {</p>
-                        <p class="tab">color: red;</p>
-                        <p class="tab">font-family: 'ComfortaaReg', Arial, Sans-Serif;</p>
-                        <p>}</p>
-
-                        <p class=firstCode>.green {</p>
-                        <p class="tab">color: green;</p>
-                        <p class="tab">font-family: 'ComfortaaReg', Arial, Sans-Serif;</p>
-                        <p>}</p>
-                      </div>
-                    </div>
+                    <p class='tab'>&lt;/div&gt;</p>
+                    <p>&lt;/body&gt;</p>
+                    <p>&lt;/html&gt;</p>
                   </div>
-                  </div>
-                  <div class="htmlRender">
+                  <br>
+                  <hr>
+                  <br>
+                  <div class="masterCSSEX">
                     <div class="dots">
                       <span class="dotOne"></span>
                       <span class="dotTwo"></span>
                       <span class="dotThree"></span>
                     </div>
                     <div class="fileName">
-                      <p id="inline">Classes Example</p>
+                      <p class="inline">master.css</p>
                     </div>
-                    <div class="results">
-                      <div class="red">
-                        <p>On and on you will hike,
-                        And I know you'll hike far
-                        and face up to your problems
-                        whatever they are.</p>
-                      </div>
-                      <div class="green">
-                        <p>You'll get mixed up, of course,
-                        as you already know.
-                        You'll get mixed up
-                        with many strange birds as you go.
-                        So be sure when you step.
-                        Step with care and great tact
-                        and remember that Life's
-                        a Great Balancing Act.
-                        Just never foget to be dexterous and deft.
-                        And never mix up your right foot with your left.</p>
-                      </div>
-
-                      <div class="red">
-                        <p>And will you succeed?
-                        Yes! You will, indeed!
-                        (98 and 3/4 percent guaranteed.)</p>
-                      </div>
-                      <div class="green">
-                        <p>KID, YOU'LL MOVE MOUNTAINS!<br>
-
-                        So...
-                        be your name Buxbaum or Bixby or Bray
-                        or Mordecai Ali Van Allen O'Shea,
-                        You're off the Great Places!
-                        Today is your day!
-                        Your mountain is waiting.
-                        So...get on your way!</p>
-
-                      </div>
-
-
-
-
-
-
-
-
-
+                    <div class="htmlCode">
+                      <p class=firstCode>.red {</p>
+                      <p class="tab">color: red;</p>
+                      <p class="tab">font-family: 'ComfortaaReg', Arial, Sans-Serif;</p>
+                      <p>}</p>
+                      <p class=firstCode>.green {</p>
+                      <p class="tab">color: green;</p>
+                      <p class="tab">font-family: 'ComfortaaReg', Arial, Sans-Serif;</p>
+                      <p>}</p>
                     </div>
                   </div>
                 </div>
               </div>
-
-
-
+              <div class="htmlRender">
+                <div class="dots">
+                  <span class="dotOne"></span>
+                  <span class="dotTwo"></span>
+                  <span class="dotThree"></span>
+                </div>
+                <div class="fileName">
+                  <p class="inline">Classes Example</p>
+                </div>
+                <div class="results">
+                  <div class="red">
+                    <p>On and on you will hike,
+                      And I know you'll hike far
+                      and face up to your problems
+                      whatever they are.</p>
+                  </div>
+                  <div class="green">
+                    <p>You'll get mixed up, of course,
+                      as you already know.
+                      You'll get mixed up
+                      with many strange birds as you go.
+                      So be sure when you step.
+                      Step with care and great tact
+                      and remember that Life's
+                      a Great Balancing Act.
+                      Just never foget to be dexterous and deft.
+                      And never mix up your right foot with your left.</p>
+                  </div>
+                  <div class="red">
+                    <p>And will you succeed?
+                      Yes! You will, indeed!
+                      (98 and 3/4 percent guaranteed.)</p>
+                  </div>
+                  <div class="green">
+                    <p>KID, YOU'LL MOVE MOUNTAINS!<br>
+                      So...
+                      be your name Buxbaum or Bixby or Bray
+                      or Mordecai Ali Van Allen O'Shea,
+                      You're off the Great Places!
+                      Today is your day!
+                      Your mountain is waiting.
+                      So...get on your way!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </li>
-      </ol>
-
+        </div>
     </div>
-  </div>
-  </div>
   <div class="footer">
     <p>6</p>
   </div>
