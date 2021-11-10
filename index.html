@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="shortcut icon" href="imgs/emojiLogo.png" />
+  <link rel="shortcut icon" href="imgs/emojiLogo.png" /><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="style/master.css">
   <title>Introduction to Web Development</title>
   <style media="screen">
@@ -36,9 +36,55 @@
       padding-right: 10px;
     }
 
-    .header {
-      padding-top: 0px;
+    .box {
+      border-color: lightgrey;
+      width: 380px;
+      height: 530px;
+      background-color: #F3F3F3;
+      margin: 5px;
+      border-radius: 5px;
+      border-style: solid;
+      border-width: thin;
+      text-align: center;
+      margin-top: 10px;
+      box-shadow: 1px 5px 5px lightgrey;
     }
+
+    .box h2 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-family: 'Ubuntu';
+    }
+
+    .box p {
+      text-align: left;
+      margin-left: 20px;
+      margin-right: 20px;
+      font-size: 18px;
+      font-family: 'ComfortaaReg';
+    }
+
+    .boxHor p {
+      text-align: left;
+      margin: 20px;
+      font-size: 18px;
+      font-family: 'ComfortaaReg';
+    }
+
+    .boxHor {
+      background-color: #F3F3F3;
+      border-color: lightgrey;
+      border-radius: 5px;
+      border-style: solid;
+      border-width: thin;
+      text-align: left;
+      margin-top: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      box-shadow: 1px 5px 5px lightgrey;
+      width: 1174px;
+    }
+
   </style>
 
 </head>
@@ -47,7 +93,6 @@
 
   <div class="page">
     <div class="header">
-      <marquee direction="right" loop=1><em>This website is a work-in-progress.</em> = <img src="imgs/blimp.png" alt="blimp" width="35px"></marquee>
       <h1>Introduction to Web Development</h1>
       <h2>By Gerardo Aguilar</h2>
     </div>

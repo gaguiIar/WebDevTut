@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="shortcut icon" href="imgs/emojiLogo.png" /><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="shortcut icon" href="imgs/emojiLogo.png" />
   <link rel="stylesheet" href="style/master.css">
   <title>Introduction to Web Development</title>
@@ -95,22 +96,29 @@
     #floatExample img {
       padding-top: 20px;
       padding-right: 20px;
+      padding-left: 20px;
       width: 200px;
+
+    }
+    #floatExample .floatRight img {
       float: right;
+    }
+    #floatExample .floatLeft img {
+      float: left;
     }
 
     #floatExample .htmlCode {
-      width: 400px;
+      width: 500px;
     }
 
     #floatExample .htmlRender {
       width: 540px;
-      height: 310px;
+      height: 335px;
     }
 
     #floatExample .results {
       width: 500px;
-      height: 250px;
+      height: 270px;
     }
 
     #floatExample #quote {
@@ -118,7 +126,7 @@
     }
 
     #floatExample .htmlPreview {
-      height: 1030px;
+      height: 1075px;
     }
   </style>
 </head>
@@ -211,7 +219,7 @@
                   </div>
                   <div class="htmlCode">
                     <p class=firstCode>img {</p>
-                    <p class="tab">float: right;</p>
+                    <p class="tab">float: <em>SEE RIGHT</em>;</p>
                     <p class="tab">width: 200px;</p>
                     <p class="tab">height: auto;</p>
                     <p>}</p>
@@ -223,22 +231,42 @@
                   </div>
                 </div>
               </div>
-              <div class="htmlRender">
-                <div class="dots">
-                  <span class="dotOne"></span>
-                  <span class="dotTwo"></span>
-                  <span class="dotThree"></span>
+              <div class="secondOne">
+                <div class="htmlRender">
+                  <div class="dots">
+                    <span class="dotOne"></span>
+                    <span class="dotTwo"></span>
+                    <span class="dotThree"></span>
+                  </div>
+                  <div class="fileName">
+                    <p class="inline">float: right;</p>
+                  </div>
+                  <div class="results floatRight">
+                    <img src="https://media.newyorker.com/photos/590973cb8b51cf59fc422ca9/1:1/w_1722,h_1722,c_limit/Larkin-pg6-c-The-Estate-of-Philip-Larkin-copy.jpg" alt="DTLA view">
+                    <p id="quote">Man hands on misery to man. It deepens like a coastal shelf. Get out as early as you can, And don’t have any kids yourself.
+                      <br><br> -Philip Larkin
+                    </p>
+                  </div>
+                  <br>
                 </div>
-                <div class="fileName">
-                  <p class="inline">This be the Verse</p>
+                <div class="htmlRender">
+                  <div class="dots">
+                    <span class="dotOne"></span>
+                    <span class="dotTwo"></span>
+                    <span class="dotThree"></span>
+                  </div>
+                  <div class="fileName">
+                    <p class="inline">float: left;</p>
+                  </div>
+                  <div class="results floatLeft">
+                    <img src="https://media.newyorker.com/photos/590973cb8b51cf59fc422ca9/1:1/w_1722,h_1722,c_limit/Larkin-pg6-c-The-Estate-of-Philip-Larkin-copy.jpg" alt="DTLA view">
+                    <p id="quote">Man hands on misery to man. It deepens like a coastal shelf. Get out as early as you can, And don’t have any kids yourself.
+                      <br><br> -Philip Larkin
+                    </p>
+                  </div>
+                  <br>
                 </div>
-                <div class="results">
-                  <img src="https://media.newyorker.com/photos/590973cb8b51cf59fc422ca9/1:1/w_1722,h_1722,c_limit/Larkin-pg6-c-The-Estate-of-Philip-Larkin-copy.jpg" alt="DTLA view">
-                  <p id="quote">Man hands on misery to man. It deepens like a coastal shelf. Get out as early as you can, And don’t have any kids yourself.
-                    <br><br> -Philip Larkin
-                  </p>
-                </div>
-                <br>
+
               </div>
             </div>
           </div>
