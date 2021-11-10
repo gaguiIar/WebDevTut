@@ -29,15 +29,16 @@
 ::selection {
   background: #ededed;
 }
-
+.page {
+  background-color: red;
+}
 .flexThree {
   display: flex;
   flex-direction: row;
-  justify-content: center;
 }
 
 li {
-  font-family: ComfortaaReg;
+  font-family: 'ComfortaaReg';
 }
 
 #test {
@@ -286,6 +287,7 @@ em {
 
 .flexHalf {
   display: flex;
+  justify-content: center;
 }
 
 .htmlPreview {

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="utf-8">
   <link rel="shortcut icon" href="imgs/emojiLogo.png" />
@@ -10,32 +11,38 @@
     .textInfo h3 {
       font-family: ComfortaaReg;
     }
+
     #letter {
       width: 800px;
       margin: auto;
       line-height: 40px;
     }
+
     #letter img {
       width: 400px;
       position: relative;
       left: 50px;
       top: -50px;
     }
+
     .textInfo em {
       padding-left: 10px;
       padding-right: 10px;
       padding-top: 3px;
       padding-bottom: 3px;
     }
+
     .textInfo a:hover {
       color: blue;
     }
+
     .odometer.odometer-auto-theme,
     .odometer.odometer-theme-default {
       font-family: "ComfortaaReg";
     }
   </style>
 </head>
+
 <body>
   <div class="page">
     <div class="header">
@@ -79,31 +86,18 @@
       <p>Much of this website is a condensed version of what I learned throughout my Web Publishing course, cross-examined with Jon Duckett's "HTML & CSS" to figure out how to explain these topics in the simplest way possible. If you would like a
         vastly more in-depth explanation of all the topics discussed and then some, I can highly recommend you check out <em><a href="https://wtf.tw/ref/duckett.pdf" target="_blank">Duckett's book</a></em> for all of your needs. <br><br>Furthermore,
         <em><a href="https://www.freecodecamp.org/" target="_blank">Freecodecamp.org</a></em> is an excellent resource(and one I've used) for aspiring programmers to learn new skills through lessons and examples; they offer courses in HTML, CSS, and
-        JavaScript if you would like to check them out!</p>
+        JavaScript if you would like to check them out!
+      </p>
       <br><br>
       <hr><br><br><br>
       <div id="letter">
         <h3>Closing Remarks:</h3>
         <p> This website started as a passion project, and with a combined <em id="odometer" class=odometer>0000</em> lines of HTML, JavaScript & CSS, <em id="odometer2" class=odometer>00</em> days in start-to-finish planning, and
-        <em id="odometer3" class=odometer>00</em> GitHub commits evolved to be one of my most extensive programming endeavors to date!<br><br>Knowing how daunting the world of tech can be, condensing some of what I've learned the past few months all into one place was a great joy, and with that, I hope you've found this guide particularly serviceable in your web dev journey. As you start to get your footing, I implore you to reference my<br> <em><a href="comingSoon.html" target="_blank">HTML & CSS cheatsheet</a></em> as a last resource available at your disposal. If you would like to learn more about the author of this website(aka me), I'm hosted permanently at <em><a href="http://gerardoaguilar.com/" target="_blank">gerardoaguilar.com</a></em> and I'd love to borrow your eyes for a few moments to show you what I've been working on!<br><br>Best of luck,<br><br> </p>
-        <script src="js/odometer.min.js"></script>
-        <script>
-          setTimeout(function() {
-            odometer.innerHTML = 2740;
-          });
-        </script>
-        <script src="js/odometer.min.js"></script>
-        <script>
-          setTimeout(function() {
-            odometer2.innerHTML = 31;
-          });
-        </script>
-        <script src="js/odometer.min.js"></script>
-        <script>
-          setTimeout(function() {
-            odometer3.innerHTML = 39;
-          });
-        </script>
+          <em id="odometer3" class=odometer>00</em> GitHub commits evolved to be one of my most extensive programming endeavors to date!<br><br>Knowing how daunting the world of tech can be, condensing some of what I've learned the past few months
+          all into one place was a great joy, and with that, I hope you've found this guide particularly serviceable in your web dev journey. As you start to get your footing, I implore you to reference my<br> <em><a href="comingSoon.html"
+              target="_blank">HTML & CSS cheatsheet</a></em> as a last resource available at your disposal. If you would like to learn more about the author of this website(aka me), I'm hosted permanently at <em><a href="http://gerardoaguilar.com/"
+              target="_blank">gerardoaguilar.com</a></em> and I'd love to borrow your eyes for a few moments to show you what I've been working on!<br><br>Best of luck,<br><br>
+        </p>
         <img src="imgs/handcock.png" alt="My signiture">
       </div>
     </div>
@@ -112,4 +106,24 @@
     <p>9</p>
   </div>
 </body>
+
 </html>
+
+<!-- plugins  -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/odometer.min.js"></script>
+<script type='text/javascript'>
+  $(window).scroll(function() {
+    if ($(this).scrollTop() >= 65) { // If page is scrolled more than 50px
+      setTimeout(function() {
+        odometer.innerHTML = 2740;
+      });
+      setTimeout(function() {
+        odometer2.innerHTML = 31;
+      });
+      setTimeout(function() {
+        odometer3.innerHTML = 39;
+      });
+    }
+  });
+</script>
