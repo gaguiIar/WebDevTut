@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="shortcut icon" href="imgs/emojiLogo.png" /><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="shortcut icon" href="imgs/emojiLogo.png" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="style/master.css">
   <title>Introduction to Web Development</title>
   <style media="screen">
@@ -84,7 +85,6 @@
       box-shadow: 1px 5px 5px lightgrey;
       width: 1174px;
     }
-
   </style>
 
 </head>
@@ -161,5 +161,14 @@
     <a href="comingSoon.html">[Español]</a>
   </div>
 </body>
-
 </html>
+
+<!-- plugins -->
+
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+<script>
+  function addDarkmodeWidget() {
+    new Darkmode().showWidget();
+  }
+  window.addEventListener('load', addDarkmodeWidget);
+</script>
