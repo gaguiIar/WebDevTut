@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="shortcut icon" href="imgs/emojiLogo.png" /><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <meta name="Seventh page of the Intro to Web Development website covers layout strategies such as float and flexbox properties." content="">
+  <link rel="shortcut icon" href="imgs/emojiLogo.png" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="shortcut icon" href="imgs/emojiLogo.png" />
   <link rel="stylesheet" href="style/master.css">
   <title>Introduction to Web Development</title>
@@ -14,7 +16,8 @@
 
     .iFrameContainer .htmlRender {
       width: 1000px;
-      height: 690px;
+      height: 100%;
+      padding-bottom: .2%;
     }
 
     .iFrameContainer .htmlCode {
@@ -30,7 +33,8 @@
 
     .flexBoxExample .htmlPreview {
       width: 400px;
-      height: 1060px;
+      height: 100%;
+      padding-bottom: 1%;
     }
 
     .flexBoxExample .flexParentContainer {
@@ -44,7 +48,8 @@
 
     .flexBoxExample .htmlRender {
       width: 600px;
-      height: 140px;
+      height: 100%;
+      padding-bottom: 2%;
     }
 
     .flexBoxExample .results {
@@ -100,9 +105,11 @@
       width: 200px;
 
     }
+
     #floatExample .floatRight img {
       float: right;
     }
+
     #floatExample .floatLeft img {
       float: left;
     }
@@ -121,7 +128,7 @@
       height: 270px;
     }
 
-    #floatExample #quote {
+    #floatExample .quote {
       padding: 20px;
     }
 
@@ -244,7 +251,7 @@
                   </div>
                   <div class="results floatRight">
                     <img src="https://media.newyorker.com/photos/590973cb8b51cf59fc422ca9/1:1/w_1722,h_1722,c_limit/Larkin-pg6-c-The-Estate-of-Philip-Larkin-copy.jpg" alt="DTLA view">
-                    <p id="quote">Man hands on misery to man. It deepens like a coastal shelf. Get out as early as you can, And don’t have any kids yourself.
+                    <p class="quote">Man hands on misery to man. It deepens like a coastal shelf. Get out as early as you can, And don’t have any kids yourself.
                       <br><br> -Philip Larkin
                     </p>
                   </div>
@@ -261,7 +268,7 @@
                   </div>
                   <div class="results floatLeft">
                     <img src="https://media.newyorker.com/photos/590973cb8b51cf59fc422ca9/1:1/w_1722,h_1722,c_limit/Larkin-pg6-c-The-Estate-of-Philip-Larkin-copy.jpg" alt="DTLA view">
-                    <p id="quote">Man hands on misery to man. It deepens like a coastal shelf. Get out as early as you can, And don’t have any kids yourself.
+                    <p class="quote">Man hands on misery to man. It deepens like a coastal shelf. Get out as early as you can, And don’t have any kids yourself.
                       <br><br> -Philip Larkin
                     </p>
                   </div>
@@ -500,12 +507,7 @@
     <p>7</p>
   </div>
 
-</body>
-
-</html>
-
 <!-- plugins -->
-
 <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
 <script>
   function addDarkmodeWidget() {
@@ -513,3 +515,6 @@
   }
   window.addEventListener('load', addDarkmodeWidget);
 </script>
+</body>
+
+</html>

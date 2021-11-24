@@ -3,8 +3,11 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="description" content="First page of Introduction to Web Development,
+  covers what HTML, CSS and Javascript is and how they work together to build interactive websites">
   <link rel="shortcut icon" href="imgs/emojiLogo.png" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
   <link rel="stylesheet" href="style/master.css">
   <title>Introduction to Web Development</title>
   <style media="screen">
@@ -109,11 +112,11 @@
       <ul>
         <li class="inline selectedTab"><a href="index.html">How Websites are Created</a></li>
         <li class="inline line"> |</li>
-        <li class="inline"><a href="structure.html">HTML Structure</a></li>
+        <li class="inline "><a href="structure.html">HTML Structure</a></li>
         <li class="inline line"> |</li>
         <li class="inline"><a href="bodyTags.html">Body Tags</a></li>
         <li class="inline line"> |</li>
-        <li class="inline"><a href="tablesAndForms.html">Tables & Forms</a></li>
+        <li class="inline "><a href="tablesAndForms.html">Tables & Forms</a></li>
         <li class="inline"><a href="cssOne.html">CSS (1/2)</a></li>
         <li class="inline line"> |</li>
         <li class="inline"><a href="cssTwo.html">CSS (2/2)</a></li>
@@ -160,15 +163,15 @@
     <p class=inline>1</p>
     <a href="comingSoon.html">[Español]</a>
   </div>
+
+  <!-- plugins -->
+  <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+  <script>
+    function addDarkmodeWidget() {
+      new Darkmode().showWidget();
+    }
+    window.addEventListener('load', addDarkmodeWidget);
+  </script>
 </body>
+
 </html>
-
-<!-- plugins -->
-
-<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
-<script>
-  function addDarkmodeWidget() {
-    new Darkmode().showWidget();
-  }
-  window.addEventListener('load', addDarkmodeWidget);
-</script>

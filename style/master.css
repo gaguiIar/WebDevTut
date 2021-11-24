@@ -6,6 +6,13 @@
 }
 
 @font-face {
+  font-family: 'OpenSans';
+  /*a name to be used later*/
+  src: url('../fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf');
+  /*URL to font*/
+}
+
+@font-face {
   font-family: 'Ubuntu';
   /*a name to be used later*/
   src: url('../fonts/Ubuntu/Ubuntu-Bold.ttf');
@@ -55,7 +62,7 @@ body {
 }
 
 .page {
-  width: 1200px;
+  width: 80%;
   height: auto;
   margin: auto;
   background-color: #fff;
@@ -117,7 +124,7 @@ body {
 
 .textInfo {
   margin: auto;
-  width: 1200px;
+  width: 100%;
 }
 
 .textInfo p {

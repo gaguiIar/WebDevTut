@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="shortcut icon" href="imgs/emojiLogo.png" /><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <meta name="description" content="This is the second papge of the intro to web development website, it covers html structure tags such as doctype, html, head link & body">
+  <link rel="shortcut icon" href="imgs/emojiLogo.png" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="shortcut icon" href="imgs/emojiLogo.png" />
   <style media="screen">
     .htmlRender {
@@ -24,7 +26,7 @@
     }
 
     .htmlPreview>.htmlCode {
-      height: 330px;
+      height: 315px;
     }
 
     .htmlPreview {
@@ -37,6 +39,8 @@
 
 <body>
   <div class="page">
+
+
     <div class="header">
       <h1>Introduction to Web Development</h1>
       <h2>By Gerardo Aguilar</h2>
@@ -58,7 +62,7 @@
         <li class="inline line"> |</li>
         <li class="inline"><a href="bodyTags.html">Body Tags</a></li>
         <li class="inline line"> |</li>
-        <li class="inline"><a href="tablesAndForms.html">Tables & Forms</a></li>
+        <li class="inline "><a href="tablesAndForms.html">Tables & Forms</a></li>
         <li class="inline"><a href="cssOne.html">CSS (1/2)</a></li>
         <li class="inline line"> |</li>
         <li class="inline"><a href="cssTwo.html">CSS (2/2)</a></li>
@@ -78,31 +82,35 @@
       <ol>
         <li>
           <p class="tagHighlight">&lt;!DOCTYPE html&gt;</p>
-          <p>There are all kinds of files you can open on the web and each of them have properties that change the way they are displayed in a brower. Browsers need to be able to identify what kind if file is being loaded to figure out how to display
-            it; the <em>&lt;!DOCTYPE html&gt;</em> tag allows us to do so. Writing <em>&lt;!DOCTYPE html&gt;</em> declares the document type as an HTML file and tells the browser how it should be displayed.</p>
+          <p>There are all kinds of files you can open on the web, and each of them has properties that change the way they are displayed in a browser. Browsers need to identify what kind of file is being loaded to figure out how to display it. The
+            <em>&lt;!DOCTYPE html&gt;</em> tag allows us to do so. Writing <em>&lt;!DOCTYPE html&gt;</em> at the top of your HTML document officially declares the document as an HTML file and tells the browser how it should be displayed.
+          </p>
         </li>
         <li>
           <p class="tagHighlight">&lt;html&gt;</p>
-          <p>The html tag begins with <em>&lt;html&gt;</em> and ends with <em>&lt;/html&gt;</em>. As we go through this tutorial you will see that most html tags have a starting and closing tag––Unless otherwise specified you can assume any future
-            tags discussed in this tutorial have a closing tag that is identical to the primary tag with a forwardslash <em>(/)</em> in the beggining. In this case the beggining <em>&lt;html&gt;</em> tag identifies the start or root of a HTML
-            document and the closing <em>&lt;/html&gt;</em> tag indicates the end. Because the html tag is used to mark the start and end of an HTML document that means all other HTML elements present on your webpage will go inside these two tags.
+          <p>The HTML tag follows the <em>&lt;!DOCTYPE html&gt;</em> tag and begins with <em>&lt;html&gt;</em> and ends with <em>&lt;/html&gt;</em>. As we go through this tutorial, you will see that most HTML tags have a starting and closing tag.
+            Unless otherwise specified, you can assume any future tags discussed in this tutorial have an opening & closing tag that is identical to the primary tag with a forward-slash <em>(/)</em> in the beggining. In this case the beggining
+            <em>&lt;html&gt;</em> tag identifies the start or root of a HTML
+            document and the closing <em>&lt;/html&gt;</em> tag indicates the end. Because the HTML tag is used to mark the start and end of an HTML document, all other HTML elements present on your web page will go inside these two tags.
           </p>
         </li>
         <li>
           <p class="tagHighlight">&lt;head&gt;</p>
-          <p>The <em>&lt;head&gt;</em> tag defines elements about an html page such as the page title, links to CSS, external files, character encoding and other types of metadata about the document.</p>
+          <p>The <em>&lt;head&gt;</em> tag defines elements about an HTML page, such as the page title, links to CSS, external files, character encoding, and other types of metadata about the document.</p>
         </li>
         <li>
           <p class="tagHighlight">&lt;title&gt;</p>
-          <p>The <em>&lt;title&gt;</em> tag goes inside the head tag and defines the title of a webpage(Words that show up on webpage tab above url bar)</p>
+          <p>The <em>&lt;title&gt;</em> tag goes inside the head tag and defines the title of a webpage(words that show up on webpage tab above URL bar).</p>
         </li>
         <li>
           <p class="tagHighlight">&lt;link&gt;</p>
-          <p>The <em>&lt;link&gt;</em> tag also goes inside the head tag and is used to import external resources such as CSS or cascading style sheet <em>(.css)</em> files.</p>
+          <p>The <em>&lt;link&gt;</em> tag also goes inside the head tag and imports external resources such as CSS or cascading style sheet <em>(.css)</em> files.</p>
         </li>
         <li>
           <p class="tagHighlight">&lt;body&gt;</p>
-          <p>The <em>&lt;body&gt;</em> tag will be the first HTML tag that proceeds the ending <em>&lt;/head&gt;</em> tag. The <em>&lt;body&gt;</em> openeing and closing tags will contain eveyrthing that your browser will display. </p>
+          <p> The <em>&lt;body&gt;</em> tag will be the first HTML tag that proceeds the ending <em>&lt;/head&gt;</em>/head> tag. The <em>&lt;body&gt;</em> opening and closing tags will contain everything that your browser will display. </p>
+
+
           <div class="flexHalf">
             <div class="htmlPreview">
               <div class="dots">
@@ -146,12 +154,8 @@
   <div class="footer">
     <p>2</p>
   </div>
-</body>
-
-</html>
 
 <!-- plugins -->
-
 <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
 <script>
   function addDarkmodeWidget() {
@@ -159,3 +163,6 @@
   }
   window.addEventListener('load', addDarkmodeWidget);
 </script>
+</body>
+
+</html>

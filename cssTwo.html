@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="shortcut icon" href="imgs/emojiLogo.png" /><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <meta name="description" content="Page 6 of the Intro to Web Development website, covers the second portion of CSS with grouping using ID's classes, what ID's and classes are and when you should use them.">
+  <link rel="shortcut icon" href="imgs/emojiLogo.png" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="shortcut icon" href="imgs/emojiLogo.png" />
   <link rel="stylesheet" href="style/master.css">
   <title>Introduction to Web Development</title>
@@ -46,9 +48,11 @@
     .results p {
       margin: 10px;
     }
+
     .title {
       margin-bottom: 20px;
     }
+
     .usefulCSS {
       width: 340px;
     }
@@ -63,6 +67,7 @@
     }
   </style>
 </head>
+
 <body>
   <div class="page">
     <div class="header">
@@ -88,7 +93,7 @@
           <li class="inline"><a href="tablesAndForms.html">Tables & Forms</a></li>
           <li class="inline"><a href="cssOne.html">CSS (1/2)</a></li>
           <li class="inline line"> |</li>
-          <li class="inline"><a href="cssTwo.html">CSS (2/2)</a></li>
+          <li class="inline selectedTab"><a href="cssTwo.html">CSS (2/2)</a></li>
           <li class="inline"> |</li>
           <li class="inline"><a href="layout.html">Layout</a></li>
           <li class="inline"> |</li>
@@ -195,147 +200,142 @@
             a single element. If you know you will want to reuse some CSS on multiple elements(such as the CSS that makes the example boxes on every page on this website) you should use classes.</p>
         </li>
       </ol>
-          <div class="title">
-            <p class='tagHighlight'>Example</p>
-          </div>
-          <div class="tagAndClassEX">
-            <div class="flexHalf">
-              <div class="externalPreview">
-                <div class="htmlPreview">
-                  <div class="dots">
-                    <span class="dotOne"></span>
-                    <span class="dotTwo"></span>
-                    <span class="dotThree"></span>
-                  </div>
-                  <div class="fileName">
-                    <p class="inline">classesExample.html</p>
-                  </div>
-                  <div class="htmlCode">
-                    <p class="firstCode">&lt;!DOCTYPE html&gt;</p>
-                    <p>&lt;html&gt;</p>
-                    <p>&lt;head&gt;</p>
-                    <p class="tab">&lt;title&gt;Classes Example&lt;/title&gt;</p>
-                    <p>&lt;link rel="stylesheet" href="style/master.css"&gt;</p>
-                    <p>&lt;/head&gt;</p>
-                    <p>&lt;body&gt;</p>
-                    <p class='tab'>&lt;div class=red&gt;</p>
-                    <p class="doubleTab">&lt;p&gt; On and on you will hike,
-                      And I know you'll hike far
-                      and face up to your problems
-                      whatever they are. &lt;/p&gt;</p>
-                    <p class='tab'>&lt;/div&gt;</p>
-                    <p class='tab'>&lt;div class=green&gt;</p>
-                    <p class="doubleTab">&lt;p&gt; You'll get mixed up, of course,
-                      as you already know.
-                      You'll get mixed up
-                      with many strange birds as you go.
-                      So be sure when you step.
-                      Step with care and great tact
-                      and remember that Life's
-                      a Great Balancing Act.
-                      Just never foget to be dexterous and deft.
-                      And never mix up your right foot with your left. &lt;/p&gt;</p>
-                    <p class='tab'>&lt;/div&gt;</p>
-                    <p class='tab'>&lt;div class=red&gt;</p>
-                    <p class="doubleTab">&lt;p&gt; And will you succeed?
-                      Yes! You will, indeed!
-                      (98 and 3/4 percent guaranteed.) &lt;/p&gt;</p>
-                    <p class='tab'>&lt;div class=green&gt;</p>
-                    <p class="doubleTab">&lt;p&gt; KID, YOU'LL MOVE MOUNTAINS!.&lt;br&gt; <br> So...
-                      be your name Buxbaum or Bixby or Bray
-                      or Mordecai Ali Van Allen O'Shea,
-                      You're off the Great Places!
-                      Today is your day!
-                      Your mountain is waiting.
-                      So...get on your way! &lt;/p&gt;</p>
-                    <p class='tab'>&lt;/div&gt;</p>
-                    <p>&lt;/body&gt;</p>
-                    <p>&lt;/html&gt;</p>
-                  </div>
-                  <br>
-                  <hr>
-                  <br>
-                  <div class="masterCSSEX">
-                    <div class="dots">
-                      <span class="dotOne"></span>
-                      <span class="dotTwo"></span>
-                      <span class="dotThree"></span>
-                    </div>
-                    <div class="fileName">
-                      <p class="inline">master.css</p>
-                    </div>
-                    <div class="htmlCode">
-                      <p class=firstCode>.red {</p>
-                      <p class="tab">color: red;</p>
-                      <p class="tab">font-family: 'ComfortaaReg', Arial, Sans-Serif;</p>
-                      <p>}</p>
-                      <p class=firstCode>.green {</p>
-                      <p class="tab">color: green;</p>
-                      <p class="tab">font-family: 'ComfortaaReg', Arial, Sans-Serif;</p>
-                      <p>}</p>
-                    </div>
-                  </div>
-                </div>
+      <div class="title">
+        <p class='tagHighlight'>Example</p>
+      </div>
+      <div class="tagAndClassEX">
+        <div class="flexHalf">
+          <div class="externalPreview">
+            <div class="htmlPreview">
+              <div class="dots">
+                <span class="dotOne"></span>
+                <span class="dotTwo"></span>
+                <span class="dotThree"></span>
               </div>
-              <div class="htmlRender">
+              <div class="fileName">
+                <p class="inline">classesExample.html</p>
+              </div>
+              <div class="htmlCode">
+                <p class="firstCode">&lt;!DOCTYPE html&gt;</p>
+                <p>&lt;html&gt;</p>
+                <p>&lt;head&gt;</p>
+                <p class="tab">&lt;title&gt;Classes Example&lt;/title&gt;</p>
+                <p>&lt;link rel="stylesheet" href="style/master.css"&gt;</p>
+                <p>&lt;/head&gt;</p>
+                <p>&lt;body&gt;</p>
+                <p class='tab'>&lt;div class=red&gt;</p>
+                <p class="doubleTab">&lt;p&gt; On and on you will hike,
+                  And I know you'll hike far
+                  and face up to your problems
+                  whatever they are. &lt;/p&gt;</p>
+                <p class='tab'>&lt;/div&gt;</p>
+                <p class='tab'>&lt;div class=green&gt;</p>
+                <p class="doubleTab">&lt;p&gt; You'll get mixed up, of course,
+                  as you already know.
+                  You'll get mixed up
+                  with many strange birds as you go.
+                  So be sure when you step.
+                  Step with care and great tact
+                  and remember that Life's
+                  a Great Balancing Act.
+                  Just never foget to be dexterous and deft.
+                  And never mix up your right foot with your left. &lt;/p&gt;</p>
+                <p class='tab'>&lt;/div&gt;</p>
+                <p class='tab'>&lt;div class=red&gt;</p>
+                <p class="doubleTab">&lt;p&gt; And will you succeed?
+                  Yes! You will, indeed!
+                  (98 and 3/4 percent guaranteed.) &lt;/p&gt;</p>
+                <p class='tab'>&lt;div class=green&gt;</p>
+                <p class="doubleTab">&lt;p&gt; KID, YOU'LL MOVE MOUNTAINS!.&lt;br&gt; <br> So...
+                  be your name Buxbaum or Bixby or Bray
+                  or Mordecai Ali Van Allen O'Shea,
+                  You're off the Great Places!
+                  Today is your day!
+                  Your mountain is waiting.
+                  So...get on your way! &lt;/p&gt;</p>
+                <p class='tab'>&lt;/div&gt;</p>
+                <p>&lt;/body&gt;</p>
+                <p>&lt;/html&gt;</p>
+              </div>
+              <br>
+              <hr>
+              <br>
+              <div class="masterCSSEX">
                 <div class="dots">
                   <span class="dotOne"></span>
                   <span class="dotTwo"></span>
                   <span class="dotThree"></span>
                 </div>
                 <div class="fileName">
-                  <p class="inline">Classes Example</p>
+                  <p class="inline">master.css</p>
                 </div>
-                <div class="results">
-                  <div class="red">
-                    <p>On and on you will hike,
-                      And I know you'll hike far
-                      and face up to your problems
-                      whatever they are.</p>
-                  </div>
-                  <div class="green">
-                    <p>You'll get mixed up, of course,
-                      as you already know.
-                      You'll get mixed up
-                      with many strange birds as you go.
-                      So be sure when you step.
-                      Step with care and great tact
-                      and remember that Life's
-                      a Great Balancing Act.
-                      Just never foget to be dexterous and deft.
-                      And never mix up your right foot with your left.</p>
-                  </div>
-                  <div class="red">
-                    <p>And will you succeed?
-                      Yes! You will, indeed!
-                      (98 and 3/4 percent guaranteed.)</p>
-                  </div>
-                  <div class="green">
-                    <p>KID, YOU'LL MOVE MOUNTAINS!<br>
-                      So...
-                      be your name Buxbaum or Bixby or Bray
-                      or Mordecai Ali Van Allen O'Shea,
-                      You're off the Great Places!
-                      Today is your day!
-                      Your mountain is waiting.
-                      So...get on your way!</p>
-                  </div>
+                <div class="htmlCode">
+                  <p class=firstCode>.red {</p>
+                  <p class="tab">color: red;</p>
+                  <p class="tab">font-family: 'ComfortaaReg', Arial, Sans-Serif;</p>
+                  <p>}</p>
+                  <p class=firstCode>.green {</p>
+                  <p class="tab">color: green;</p>
+                  <p class="tab">font-family: 'ComfortaaReg', Arial, Sans-Serif;</p>
+                  <p>}</p>
                 </div>
               </div>
             </div>
           </div>
+          <div class="htmlRender">
+            <div class="dots">
+              <span class="dotOne"></span>
+              <span class="dotTwo"></span>
+              <span class="dotThree"></span>
+            </div>
+            <div class="fileName">
+              <p class="inline">Classes Example</p>
+            </div>
+            <div class="results">
+              <div class="red">
+                <p>On and on you will hike,
+                  And I know you'll hike far
+                  and face up to your problems
+                  whatever they are.</p>
+              </div>
+              <div class="green">
+                <p>You'll get mixed up, of course,
+                  as you already know.
+                  You'll get mixed up
+                  with many strange birds as you go.
+                  So be sure when you step.
+                  Step with care and great tact
+                  and remember that Life's
+                  a Great Balancing Act.
+                  Just never foget to be dexterous and deft.
+                  And never mix up your right foot with your left.</p>
+              </div>
+              <div class="red">
+                <p>And will you succeed?
+                  Yes! You will, indeed!
+                  (98 and 3/4 percent guaranteed.)</p>
+              </div>
+              <div class="green">
+                <p>KID, YOU'LL MOVE MOUNTAINS!<br>
+                  So...
+                  be your name Buxbaum or Bixby or Bray
+                  or Mordecai Ali Van Allen O'Shea,
+                  You're off the Great Places!
+                  Today is your day!
+                  Your mountain is waiting.
+                  So...get on your way!</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
   <div class="footer">
     <p>6</p>
   </div>
 
-</body>
-
-</html>
-
 <!-- plugins -->
-
 <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
 <script>
   function addDarkmodeWidget() {
@@ -343,3 +343,5 @@
   }
   window.addEventListener('load', addDarkmodeWidget);
 </script>
+</body>
+</html>
